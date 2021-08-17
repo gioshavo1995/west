@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","sources":["style.scss","components/_global.scss"],"sourcesContent":["//components\n@import \"components/global\";\n\n",".test {\r\n    color: green;\r\n}"],"names":[],"mappings":"ACAA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,KAAK,GACf"}
