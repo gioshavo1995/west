@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markup</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.min.css" />
 </head>
 <body>
-  <div class="test">test</div>
+  <!-- header start -->
+  <header class="d-flex align-items-center justify-content-between">
+    <div class="main_menu h-100 d-flex align-items-center">
+      <div class="dropdown lang h-100 d-flex align-items-center">
+        <button class="btn dropdown-toggle p-0 d-flex align-items-center" type="button" id="langdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          EN <img src="assets/images/drop_button.png" alt="drop_button">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <a class="header_link d-flex align-items-center" href="#">Bus tours</a>
+      <a class="header_link d-flex align-items-center" href="#">Day trips</a>
+      <a class="header_link d-flex align-items-center" href="#">Private tours</a>
+      <a class="header_link d-flex align-items-center" href="#">Holidays packages</a>
+      <a class="header_link d-flex align-items-center" href="#">Transfers</a>
+      <a class="header_link d-flex align-items-center" href="#">Attraction</a>
+      <figure class="mb-0 logo h-100">
+        <a href="#" class="w-100 h-100 d-flex align-items-center">
+          <img src="assets/images/wst_logo.png" alt="logo">
+        </a>
+      </figure>
+    </div>
+    <div class="right_menu d-flex align-items-center h-100">
+      <a class="header_link d-flex align-items-center" href="#">Contact us</a>
+      <a class="header_link d-flex align-items-center" href="#">B2B</a>
+      <a class="header_link d-flex align-items-center" href="#"><img src="assets/images/login.png" alt="login">Login</a>
+      <a class="header_link d-flex align-items-center" href="#"><img src="assets/images/registration.png" alt="registration"> Registration</a>
+      <div class="dropdown cart p-0">
+        <button class="btn dropdown-toggle w-100 h-100 p-0" type="button" id="cartdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="assets/images/cart.png" alt="cart">
+        </button>
+        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="search d-flex align-items-center">
+          <button class="btn p-0 w-100 h-100"><img src="assets/images/search.png"></button>
+      </div>
+    </div>
+  </header>
+  <!-- main-image start -->
+  <section class="main_image position-relative" style="background-image: url('assets/images/cover.JPG');">
+    <div class="text d-flex flex-column align-items-center position-relative h-100">
+      <h5>Away from monotonous life</h5>
+      <h1>Magical Georgia</h1>
+      <p class="text-center">7 years in love with Georgia. 560.000 Happy customers. 150 Tours around Georgia.</p>
+      <div class="bottom_divs mt-auto">
+        <p class="mw-100 text-center">Choose the service you want</p>
+        <div class="d-flex align-items-center tour_items flex-wrap justify-content-between">
+          <a href="#" class="tour_item d-flex align-items-center">
+            <img src="assets/images/tour_bus.png" alt="">
+            Bus tours
+          </a>
+          <a href="#" class="tour_item d-flex align-items-center">
+            <img src="assets/images/day_trip.png" alt="">
+            Day trip
+          </a>
+          <a href="#" class="tour_item d-flex align-items-center">
+            <img src="assets/images/private_trip.png" alt="">
+            Private tours
+          </a>
+          <a href="#" class="tour_item d-flex align-items-center">
+            <img src="assets/images/holidays_packages.png" alt="">
+            Holidays packages
+          </a>
+          <a href="#" class="tour_item d-flex align-items-center">
+            <img src="assets/images/transfers.png" alt="">
+            Transfers
+          </a>
+          <a href="#" class="tour_item d-flex align-items-center">
+            <img src="assets/images/attraction.png" alt="">
+            Attraction
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- popular destinations start -->
+  <section class="popular_destinations">
+    
+  </section>
+  <!-- js -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    
+  </script>
 </body>
 </html>
