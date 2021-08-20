@@ -58,3 +58,135 @@
         }
     }
 }
+.main_content {
+    .popular_destinations {
+        margin-top: 72px;
+        margin-bottom: 48px;
+        .destinations_row {
+            margin: 0 -8px;
+            .col-md-3 {
+                padding: 0 8px;
+            }
+            .popular_item {
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+                figure {
+                    margin-bottom: 16px;
+                    img {
+                        max-width: 100%;
+                        height: 367px;
+                        object-fit: cover;
+                        border-radius: 16px;
+                    }
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $title-font-bold;
+                }
+                p {
+                    margin-bottom: 24px;
+                    padding-right: 40px;
+                    font-size: 14px;
+                    color: $color-black-1;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .afordable_prices {
+        margin-bottom: 72px;
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    a {
+                        position: relative;
+                        display: block;
+                        z-index: 1;
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            z-index: 1;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0) 60%, rgba(34, 34, 34, 0.8));
+                            border-radius: 16px;
+                        }
+                    }
+                    height: 380px;
+                    border-radius: 16px;
+                    figure {
+                        img {
+                            max-width: 100%;
+                            object-fit: cover;
+                            border-radius: 16px;
+                        }
+                    }
+                    .text {
+                        z-index: 4;
+                        bottom: 24px;
+                        left: 16px;
+                        color: $color-white;
+                        .price {
+                            display: inline-block;
+                            height: 31px;
+                            margin-bottom: 8px;
+                            padding: 0 12px;
+                            color: $color-black;
+                            background-color: rgba($color: #ffffff, $alpha: 0.5);
+                            -webkit-backdrop-filter: blur(30px);
+                            backdrop-filter: blur(30px);
+                            border-radius: 4px;
+                            font-family: $title-font-bold;
+                            sub {
+                                font-size: 12px;
+                            }
+                        }
+                        span {
+                            display: block;
+                            min-height: 45px;
+                            font-size: 18px;
+                            font-family: $title-font-bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .other {
+        margin-bottom: 72px;
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    border-radius: 30px;
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                    }
+                    figure {
+                        height: 367px;
+                        margin-bottom: 16px;
+                        img {
+                            max-width: 100%;
+                            object-fit: cover;
+                            border-radius: 30px;
+                        }
+                    }
+                    .text {
+                        span {
+                            font-size: 18px;
+                            font-family: $title-font-bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .testimonials {
+        background-color: $color-white-1;
+        padding: 40px 0 70px;
+    }
+}
