@@ -9,6 +9,20 @@ $( document ).ready(function() {
         spaceBetween: 16,
         touchRatio: 0,
       });
+      const testimonials = new Swiper('.testimonials_swiper', {
+        slidesPerView: 5,
+        spaceBetween: 16,
+        touchRatio: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      const blog = new Swiper('.blog_swiper', {
+        slidesPerView: 4,
+        spaceBetween: 16,
+        touchRatio: 0,
+      });
       // $(".rating").rate();
       //   //or for example
       //   var options = {
