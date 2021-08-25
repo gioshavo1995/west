@@ -1,10 +1,9 @@
 $( document ).ready(function() {
-
-    $('.search').click(function(){
-      $('.search_wrap').addClass('active');
-    });
-      $('.search_back').click(function(){
-        $('.search_wrap').removeClass('active');
+  $(document).on('click', '.search', function(){
+    $('.search_wrap').addClass('active');
+  });
+  $(document).on('click', '.search_back', function(){
+    $('.search_wrap').removeClass('active');
   });
     const afrodable = new Swiper('.afordable_swiper', {
         slidesPerView: 5,
@@ -32,7 +31,7 @@ $( document ).ready(function() {
       });
       const search = new Swiper('.search_swiper', {
         slidesPerView: 7,
-        spaceBetween: 16,
+        spaceBetween: 24,
       });
       // $(".rating").rate();
       //   //or for example
