@@ -1,4 +1,11 @@
 $( document ).ready(function() {
+
+    $('.search').click(function(){
+      $('.search_wrap').addClass('active');
+    });
+      $('.search_back').click(function(){
+        $('.search_wrap').removeClass('active');
+  });
     const afrodable = new Swiper('.afordable_swiper', {
         slidesPerView: 5,
         spaceBetween: 16,
@@ -23,6 +30,10 @@ $( document ).ready(function() {
         spaceBetween: 16,
         touchRatio: 0,
       });
+      const search = new Swiper('.search_swiper', {
+        slidesPerView: 7,
+        spaceBetween: 16,
+      });
       // $(".rating").rate();
       //   //or for example
       //   var options = {
@@ -46,7 +57,6 @@ $( document ).ready(function() {
           $(this).next().removeClass('d-none');
           $(this).next().addClass('d-flex');
           $('.social_items').addClass('active');
-
         });
         $('.scroll_social .close').click(function(){
           $(this).addClass('d-none');

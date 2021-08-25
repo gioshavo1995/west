@@ -10,16 +10,99 @@
 </head>
 <body>
   <!-- header start -->
-  <header class="d-flex align-items-center justify-content-between">
+  <header class="d-flex align-items-center position-relative">
+    <div class="search_wrap">
+      <div class="search_content h-100">
+        <div class="search_container">
+          <div class="search_input position-relative">
+              <button class="search_icon btn position-absolute"><img src="assets/images/search.png" alt="search"></button>
+              <input class="w-100" type="text" placeholder="what can we help you find today">
+              <button class="search_back btn position-absolute"><img src="assets/images/exit_social.png" alt="exit"></button>
+          </div>
+          <span class="d-block title">Popular searches</span>
+          <div class="swiper-container search_swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="w-100 h-100" href="#">
+                <figure>
+                  <img src="assets/images/cover.JPG" alt="search_imgage">
+                </figure>
+                <span class="d-block">City tour Tbilisi</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="main_menu h-100 d-flex align-items-center">
       <div class="dropdown lang h-100 d-flex align-items-center">
         <button class="btn dropdown-toggle p-0 d-flex align-items-center" type="button" id="langdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           EN <img src="assets/images/drop_button.png" alt="drop_button">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">ქართული</a>
+          <a class="dropdown-item" href="#">русский</a>
+          <a class="dropdown-item" href="#">Укранська</a>
         </div>
       </div>
       <a class="header_link d-flex align-items-center" href="#">Bus tours</a>
@@ -28,27 +111,20 @@
       <a class="header_link d-flex align-items-center" href="#">Holidays packages</a>
       <a class="header_link d-flex align-items-center" href="#">Transfers</a>
       <a class="header_link d-flex align-items-center" href="#">Attraction</a>
-      <figure class="mb-0 logo h-100">
-        <a href="#" class="w-100 h-100 d-flex align-items-center">
-          <img src="assets/images/wst_logo.png" alt="logo">
-        </a>
-      </figure>
     </div>
-    <div class="right_menu d-flex align-items-center h-100">
+    <figure class="mb-0 logo h-100">
+      <a href="#" class="w-100 h-100 d-flex align-items-center">
+        <img src="assets/images/wst_logo.png" alt="logo">
+      </a>
+    </figure>
+    <div class="right_menu d-flex align-items-center h-100 ml-auto">
       <a class="header_link d-flex align-items-center" href="#">Contact us</a>
       <a class="header_link d-flex align-items-center" href="#">B2B</a>
       <a class="header_link d-flex align-items-center" href="#"><img src="assets/images/login.png" alt="login">Login</a>
       <a class="header_link d-flex align-items-center" href="#"><img src="assets/images/registration.png" alt="registration"> Registration</a>
-      <div class="dropdown cart p-0">
-        <button class="btn dropdown-toggle w-100 h-100 p-0" type="button" id="cartdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="assets/images/cart.png" alt="cart">
-        </button>
-        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
+      <a class="header_link d-flex align-items-center cart" href="#"><img src="assets/images/cart.png" alt="cart"></a>
+      
+          
       <div class="search d-flex align-items-center">
           <button class="btn p-0 w-100 h-100"><img src="assets/images/search.png"></button>
       </div>
