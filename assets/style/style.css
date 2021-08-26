@@ -575,26 +575,26 @@ header {
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -ms-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out; }
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
         header .main_menu .mobile_menu .spans span:first-child {
           top: 15px; }
         header .main_menu .mobile_menu .spans span:last-child {
           top: 23px; }
     header .main_menu .mobile_menu.active .spans span:first-child {
-      top: 10px;
-      left: 11px;
+      top: 14px;
+      left: 14px;
       transform: rotate(45deg);
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
     header .main_menu .mobile_menu.active .spans span:last-child {
-      top: 22.1px;
-      left: 11px;
+      top: 26px;
+      left: 14px;
       transform: rotate(-45deg);
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;

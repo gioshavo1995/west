@@ -42,7 +42,7 @@
                -moz-transform: rotate(0deg);
                -o-transform: rotate(0deg);
                transform: rotate(0deg);
-               @include transition( all , 0.4s, ease-in-out);
+               @include transition( all , 0.3s, ease-in-out);
                &:first-child {
                   top: 15px;
                }
@@ -55,8 +55,8 @@
              .spans {
                 span {
                    &:first-child {
-                     top: 10px;
-                     left: 11px;
+                     top: 14px;
+                     left: 14px;
                      transform: rotate(45deg);
                      -webkit-transform-origin: left center;
                      -moz-transform-origin: left center;
@@ -64,8 +64,8 @@
                      transform-origin: left center;
                    }
                    &:last-child {
-                     top: 22.1px;
-                     left: 11px;
+                     top: 26px;
+                     left: 14px;
                      transform: rotate(-45deg);
                      -webkit-transform-origin: left center;
                      -moz-transform-origin: left center;
