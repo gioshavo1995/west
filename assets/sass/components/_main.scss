@@ -59,54 +59,6 @@
     }
 }
 .main_content {
-    .scroll_social {
-        position: fixed;
-        z-index: 4;
-        top: 400px;
-        right: 100px;
-        .social_items , .social_button{
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background-color: $color-white;
-            box-shadow: 0 6px 12px 0 rgba(34, 34, 34, 0.12);
-            border: solid 1px $color-white-1;
-            img {
-                width: 24px;
-                height: 24px;
-            }
-            &.social_items {
-                position: absolute;
-                z-index: 0;
-                bottom: 0;
-                -webkit-animation-fill-mode: forwards;
-                -moz-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-                &.hide {
-                    @for $i from 1 through 3 {
-                        &:nth-child(#{$i}) {
-                            animation-name: backward-#{$i};
-                            animation-duration: $i*0.1s;
-                            z-index: #{$i};
-                        }
-                    }
-                }
-                &.active {
-                    @for $i from 1 through 3 {
-                        &:nth-child(#{$i}) {
-                            animation-name: forward-#{$i};
-                            animation-duration: $i*0.1s;
-                            z-index: #{$i};
-                        }
-                    }
-                }
-            }
-            &.social_button {
-                z-index: 1;
-                margin-bottom: 0;
-            }
-        }
-    }
     .popular_destinations {
         margin-top: 64px;
         margin-bottom: 38px;

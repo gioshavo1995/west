@@ -37,6 +37,59 @@ p.title {
 .cursor-pointer {
   cursor: pointer; }
 
+.scroll_social {
+  position: fixed;
+  z-index: 4;
+  top: 400px;
+  right: 100px; }
+  @media only screen and (max-width: 1270px) {
+    .scroll_social {
+      right: 50px; } }
+  .scroll_social .social_items, .scroll_social .social_button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px 0 rgba(34, 34, 34, 0.12);
+    border: solid 1px #f7f6f7; }
+    .scroll_social .social_items img, .scroll_social .social_button img {
+      width: 24px;
+      height: 24px; }
+    .scroll_social .social_items.social_items, .scroll_social .social_button.social_items {
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+      .scroll_social .social_items.social_items.hide:nth-child(1), .scroll_social .social_button.social_items.hide:nth-child(1) {
+        animation-name: backward-1;
+        animation-duration: 0.1s;
+        z-index: 1; }
+      .scroll_social .social_items.social_items.hide:nth-child(2), .scroll_social .social_button.social_items.hide:nth-child(2) {
+        animation-name: backward-2;
+        animation-duration: 0.2s;
+        z-index: 2; }
+      .scroll_social .social_items.social_items.hide:nth-child(3), .scroll_social .social_button.social_items.hide:nth-child(3) {
+        animation-name: backward-3;
+        animation-duration: 0.3s;
+        z-index: 3; }
+      .scroll_social .social_items.social_items.active:nth-child(1), .scroll_social .social_button.social_items.active:nth-child(1) {
+        animation-name: forward-1;
+        animation-duration: 0.1s;
+        z-index: 1; }
+      .scroll_social .social_items.social_items.active:nth-child(2), .scroll_social .social_button.social_items.active:nth-child(2) {
+        animation-name: forward-2;
+        animation-duration: 0.2s;
+        z-index: 2; }
+      .scroll_social .social_items.social_items.active:nth-child(3), .scroll_social .social_button.social_items.active:nth-child(3) {
+        animation-name: forward-3;
+        animation-duration: 0.3s;
+        z-index: 3; }
+    .scroll_social .social_items.social_button, .scroll_social .social_button.social_button {
+      z-index: 1;
+      margin-bottom: 0; }
+
 @font-face {
   font-family: 'Helvetica-55';
   src: url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.eot");
@@ -114,56 +167,6 @@ p.title {
           background-image: linear-gradient(to bottom, #fff, #ddd); }
           .main_image .text .bottom_divs .tour_items .tour_item img {
             margin-right: 12px; }
-
-.main_content .scroll_social {
-  position: fixed;
-  z-index: 4;
-  top: 400px;
-  right: 100px; }
-  .main_content .scroll_social .social_items, .main_content .scroll_social .social_button {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    box-shadow: 0 6px 12px 0 rgba(34, 34, 34, 0.12);
-    border: solid 1px #f7f6f7; }
-    .main_content .scroll_social .social_items img, .main_content .scroll_social .social_button img {
-      width: 24px;
-      height: 24px; }
-    .main_content .scroll_social .social_items.social_items, .main_content .scroll_social .social_button.social_items {
-      position: absolute;
-      z-index: 0;
-      bottom: 0;
-      -webkit-animation-fill-mode: forwards;
-      -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards; }
-      .main_content .scroll_social .social_items.social_items.hide:nth-child(1), .main_content .scroll_social .social_button.social_items.hide:nth-child(1) {
-        animation-name: backward-1;
-        animation-duration: 0.1s;
-        z-index: 1; }
-      .main_content .scroll_social .social_items.social_items.hide:nth-child(2), .main_content .scroll_social .social_button.social_items.hide:nth-child(2) {
-        animation-name: backward-2;
-        animation-duration: 0.2s;
-        z-index: 2; }
-      .main_content .scroll_social .social_items.social_items.hide:nth-child(3), .main_content .scroll_social .social_button.social_items.hide:nth-child(3) {
-        animation-name: backward-3;
-        animation-duration: 0.3s;
-        z-index: 3; }
-      .main_content .scroll_social .social_items.social_items.active:nth-child(1), .main_content .scroll_social .social_button.social_items.active:nth-child(1) {
-        animation-name: forward-1;
-        animation-duration: 0.1s;
-        z-index: 1; }
-      .main_content .scroll_social .social_items.social_items.active:nth-child(2), .main_content .scroll_social .social_button.social_items.active:nth-child(2) {
-        animation-name: forward-2;
-        animation-duration: 0.2s;
-        z-index: 2; }
-      .main_content .scroll_social .social_items.social_items.active:nth-child(3), .main_content .scroll_social .social_button.social_items.active:nth-child(3) {
-        animation-name: forward-3;
-        animation-duration: 0.3s;
-        z-index: 3; }
-    .main_content .scroll_social .social_items.social_button, .main_content .scroll_social .social_button.social_button {
-      z-index: 1;
-      margin-bottom: 0; }
 
 .main_content .popular_destinations {
   margin-top: 64px;
@@ -818,6 +821,10 @@ header {
             object-fit: cover;
             border-radius: 8px; }
         .search_wrap .search_content .search_container .search_swiper .swiper-wrapper .swiper-slide span {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
           font-size: 12px;
           font-family: "helvetica-65";
           line-height: 1.5; }
@@ -878,13 +885,22 @@ footer .footer_wrap {
           height: 25px;
           margin-bottom: 10px; }
           footer .footer_wrap .footer_links .footer_divs.text_link ul li a {
+            display: block;
+            height: 100%;
             font-size: 12px;
             color: inherit;
-            text-decoration: none; }
+            text-decoration: none;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; }
             footer .footer_wrap .footer_links .footer_divs.text_link ul li a img {
               width: 14px;
               height: 14px;
               margin-right: 8px; }
+            footer .footer_wrap .footer_links .footer_divs.text_link ul li a:hover {
+              opacity: 0.7; }
       footer .footer_wrap .footer_links .footer_divs .pays_row {
         margin: 0 -10px; }
         footer .footer_wrap .footer_links .footer_divs .pays_row .pay_item {
@@ -901,6 +917,13 @@ footer .footer_wrap {
     margin-right: 16px;
     color: inherit;
     text-decoration: underline;
-    font-size: 12px; }
+    font-size: 12px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+    footer .footer_wrap .footer_terms div a:hover {
+      opacity: 0.7; }
 
 /*# sourceMappingURL=style.css.map */
