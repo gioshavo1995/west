@@ -17,7 +17,7 @@
     }
     .text {
         z-index: 4;
-        padding-top: 80px;
+        padding: 80px 20px 0;
         h5 {
             margin-bottom: 16px;
             font-size: 24px;
@@ -56,6 +56,22 @@
                 }
             }
         }
+    }
+    @media only screen and (max-width : 767px) {
+       margin: 8px 8px 0;
+       .text {
+            padding: 25px 20px 0;
+            h5 {
+                margin-bottom: 8px;
+            }
+            h1 {
+                margin-bottom: 8px;
+                font-size: 36px;
+            }
+            p {
+                font-size: 18px;
+            }
+       }
     }
 }
 .main_content {
@@ -244,6 +260,7 @@
             border-radius: 16px;
         }
         .text {
+            padding: 0 20px;
             -webkit-transform: translateX(-25px);
             -ms-transform: translateX(-25px);
             transform: translateX(-25px);
@@ -254,11 +271,21 @@
                 margin-bottom: 20px;
                 font-size: 60px;
                 font-family: $title-font;
+                @media only screen and (max-width : 1270px) {
+                    font-size: 40px;
+                    @media only screen and (max-width : 992px) {
+                        font-size: 24px;
+                    }
+                }
             }
             p {
                 max-width: 445px;
                 margin-bottom: 40px;
                 font-size: 24px;
+                @media only screen and (max-width : 992px) {
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                }
             }
             button {
                 height: 45px;

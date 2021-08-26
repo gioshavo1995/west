@@ -1,6 +1,9 @@
  header {
     height: 72px;
     padding: 0 40px;
+    @media only screen and (max-width : 767px) {
+      padding: 0 16px;
+   }
     .header_link {
        height: 100%;
        margin-right: 40px;
@@ -218,6 +221,13 @@
                }
             }
          }
+         &.mobile_links {
+            li {
+               a {
+                  font-family: $normal-font;
+               }
+            }
+         }
          &.login {
             border-bottom: 0;
          }
@@ -272,6 +282,7 @@
          .search_container {
          max-width: 748px;
          margin: 0 auto;
+         padding: 0 20px;
          .search_input {
             margin: 16px 0 32px;
             .search_icon {

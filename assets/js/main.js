@@ -8,28 +8,64 @@ $( document ).ready(function() {
   });
   // main page sliders
     const afrodable = new Swiper('.afordable_swiper', {
-        slidesPerView: 5,
+        slidesPerView: 3,
         spaceBetween: 16,
         touchRatio: 0,
+        breakpoints: {
+          // when window width is >= 320px
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 16
+          },
+          1270: {
+            slidesPerView: 5,
+            spaceBetween: 16
+          },
+        }
       });
       const other = new Swiper('.other_swiper', {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 16,
         touchRatio: 0,
+        breakpoints: {
+          // when window width is >= 320px
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 16
+          },
+        }
       });
       const testimonials = new Swiper('.testimonials_swiper', {
-        slidesPerView: 5,
+        slidesPerView: 3,
         spaceBetween: 16,
         touchRatio: 1,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
+        breakpoints: {
+          // when window width is >= 320px
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 16
+          },
+          1270: {
+            slidesPerView: 5,
+            spaceBetween: 16
+          },
+        }
       });
       const blog = new Swiper('.blog_swiper', {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 16,
         touchRatio: 0,
+        breakpoints: {
+          // when window width is >= 320px
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 16
+          },
+        }
       });
       const search = new Swiper('.search_swiper', {
         slidesPerView: 7,

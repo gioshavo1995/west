@@ -136,7 +136,7 @@ p.title {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 47%, rgba(255, 255, 255, 0.7)); }
   .main_image .text {
     z-index: 4;
-    padding-top: 80px; }
+    padding: 80px 20px 0; }
     .main_image .text h5 {
       margin-bottom: 16px;
       font-size: 24px; }
@@ -167,6 +167,18 @@ p.title {
           background-image: linear-gradient(to bottom, #fff, #ddd); }
           .main_image .text .bottom_divs .tour_items .tour_item img {
             margin-right: 12px; }
+  @media only screen and (max-width: 767px) {
+    .main_image {
+      margin: 8px 8px 0; }
+      .main_image .text {
+        padding: 25px 20px 0; }
+        .main_image .text h5 {
+          margin-bottom: 8px; }
+        .main_image .text h1 {
+          margin-bottom: 8px;
+          font-size: 36px; }
+        .main_image .text p {
+          font-size: 18px; } }
 
 .main_content .popular_destinations {
   margin-top: 64px;
@@ -304,6 +316,7 @@ p.title {
     object-fit: cover;
     border-radius: 16px; }
   .main_content .popular_price .text {
+    padding: 0 20px;
     -webkit-transform: translateX(-25px);
     -ms-transform: translateX(-25px);
     transform: translateX(-25px);
@@ -314,10 +327,20 @@ p.title {
       margin-bottom: 20px;
       font-size: 60px;
       font-family: "Helvetica-75"; }
+      @media only screen and (max-width: 1270px) {
+        .main_content .popular_price .text h1 {
+          font-size: 40px; } }
+  @media only screen and (max-width: 1270px) and (max-width: 992px) {
+    .main_content .popular_price .text h1 {
+      font-size: 24px; } }
     .main_content .popular_price .text p {
       max-width: 445px;
       margin-bottom: 40px;
       font-size: 24px; }
+      @media only screen and (max-width: 992px) {
+        .main_content .popular_price .text p {
+          margin-bottom: 25px;
+          font-size: 16px; } }
     .main_content .popular_price .text button {
       height: 45px;
       padding: 0 18px;
@@ -539,6 +562,9 @@ p.title {
 header {
   height: 72px;
   padding: 0 40px; }
+  @media only screen and (max-width: 767px) {
+    header {
+      padding: 0 16px; } }
   header .header_link {
     height: 100%;
     margin-right: 40px;
@@ -729,6 +755,8 @@ header {
           margin-right: 8px;
           width: 14px;
           height: 14px; }
+      header .mobile_drop ul.mobile_links li a {
+        font-family: "Helvetica-55"; }
       header .mobile_drop ul.login {
         border-bottom: 0; }
     header .mobile_drop.active {
@@ -775,7 +803,8 @@ header {
       text-decoration: none; }
     .search_wrap .search_content .search_container {
       max-width: 748px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 0 20px; }
       .search_wrap .search_content .search_container .search_input {
         margin: 16px 0 32px; }
         .search_wrap .search_content .search_container .search_input .search_icon {
