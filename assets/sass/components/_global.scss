@@ -6,6 +6,20 @@
 body {
     color: $color-black;
     font-family: $normal-font;
+    overflow-x: hidden;
+    &.menu_open {
+        overflow: hidden;
+        &:after{
+            content: " ";
+            position: absolute;
+            z-index: 4;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 72px;
+            background-color: rgba(34, 34, 34, 0.5);
+        }
+    }
 }
 .big_container {
     max-width: 1546px;

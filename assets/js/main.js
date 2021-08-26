@@ -1,10 +1,12 @@
 $( document ).ready(function() {
+  // open search
   $(document).on('click', '.search', function(){
     $('.search_wrap').addClass('active');
   });
   $(document).on('click', '.search_back', function(){
     $('.search_wrap').removeClass('active');
   });
+  // main page sliders
     const afrodable = new Swiper('.afordable_swiper', {
         slidesPerView: 5,
         spaceBetween: 16,
@@ -41,6 +43,7 @@ $( document ).ready(function() {
       //   }
       //   $(".rating").rate(options);
 
+      // scroll socials
       $(window).on("scroll load", function() {
         if($(window).scrollTop() > 550) {
                 $('.scroll_social').removeClass('d-none');
@@ -64,5 +67,11 @@ $( document ).ready(function() {
           $(this).prev().addClass('d-flex');
           $('.social_items').removeClass('active');
           $('.social_items').addClass('hide');
+        });
+        // mobile menu opener
+        $('.mobile_menu').click(function(){
+          $(this).toggleClass('active');
+          $('body').toggleClass('menu_open');
+          $('.mobile_drop').toggleClass('active');
         });
 });
