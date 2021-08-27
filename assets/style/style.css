@@ -888,7 +888,11 @@ header {
       -ms-flex-pack: justify !important;
       justify-content: space-between !important; }
       header .logo {
-        margin-left: 0; }
+        margin-left: 0; } }
+    @media only screen and (max-width: 1270px) and (max-width: 992px) {
+      header .logo {
+        margin-left: 10px; } }
+  @media only screen and (max-width: 1270px) {
       header .right_menu {
         margin-left: 10px !important; } }
 

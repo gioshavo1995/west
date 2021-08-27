@@ -277,6 +277,9 @@
       justify-content: space-between !important;
       .logo {
          margin-left: 0;
+         @media only screen and (max-width : 992px) {
+            margin-left: 10px;
+         }
       }
       .right_menu  {
          margin-left: 10px !important;
