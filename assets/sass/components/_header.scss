@@ -123,6 +123,13 @@
                }
             }
          }
+         @media only screen and (max-width : 767px) {
+            width: 51px;
+            margin-right: 0;
+            button {
+               padding-left: 8px !important;
+            }
+         }
       }
     }
    //  logo
@@ -158,6 +165,10 @@
            opacity: 1;
            background-color: $color-white-1;  
           }
+          @media only screen and (max-width : 767px) {
+            order: 2;
+            margin-right: 0;
+         }
        }
        .search {
           width: 40px;
@@ -177,6 +188,13 @@
           &:hover {
              border: 1px solid $color-black;
           }
+          @media only screen and (max-width : 767px) {
+            order: 1;
+            margin-right: 14px;
+            button {
+               box-shadow: none;
+            }
+         }
        }
     }
    //  mobile menu
@@ -237,6 +255,20 @@
       -ms-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
+      }
+      @media only screen and (max-width : 767px) {
+         width: 70%;
+         h4 {
+            margin-bottom: 24px;
+         }
+         ul {
+            padding: 25px 16px;
+            li {
+               a {
+                  padding: 7px 0;
+               }
+            }
+         }
       }
     }
     @media only screen and (max-width : 1270px) {
@@ -300,6 +332,7 @@
                padding: 0 45px;
                border-radius: 20px;
                color: $color-black-4;
+               font-size: 14px;
                box-shadow: 0 6px 10px 0 rgba(0, 53, 78, 0.1);
                outline: none;
                border: none;
@@ -330,7 +363,7 @@
                .swiper-slide {
                   figure {
                      width: 100%;
-                     height: 100%px;
+                     height: 100%;
                      margin-bottom: 8px;
                      img {
                         width: 100%;
@@ -358,5 +391,28 @@
       pointer-events: all;
       transform: translateY(0) scaleY(1);
       opacity: 1
+   }
+   @media only screen and (max-width : 767px) {
+      height: 245px;
+      padding: 8px 8px 0;
+      .search_content {
+         .search_container {
+            padding: 0 16px;
+            .search_input {
+               margin: 12px -4px 16px;
+            }
+            span {
+               &.title {
+                  margin-bottom: 12px;
+                  font-size: 12px;
+                  line-height: 12px;
+               }
+            }
+            .search_swiper {
+               width: calc(100% + 16px);
+               margin-right: 0;
+            }
+         }
+      }
    }
 }

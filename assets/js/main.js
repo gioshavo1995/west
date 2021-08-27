@@ -8,35 +8,46 @@ $( document ).ready(function() {
   });
   // main page sliders
     const afrodable = new Swiper('.afordable_swiper', {
-        slidesPerView: 3,
+        slidesPerView: 1.4,
         spaceBetween: 16,
-        touchRatio: 0,
         breakpoints: {
           // when window width is >= 320px
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+            touchRatio: 0,
+          },
           992: {
             slidesPerView: 4,
-            spaceBetween: 16
+            spaceBetween: 16,
+            touchRatio: 0
           },
           1270: {
             slidesPerView: 5,
-            spaceBetween: 16
+            spaceBetween: 16,
+            touchRatio: 0
           },
         }
       });
       const other = new Swiper('.other_swiper', {
-        slidesPerView: 3,
+        slidesPerView: 1.4,
         spaceBetween: 16,
-        touchRatio: 0,
         breakpoints: {
           // when window width is >= 320px
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+            touchRatio: 0,
+          },
           992: {
             slidesPerView: 4,
-            spaceBetween: 16
+            spaceBetween: 16,
+            touchRatio: 0,
           },
         }
       });
       const testimonials = new Swiper('.testimonials_swiper', {
-        slidesPerView: 3,
+        slidesPerView: 1.4,
         spaceBetween: 16,
         touchRatio: 1,
         pagination: {
@@ -45,9 +56,13 @@ $( document ).ready(function() {
         },
         breakpoints: {
           // when window width is >= 320px
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+          },
           992: {
             slidesPerView: 4,
-            spaceBetween: 16
+            spaceBetween: 16,
           },
           1270: {
             slidesPerView: 5,
@@ -56,20 +71,32 @@ $( document ).ready(function() {
         }
       });
       const blog = new Swiper('.blog_swiper', {
-        slidesPerView: 3,
+        slidesPerView: 1.4,
         spaceBetween: 16,
-        touchRatio: 0,
         breakpoints: {
           // when window width is >= 320px
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+            touchRatio: 0,
+          },
           992: {
             slidesPerView: 4,
-            spaceBetween: 16
+            spaceBetween: 16,
+            touchRatio: 0
           },
         }
       });
       const search = new Swiper('.search_swiper', {
-        slidesPerView: 7,
+        slidesPerView: 3.5,
         spaceBetween: 24,
+        breakpoints: {
+          // when window width is >= 320px
+          767: {
+            slidesPerView: 7,
+            spaceBetween: 24,
+          },
+        }
       });
       // $(".rating").rate();
       //   //or for example

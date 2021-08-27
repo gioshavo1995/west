@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: $color-black;
     font-family: $normal-font;
@@ -38,6 +41,9 @@ p {
         max-width: 590px;
         margin-bottom: 32px;
         font-size: 18px;
+        @media only screen and (max-width : 767px) {
+            margin-bottom: 24px;
+        }   
     }
 }
 .cursor-pointer {
@@ -59,6 +65,9 @@ p {
     right: 100px;
     @media only screen and (max-width : 1270px) {
         right: 50px;
+    }
+    @media only screen and (max-width : 767px) {
+        right: 16px;
     }
     .social_items , .social_button{
         width: 48px;

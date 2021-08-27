@@ -112,4 +112,38 @@ footer {
             }
         }
     }
+    @media only screen and (max-width : 767px) {
+       .footer_wrap {
+            padding: 40px 0 40px;
+            .subscribe {
+                margin-bottom: 64px;
+                .text {
+                    width: 100%;
+                    padding-right: 10px;
+                    h4 {
+                        font-size: 12px;
+                    }
+                    p {
+                        margin-bottom: 16px;
+                        font-size: 12px;
+                    }
+                }
+                .subscribe_input {
+                    width: 100%;
+                }
+            }
+            .footer_links {
+                .footer_divs {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    margin-bottom: 50px;
+                    padding: 0 15px;
+                    &.lang {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    }
+                }
+            }
+       }
+    }
 }
