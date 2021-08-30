@@ -471,6 +471,8 @@ p.title {
       text-decoration: none;
       border-radius: 4px;
       border: 1px solid #dddddd; }
+      .main_content .stay_involved .socials .social_items.active {
+        background-color: #dddddd; }
   .main_content .stay_involved .involved_images {
     margin: 0 -8px; }
     .main_content .stay_involved .involved_images .involved_item {
