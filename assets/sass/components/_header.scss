@@ -43,6 +43,9 @@
        .mobile_menu {
           display: none;
           margin-right: 14px;
+          @media only screen and (max-width : 370px) {
+               margin-right: 4px;
+            }
           .spans {
              width: 40px;
              height: 40px;
@@ -202,6 +205,9 @@
           @media only screen and (max-width : 767px) {
             order: 1;
             margin-right: 14px;
+            @media only screen and (max-width : 370px) {
+               margin-right: 4px;
+            }
             button {
                box-shadow: none;
             }
@@ -281,6 +287,15 @@
             }
          }
       }
+      @media only screen and (max-width : 370px) {
+         padding: 15px 0;
+         ul {
+            padding: 15px 16px;
+            h4 {
+               margin-bottom: 15px;
+            }
+         }
+      }
     }
     @media only screen and (max-width : 1270px) {
       -webkit-box-pack: justify !important;
@@ -288,12 +303,9 @@
       justify-content: space-between !important;
       .logo {
          margin-left: 0;
-         @media only screen and (max-width : 992px) {
-            margin-left: 14px;
-         }
       }
       .right_menu  {
-         margin-left: 10px !important;
+         margin-left: 0 !important;
       }
     }
  }

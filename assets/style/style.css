@@ -670,7 +670,8 @@ p.title {
     transform: translateY(-60px); } }
 
 .categories {
-  margin-top: 31px; }
+  margin-top: 31px;
+  margin-bottom: 120px; }
   .categories .breadcrumb {
     background-color: #ffffff; }
     .categories .breadcrumb .breadcrumb_item {
@@ -924,7 +925,15 @@ p.title {
           -ms-flex-pack: center !important;
           justify-content: center !important;
           width: 100%;
-          padding: 0 10px; } }
+          padding: 0 10px; }
+        .categories .right_content .categories_cards a::after {
+          content: " ";
+          position: absolute;
+          bottom: 0;
+          left: -16px;
+          width: calc(100% + 32px);
+          height: 1px;
+          background-color: #dddddd; } }
 
 body header {
   border-bottom: 1px solid #dddddd; }
@@ -965,6 +974,9 @@ header {
   header .main_menu .mobile_menu {
     display: none;
     margin-right: 14px; }
+    @media only screen and (max-width: 370px) {
+      header .main_menu .mobile_menu {
+        margin-right: 4px; } }
     header .main_menu .mobile_menu .spans {
       width: 40px;
       height: 40px; }
@@ -1102,7 +1114,11 @@ header {
     @media only screen and (max-width: 767px) {
       header .right_menu .search {
         order: 1;
-        margin-right: 14px; }
+        margin-right: 14px; } }
+  @media only screen and (max-width: 767px) and (max-width: 370px) {
+    header .right_menu .search {
+      margin-right: 4px; } }
+    @media only screen and (max-width: 767px) {
         header .right_menu .search button {
           box-shadow: none; } }
   header .mobile_drop {
@@ -1166,19 +1182,22 @@ header {
           padding: 25px 16px; }
           header .mobile_drop ul li a {
             padding: 7px 0; } }
+    @media only screen and (max-width: 370px) {
+      header .mobile_drop {
+        padding: 15px 0; }
+        header .mobile_drop ul {
+          padding: 15px 16px; }
+          header .mobile_drop ul h4 {
+            margin-bottom: 15px; } }
   @media only screen and (max-width: 1270px) {
     header {
       -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
       justify-content: space-between !important; }
       header .logo {
-        margin-left: 0; } }
-    @media only screen and (max-width: 1270px) and (max-width: 992px) {
-      header .logo {
-        margin-left: 14px; } }
-  @media only screen and (max-width: 1270px) {
+        margin-left: 0; }
       header .right_menu {
-        margin-left: 10px !important; } }
+        margin-left: 0 !important; } }
 
 .search_wrap {
   position: absolute;
