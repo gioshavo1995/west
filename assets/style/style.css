@@ -731,6 +731,7 @@ p.title {
         -ms-transform: rotate(180deg);
         transform: rotate(180deg); }
   .categories .left_filters {
+    flex-shrink: 0;
     width: 366px;
     margin-right: 16px; }
     .categories .left_filters .text {
@@ -771,8 +772,159 @@ p.title {
         .categories .left_filters .radio_inputs .mh_radio span {
           font-size: 16px;
           line-height: 16px; }
+    .categories .left_filters .categories_menu ul {
+      list-style: none; }
+      .categories .left_filters .categories_menu ul li {
+        margin-bottom: 8px; }
+        .categories .left_filters .categories_menu ul li a {
+          height: 40px;
+          padding: 0 16px;
+          color: inherit;
+          background-color: #f7f6f7;
+          text-decoration: none;
+          border-radius: 8px;
+          border: 1px solid transparent;
+          font-size: 14px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          .categories .left_filters .categories_menu ul li a svg {
+            width: 20px;
+            height: 20px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+          .categories .left_filters .categories_menu ul li a:hover {
+            color: #fd0e18;
+            border: 1px solid #757575; }
+            .categories .left_filters .categories_menu ul li a:hover svg path:last-child {
+              fill: #fd0e18; }
+    @media only screen and (max-width: 1250px) {
+      .categories .left_filters {
+        width: 290px; } }
+  @media only screen and (max-width: 1250px) and (max-width: 1180px) {
+    .categories .left_filters {
+      display: none; } }
   .categories .right_content {
     flex: 1; }
+    .categories .right_content .categories_cards a {
+      margin-bottom: 16px;
+      padding: 16px;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid #dddddd;
+      border-radius: 16px; }
+      .categories .right_content .categories_cards a figure {
+        margin-right: 32px; }
+        .categories .right_content .categories_cards a figure img {
+          width: 258px;
+          height: 257px;
+          object-fit: cover;
+          border-radius: 12px; }
+      .categories .right_content .categories_cards a .right_price {
+        position: absolute;
+        top: 14px;
+        right: 24px; }
+        .categories .right_content .categories_cards a .right_price span {
+          margin-bottom: 4px;
+          font-size: 12px;
+          line-height: 12px;
+          font-family: "helvetica-65";
+          color: #757575; }
+          .categories .right_content .categories_cards a .right_price span.price {
+            font-size: 24px;
+            font-family: "Helvetica-75";
+            line-height: 24px;
+            color: #000000; }
+            .categories .right_content .categories_cards a .right_price span.price sub {
+              top: 0;
+              font-size: 18px; }
+      .categories .right_content .categories_cards a h4 {
+        margin-bottom: 14px;
+        padding-right: 115px;
+        font-size: 24px;
+        font-family: "Helvetica-75-bold"; }
+      .categories .right_content .categories_cards a p {
+        margin-bottom: 0;
+        padding-right: 205px;
+        font-size: 18px;
+        opacity: 0.5; }
+        @media only screen and (max-width: 992px) {
+          .categories .right_content .categories_cards a p {
+            padding-right: 145px; } }
+      .categories .right_content .categories_cards a .bottom_items {
+        max-width: 70%;
+        margin: 0 -14px; }
+        .categories .right_content .categories_cards a .bottom_items .bottom_item {
+          margin: 25px 14px 0;
+          font-size: 14px;
+          font-family: "helvetica-65"; }
+          .categories .right_content .categories_cards a .bottom_items .bottom_item img {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px; }
+        @media only screen and (max-width: 1350px) {
+          .categories .right_content .categories_cards a .bottom_items {
+            max-width: 90%; } }
+      .categories .right_content .categories_cards a .bottom_booked {
+        height: 34px;
+        padding: 0 75px;
+        background-color: #f7f6f7;
+        border-radius: 8px;
+        font-size: 12px; }
+        .categories .right_content .categories_cards a .bottom_booked img {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px; }
+        .categories .right_content .categories_cards a .bottom_booked span {
+          margin: 0 5px;
+          color: #fd0e18;
+          font-size: 14px;
+          line-height: 14px;
+          font-family: "Helvetica-75"; }
+    @media only screen and (max-width: 767px) {
+      .categories .right_content .categories_cards a {
+        flex-wrap: wrap;
+        padding: 0 0 16px;
+        border: none; }
+        .categories .right_content .categories_cards a figure {
+          width: 100%;
+          margin-bottom: 16px !important;
+          margin-right: 0; }
+          .categories .right_content .categories_cards a figure img {
+            width: 100%; }
+        .categories .right_content .categories_cards a .right_price {
+          position: static;
+          -webkit-box-orient: horizontal !important;
+          -webkit-box-direction: normal !important;
+          -ms-flex-direction: row !important;
+          flex-direction: row !important;
+          margin-bottom: 16px; }
+          .categories .right_content .categories_cards a .right_price .price {
+            margin: 0 8px; }
+        .categories .right_content .categories_cards a h4 {
+          margin-bottom: 8px;
+          padding-right: 0;
+          font-size: 18px; }
+        .categories .right_content .categories_cards a p {
+          padding-right: 0;
+          font-size: 14px; }
+        .categories .right_content .categories_cards a .bottom_items .bottom_item {
+          margin: 17px 14px 0;
+          font-size: 12px; }
+          .categories .right_content .categories_cards a .bottom_items .bottom_item img {
+            width: 14px;
+            height: 14px; }
+        .categories .right_content .categories_cards a .bottom_booked {
+          -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+          justify-content: center !important;
+          width: 100%;
+          padding: 0 10px; } }
 
 body header {
   border-bottom: 1px solid #dddddd; }

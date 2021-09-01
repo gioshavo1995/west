@@ -78,6 +78,7 @@
         }
     }
     .left_filters {
+        flex-shrink: 0;
         width: 366px;
         margin-right: 16px;
         .text {
@@ -128,8 +129,195 @@
                 }
             }
         }
+        .categories_menu {
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        height: 40px;
+                        padding: 0 16px;
+                        color: inherit;
+                        background-color: $color-white-1;
+                        text-decoration: none;
+                        border-radius: 8px;
+                        border: 1px solid transparent;
+                        font-size: 14px;
+                        @include transition( all , 0.3s, ease-in-out);
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            @include transition( all , 0.3s, ease-in-out);
+                        }
+                        &:hover {
+                            color: $color-red;
+                            border: 1px solid $color-black-4;
+                            svg {
+                                path {
+                                    &:last-child {
+                                        fill: $color-red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width : 1250px) {
+            width: 290px;
+            @media only screen and (max-width : 1180px) {
+                display: none;
+            }
+        }
     }
     .right_content {
         flex: 1;
+        .categories_cards {
+            a {
+                margin-bottom: 16px;
+                padding: 16px;
+                color: inherit;
+                text-decoration: none;
+                border: 1px solid $color-white-4;
+                border-radius: 16px;
+                figure {
+                    margin-right: 32px;
+                    img {
+                        width: 258px;
+                        height: 257px;
+                        object-fit: cover;
+                        border-radius: 12px;
+                    }
+                }
+                .right_price {
+                    position: absolute;
+                    top: 14px;
+                    right: 24px;
+                    span {
+                        margin-bottom: 4px;
+                        font-size: 12px;
+                        line-height: 12px;
+                        font-family: $medium-font;
+                        color: $color-black-4;
+                        &.price {
+                           font-size: 24px;
+                           font-family: $title-font;
+                           line-height: 24px;
+                           color: $color-black-1;
+                           sub {
+                               top: 0;
+                               font-size: 18px;
+                           } 
+                        }
+                    }
+                }
+                h4 {
+                    margin-bottom: 14px;
+                    padding-right: 115px;
+                    font-size: 24px;
+                    font-family: $title-font-bold;
+                }
+                p {
+                    margin-bottom: 0;
+                    padding-right: 205px;
+                    font-size: 18px;
+                    opacity: 0.5;
+                    @media only screen and (max-width : 992px) {
+                        padding-right: 145px
+                    }
+                }
+                .bottom_items {
+                    max-width: 70%;
+                    margin: 0 -14px;
+                    .bottom_item {
+                        margin: 25px 14px 0;
+                        font-size: 14px;
+                        font-family: $medium-font;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 12px;
+                        }
+                    }
+                    @media only screen and (max-width : 1350px) {
+                        max-width: 90%;
+                    }
+                }
+                .bottom_booked {
+                    height: 34px;
+                    padding: 0 75px;
+                    background-color: $color-white-1;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                    }
+                    span {
+                        margin: 0 5px;
+                        color: $color-red;
+                        font-size: 14px;
+                        line-height: 14px;
+                        font-family: $title-font;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width : 767px) {
+            .categories_cards {
+                a {
+                    flex-wrap: wrap;
+                    padding: 0 0 16px;
+                    border: none;
+                    figure {
+                        width: 100%;
+                        margin-bottom: 16px !important;
+                        margin-right: 0;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .right_price {
+                        position: static;
+                        -webkit-box-orient: horizontal !important;
+                        -webkit-box-direction: normal !important;
+                        -ms-flex-direction: row !important;
+                        flex-direction: row !important;
+                        margin-bottom: 16px;
+                        .price {
+                            margin: 0 8px;
+                        }
+                    }
+                    h4 {
+                        margin-bottom: 8px;
+                        padding-right: 0;
+                        font-size: 18px;
+                    }
+                    p {
+                        padding-right: 0;
+                        font-size: 14px;
+                    }
+                    .bottom_items {
+                        .bottom_item {
+                            margin: 17px 14px 0;
+                            font-size: 12px;
+                            img {
+                                width: 14px;
+                                height: 14px;
+                            }
+                        }
+                    }
+                    .bottom_booked {
+                        -webkit-box-pack: center !important;
+                        -ms-flex-pack: center !important;
+                        justify-content: center !important;
+                        width: 100%;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
     }
 }
