@@ -672,6 +672,32 @@ p.title {
 .categories {
   margin-top: 31px;
   margin-bottom: 120px; }
+  @media only screen and (max-width: 767px) {
+    .categories {
+      margin-top: 8px;
+      margin-bottom: 24px; } }
+  .categories .categories_filter {
+    height: 48px;
+    margin-bottom: 8px; }
+    .categories .categories_filter .main_filters {
+      flex: 1;
+      background-color: #f7f6f7;
+      border-radius: 8px; }
+      .categories .categories_filter .main_filters button {
+        padding: 0 14px;
+        font-size: 14px;
+        line-height: 14px; }
+        .categories .categories_filter .main_filters button svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px; }
+        .categories .categories_filter .main_filters button img.dott {
+          width: 4px;
+          height: 4px;
+          margin: 0 4px; }
+        .categories .categories_filter .main_filters button img.arrow {
+          width: 20px;
+          height: 20px; }
   .categories .breadcrumb {
     background-color: #ffffff; }
     .categories .breadcrumb .breadcrumb_item {

@@ -1,6 +1,40 @@
 .categories {
     margin-top: 31px;
     margin-bottom: 120px;
+    @media only screen and (max-width : 767px) {
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+    .categories_filter {
+        height: 48px;
+        margin-bottom: 8px;
+        .main_filters {
+            flex: 1;
+            background-color: $color-white-1;
+            border-radius: 8px;
+            button {
+                padding: 0 14px;
+                font-size: 14px;
+                line-height: 14px;
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+                img {
+                    &.dott {
+                        width: 4px;
+                        height: 4px;
+                        margin: 0 4px;
+                    }
+                    &.arrow {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
     .breadcrumb {
         background-color: $color-white;
         .breadcrumb_item {
