@@ -100,6 +100,26 @@ p.title {
       z-index: 1;
       margin-bottom: 0; }
 
+.bottom_modal {
+  background-color: rgba(34, 34, 34, 0.6); }
+  .bottom_modal .modal-dialog {
+    align-items: flex-end;
+    margin: 0; }
+    .bottom_modal .modal-dialog .modal-content {
+      border: 1px solid #222222; }
+      .bottom_modal .modal-dialog .modal-content .modal-header {
+        height: 50px;
+        padding: 0 24px;
+        font-size: 14px;
+        border-bottom: 1px solid #222222; }
+        .bottom_modal .modal-dialog .modal-content .modal-header h5 {
+          font-size: 14px; }
+        .bottom_modal .modal-dialog .modal-content .modal-header .close {
+          padding: 10px;
+          line-height: 25px; }
+      .bottom_modal .modal-dialog .modal-content .modal-body {
+        padding: 24px; }
+
 @font-face {
   font-family: 'Helvetica-55';
   src: url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.eot");
@@ -849,6 +869,9 @@ p.title {
   @media only screen and (max-width: 1250px) and (max-width: 1180px) {
     .categories .left_filters {
       display: none; } }
+    @media only screen and (max-width: 767px) {
+      .categories .left_filters .text {
+        padding: 24px; } }
   .categories .right_content {
     flex: 1; }
     .categories .right_content .categories_cards a {

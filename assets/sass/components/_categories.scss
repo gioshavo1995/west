@@ -208,6 +208,11 @@
                 display: none;
             }
         }
+        @media only screen and (max-width : 767px) {
+            .text {
+                padding: 24px;
+            }
+        }
     }
     .right_content {
         flex: 1;

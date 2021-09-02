@@ -115,5 +115,28 @@ p {
 }
 
 .bottom_modal {
-
+    background-color: rgba(34, 34, 34, 0.6);
+    .modal-dialog {
+        align-items: flex-end;
+        margin:0;
+        .modal-content {
+            border: 1px solid $color-black;
+            .modal-header {
+                height: 50px;
+                padding: 0 24px;
+                font-size: 14px;
+                border-bottom: 1px solid $color-black;
+                h5 {
+                    font-size: 14px;
+                }
+                .close {
+                    padding: 10px;
+                    line-height: 25px;
+                }
+            }
+            .modal-body {
+                padding: 24px;
+            }
+        }
+    }
 }
