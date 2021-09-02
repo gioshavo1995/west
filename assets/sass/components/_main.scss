@@ -25,6 +25,7 @@
         h1 {
             margin-bottom: 24px;
             font-size: 60px;
+            font-weight: bold;
             font-family: $title-font;
         }
         p {
@@ -48,7 +49,8 @@
                     text-decoration: none;
                     border-radius: 4px;
                     font-size: 14px;
-                    font-family: $medium-font;
+                    font-weight: bold;
+                    font-family: $title-font;
                     background-image: linear-gradient(to bottom, #fff, #ddd);
                     img {
                         margin-right: 12px;
@@ -123,6 +125,7 @@
                 }
                 h4 {
                     font-size: 18px;
+                    font-weight: bold;
                     font-family: $title-font-bold;
                 }
                 p {
@@ -184,6 +187,7 @@
                             -webkit-backdrop-filter: blur(30px);
                             backdrop-filter: blur(30px);
                             border-radius: 4px;
+                            font-weight: bold;
                             font-family: $title-font-bold;
                             sub {
                                 font-size: 12px;
@@ -193,6 +197,7 @@
                             display: block;
                             min-height: 45px;
                             font-size: 18px;
+                            font-weight: bold;
                             font-family: $title-font-bold;
                         }
                     }
@@ -228,6 +233,7 @@
                     .text {
                         span {
                             font-size: 18px;
+                            font-weight: bold;
                             font-family: $title-font-bold;
                         }
                     }
@@ -273,6 +279,7 @@
                     h4 {
                         margin-bottom: 8px;
                         font-size: 16px;
+                        font-weight: bold;
                         font-family: $title-font-bold;
                     }
                     p {
@@ -316,6 +323,7 @@
             h1 {
                 margin-bottom: 20px;
                 font-size: 60px;
+                font-weight: bold;
                 font-family: $title-font;
                 @media only screen and (max-width : 992px) {
                     font-size: 24px;
@@ -428,6 +436,7 @@
            margin-bottom: 40px;
            font-size: 60px;
            span {
+               font-weight: bold;
                font-family: $title-font;
            }
        }

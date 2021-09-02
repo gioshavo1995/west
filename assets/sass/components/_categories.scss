@@ -77,7 +77,8 @@
                    height: 40px;
                    padding: 0 16px;
                    font-size: 12px;
-                   font-family: $medium-font;
+                   font-weight: bold;
+                   font-family: $title-font;
                    line-height: 14px;
                    box-shadow: none;
                    img {
@@ -235,7 +236,8 @@
                         margin-bottom: 4px;
                         font-size: 12px;
                         line-height: 12px;
-                        font-family: $medium-font;
+                        font-weight: bold;
+                        font-family: $title-font;
                         color: $color-black-4;
                         &.price {
                            font-size: 24px;
@@ -270,7 +272,7 @@
                     .bottom_item {
                         margin: 25px 14px 0;
                         font-size: 14px;
-                        font-family: $medium-font;
+                        font-weight: bold;
                         img {
                             width: 20px;
                             height: 20px;

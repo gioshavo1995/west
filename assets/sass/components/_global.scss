@@ -33,6 +33,7 @@ h4  {
     &.title {
         margin-bottom: 4px;
         font-size: 24px;
+        font-weight: bold;
         font-family: $title-font;
     }
 }
@@ -111,4 +112,8 @@ p {
             margin-bottom: 0;
         }
     }
+}
+
+.bottom_modal {
+
 }
