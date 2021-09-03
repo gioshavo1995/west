@@ -1473,11 +1473,15 @@ footer .footer_wrap {
             footer .footer_wrap .footer_links .footer_divs.text_link ul li a:hover {
               opacity: 0.7; }
       footer .footer_wrap .footer_links .footer_divs .pays_row {
-        margin: 0 -10px; }
+        margin: 0 -10px 50px; }
         footer .footer_wrap .footer_links .footer_divs .pays_row .pay_item {
           margin: 0 10px; }
           footer .footer_wrap .footer_links .footer_divs .pays_row .pay_item img {
             box-shadow: 0 6px 10px 0 rgba(0, 53, 78, 0.1); }
+      footer .footer_wrap .footer_links .footer_divs .langs-row {
+        margin: 0 -4px; }
+        footer .footer_wrap .footer_links .footer_divs .langs-row .lang_item {
+          margin: 0 4px; }
   footer .footer_wrap .footer_terms figure {
     margin-right: 16px; }
   footer .footer_wrap .footer_terms p {

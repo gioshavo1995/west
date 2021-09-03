@@ -86,12 +86,18 @@ footer {
                     }
                 }
                 .pays_row {
-                    margin: 0 -10px;
+                    margin: 0 -10px 50px;
                     .pay_item {
                         margin: 0 10px;
                         img {
                             box-shadow: 0 6px 10px 0 rgba(0, 53, 78, 0.1);
                         }
+                    }
+                }
+                .langs-row  {
+                    margin: 0 -4px;
+                    .lang_item {
+                        margin: 0 4px;
                     }
                 }
             }
