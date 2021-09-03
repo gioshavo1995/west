@@ -121,6 +121,7 @@ p {
         margin:0;
         .modal-content {
             border: 1px solid $color-black;
+            border-radius: 16px;
             .modal-header {
                 height: 50px;
                 padding: 0 24px;
@@ -135,7 +136,7 @@ p {
                 }
             }
             .modal-body {
-                padding: 24px;
+                padding:20px 24px;
             }
         }
     }

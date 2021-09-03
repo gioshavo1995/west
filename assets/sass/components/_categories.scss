@@ -211,6 +211,26 @@
         @media only screen and (max-width : 767px) {
             .text {
                 padding: 24px;
+                figure {
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                h4 {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .radio_inputs {
+                .mh_radio {
+                    span {
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                }
             }
         }
     }
@@ -305,6 +325,25 @@
                         font-size: 14px;
                         line-height: 14px;
                         font-family: $title-font;
+                    }
+                }
+            }
+            .read_more {
+                margin: 40px 0;
+                button {
+                    height: 40px;
+                    padding: 0 24px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    border: 1px solid $color-black-4;
+                    box-shadow: none;
+                    outline: none;
+                }
+                @media only screen and (max-width : 767px) {
+                    margin: 24px 0 0;
+                    button {
+                        height: 32px;
+                        padding: 0 14px;
                     }
                 }
             }
