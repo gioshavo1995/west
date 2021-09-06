@@ -29,6 +29,11 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
+.medium_container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 h4  {
     &.title {
         margin-bottom: 4px;
@@ -50,6 +55,7 @@ p {
 .cursor-pointer {
     cursor: pointer;
 }
+// transition mixin
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
@@ -58,7 +64,7 @@ p {
     transition: $transition-property $transition-time $method;
 }
 
-
+// social scroll
 .scroll_social {
     position: fixed;
     z-index: 4;
@@ -114,6 +120,7 @@ p {
     }
 }
 
+// modal
 .bottom_modal {
     background-color: rgba(34, 34, 34, 0.6);
     .modal-dialog {
@@ -138,6 +145,22 @@ p {
             .modal-body {
                 padding:20px 24px;
             }
+        }
+    }
+}
+// breadcrumb
+.breadcrumb {
+    background-color: $color-white;
+    .breadcrumb_item {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.5;
+        font-size: 12px;
+        img {
+            width: 14px;
+            height: 14px;
+            margin-left: 4px;
+            transform: rotate(-90deg);
         }
     }
 }
