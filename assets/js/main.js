@@ -98,6 +98,28 @@ $( document ).ready(function() {
           },
         }
       });
+      const similar = new Swiper('.similar_swiper', {
+        slidesPerView: 1.4,
+        spaceBetween: 16,
+        breakpoints: {
+          // when window width is >= 320px
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+            touchRatio: 0,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            touchRatio: 0
+          },
+          1270: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            touchRatio: 0
+          },
+        }
+      });
       // $(".rating").rate();
       //   //or for example
       //   var options = {
@@ -136,5 +158,11 @@ $( document ).ready(function() {
           $(this).toggleClass('active');
           $('body').toggleClass('menu_open');
           $('.mobile_drop').toggleClass('active');
+        });
+        // product drops
+        $('.drop_body').hide();
+        $('.drop_head').click(function(){
+          $(this).toggleClass('active');
+          $(this).next().slideToggle();
         });
 });
