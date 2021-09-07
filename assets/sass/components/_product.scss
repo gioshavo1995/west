@@ -43,6 +43,73 @@
       .product_content {
           .text {
               flex: 1;
+              margin-right: 24px;
+              h4 {
+                  &.title {
+                      font-size: 24px;
+                      font-family: $title-font;
+                      font-weight: bold;
+                  }
+              }
+              .price {
+                  font-size: 12px;
+                  span {
+                      color: $color-black-4;
+                      &.price {
+                        margin: 0 8px;
+                        font-size: 22px;
+                        color: $color-black;
+                        line-height: 22px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                      }
+                  }
+              }
+              p {
+                  &.description {
+                      font-size: 16px;
+                      line-height: 1.5;
+                  }
+              }
+              .details {
+                  margin-top: 55px;
+                  h4 {
+                      font-size: 24px;
+                      font-family: $title-font;
+                      font-weight: bold;
+                  }
+                  ul {
+                      list-style: none;
+                      li {
+                          margin-top: 27px;
+                          img {
+                              margin-right: 16px;
+                          }
+                          span {
+                              &.top_text {
+                                  font-size: 16px;
+                                  line-height: 20px;
+                                  font-weight: 700;
+                                  span {
+                                      font-weight: normal;
+                                  }
+                              }
+                              &.bottom_text {
+                                  margin-top: 5px;
+                                  color: $color-black-4;
+                                  font-size: 12px;
+                                  a {
+                                      color: $color-black;
+                                      text-decoration: underline;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+              .experience {
+                  
+              }
           }
           .right_travel {
               width: 365px;
