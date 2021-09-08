@@ -194,6 +194,7 @@
                                     -webkit-transform: rotate(90deg);
                                     -ms-transform: rotate(90deg);
                                     transform: rotate(90deg);
+                                    @include transition( all , 0.1s, ease-in-out);
                                 }
                                 &::after {
                                     display: none !important;
@@ -357,6 +358,15 @@
                             }
                         }
                     }
+                    div {
+                        &.show {
+                            .arrow {
+                                -webkit-transform: rotate(270deg) !important;
+                                -ms-transform: rotate(270deg) !important;
+                                transform: rotate(270deg) !important;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -445,7 +455,7 @@
         margin: 70px auto 0;
         .modal-content {
             .modal-body {
-                
+
             }
         }
     }   

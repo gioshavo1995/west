@@ -1177,7 +1177,12 @@ p.title {
             .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .arrow, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .arrow {
               -webkit-transform: rotate(90deg);
               -ms-transform: rotate(90deg);
-              transform: rotate(90deg); }
+              transform: rotate(90deg);
+              -webkit-transition: all 0.1s ease-in-out;
+              -moz-transition: all 0.1s ease-in-out;
+              -ms-transition: all 0.1s ease-in-out;
+              -o-transition: all 0.1s ease-in-out;
+              transition: all 0.1s ease-in-out; }
             .main_content .product .product_content .right_travel .right_top.right_top button.modal_button::after, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button::after {
               display: none !important; }
             .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu {
@@ -1301,6 +1306,10 @@ p.title {
             font-size: 14px;
             line-height: 14px;
             font-family: "Helvetica-75"; }
+      .main_content .product .product_content .right_travel .right_top div.show .arrow, .main_content .product .product_content .right_travel .right_bottom div.show .arrow {
+        -webkit-transform: rotate(270deg) !important;
+        -ms-transform: rotate(270deg) !important;
+        transform: rotate(270deg) !important; }
   .main_content .product .similar_place {
     margin-top: 55px; }
     .main_content .product .similar_place h4 {
