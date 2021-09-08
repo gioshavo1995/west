@@ -1096,7 +1096,8 @@ p.title {
           .main_content .product .product_content .text .details ul li span.top_text {
             font-size: 16px;
             line-height: 20px;
-            font-weight: 700; }
+            font-family: "Helvetica-75";
+            font-weight: bold; }
             .main_content .product .product_content .text .details ul li span.top_text span {
               font-weight: normal; }
           .main_content .product .product_content .text .details ul li span.bottom_text {
@@ -1118,7 +1119,8 @@ p.title {
         .main_content .product .product_content .text .experience .drop_divs .drop_head {
           height: 50px;
           padding: 0 16px;
-          font-weight: 700;
+          font-family: "Helvetica-75";
+          font-weight: bold;
           border-top: 1px solid #dddddd;
           -webkit-transition: all 0.1s ease-in-out;
           -moz-transition: all 0.1s ease-in-out;
@@ -1231,6 +1233,7 @@ p.title {
                   .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_title, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_title {
                     font-size: 14px;
                     line-height: 14px;
+                    font-family: "Helvetica-75";
                     font-weight: bold; }
                   .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_text, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_text {
                     color: #757575;
@@ -1356,6 +1359,11 @@ p.title {
         margin-bottom: 56px; }
         .main_content .product .similar_place .swiper-container {
           width: calc(100% + 16px); } }
+
+#availability .modal-dialog {
+  align-items: flex-start;
+  max-width: 780px;
+  margin: 70px auto 0; }
 
 body header {
   border-bottom: 1px solid #dddddd; }
@@ -1494,6 +1502,7 @@ header {
         transform: none;
         margin-left: 40px; } }
   header .right_menu .header_link {
+    font-family: "Helvetica-75";
     font-weight: bold; }
   header .right_menu .cart {
     width: 40px;

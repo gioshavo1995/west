@@ -90,7 +90,8 @@
                               &.top_text {
                                   font-size: 16px;
                                   line-height: 20px;
-                                  font-weight: 700;
+                                  font-family: $title-font;
+                                  font-weight: bold;
                                   span {
                                       font-weight: normal;
                                   }
@@ -121,7 +122,8 @@
                     .drop_head {
                         height: 50px;
                         padding: 0 16px;
-                        font-weight: 700;
+                        font-family: $title-font;
+                        font-weight: bold;
                         border-top: 1px solid $color-white-4;
                         @include transition( all , 0.1s, ease-in-out);
                         svg {
@@ -262,6 +264,7 @@
                                                 .count_title {
                                                     font-size: 14px;
                                                     line-height: 14px;
+                                                    font-family: $title-font;
                                                     font-weight: bold;
                                                 }
                                                 .count_text {
@@ -433,4 +436,17 @@
             }
         }
     }
+}
+// availability modal
+#availability {
+    .modal-dialog {
+        align-items: flex-start;
+        max-width: 780px;
+        margin: 70px auto 0;
+        .modal-content {
+            .modal-body {
+                
+            }
+        }
+    }   
 }
