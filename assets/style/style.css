@@ -1182,6 +1182,7 @@ p.title {
               width: calc(100% + 34px);
               left: -16px !important;
               margin-top: 8px;
+              color: inherit;
               border: 1px solid #222222;
               border-radius: 16px; }
               .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_head, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_head {
@@ -1198,7 +1199,8 @@ p.title {
               .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body {
                 padding: 16px 24px 24px; }
                 .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .title, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .title {
-                  margin-bottom: 15px; }
+                  margin-bottom: 15px;
+                  font-size: 14px; }
                 .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar {
                   box-shadow: none; }
                   .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-month, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-month {
@@ -1211,6 +1213,51 @@ p.title {
                       background-color: #11995e; }
                   .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .numInputWrapper, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .numInputWrapper {
                     display: none; }
+                .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .title, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .title {
+                  margin-bottom: 16px; }
+                  .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .title span, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .title span {
+                    padding-right: 25px;
+                    color: #757575;
+                    font-size: 14px; }
+                  .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .title .price, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .title .price {
+                    flex-shrink: 0;
+                    font-size: 16px;
+                    font-family: "Helvetica-75";
+                    font-weight: bold; }
+                .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count {
+                  margin-bottom: 16px;
+                  padding-bottom: 16px;
+                  border-bottom: 1px solid #dddddd; }
+                  .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_title, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_title {
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: bold; }
+                  .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_text, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .count_text {
+                    color: #757575;
+                    font-size: 12px; }
+                  .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter {
+                    font-size: 16px;
+                    font-weight: bold; }
+                    .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter .btn, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter .btn {
+                      width: 32px;
+                      height: 32px;
+                      border: 1px solid #757575;
+                      border-radius: 50%; }
+                      .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter .btn img, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter .btn img {
+                        width: 10px;
+                        height: 10px; }
+                    .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter .count_number, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter .count_number {
+                      margin: 0 20px; }
+                    .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter.free, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count .counter.free {
+                      padding-right: 40px;
+                      color: #5ec41f;
+                      font-size: 12px;
+                      font-family: "Helvetica-75";
+                      font-weight: bold; }
+                  .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count:last-child, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body.guest .guest_count:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-bottom: none; }
           .main_content .product .product_content .right_travel .right_top.right_top button.availability, .main_content .product .product_content .right_travel .right_bottom.right_top button.availability {
             height: 40px;
             font-family: "Helvetica-75";

@@ -200,6 +200,7 @@
                                     width: calc(100% + 34px);
                                     left: -16px !important;
                                     margin-top: 8px;
+                                    color: inherit;
                                     border: 1px solid $color-black;
                                     border-radius: 16px;
                                     .dropdown_head {
@@ -219,6 +220,7 @@
                                         padding: 16px 24px 24px;
                                         .title {
                                             margin-bottom: 15px;
+                                            font-size: 14px;
                                         }
                                         .flatpickr-calendar {
                                             box-shadow: none;
@@ -236,6 +238,65 @@
                                             }
                                             .numInputWrapper {
                                                 display: none;
+                                            }
+                                        }
+                                        &.guest {
+                                            .title {
+                                                margin-bottom: 16px;
+                                                span {
+                                                    padding-right: 25px;
+                                                    color: $color-black-4;
+                                                    font-size: 14px;
+                                                }
+                                                .price {
+                                                    flex-shrink: 0;
+                                                    font-size: 16px;
+                                                    font-family: $title-font;
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                            .guest_count {
+                                                margin-bottom: 16px;
+                                                padding-bottom: 16px;
+                                                border-bottom: 1px solid $color-white-4;
+                                                .count_title {
+                                                    font-size: 14px;
+                                                    line-height: 14px;
+                                                    font-weight: bold;
+                                                }
+                                                .count_text {
+                                                    color: $color-black-4;
+                                                    font-size: 12px;
+                                                }
+                                                .counter {
+                                                    font-size: 16px;
+                                                    font-weight: bold;
+                                                    .btn {
+                                                        width: 32px;
+                                                        height: 32px;
+                                                        border: 1px solid $color-black-4;
+                                                        border-radius: 50%;
+                                                        img {
+                                                            width: 10px;
+                                                            height: 10px;
+                                                        }
+                                                    }
+                                                    .count_number {
+                                                        margin: 0 20px;
+                                                    }
+                                                    &.free {
+                                                        padding-right: 40px;
+                                                        color: $color-green-1;
+                                                        font-size: 12px;
+                                                        font-family: $title-font;
+                                                        font-weight: bold;
+                                                    }
+                                                }
+                                                &:last-child {
+                                                    margin-bottom: 0;
+                                                    padding-bottom: 0;
+                                                    border-bottom: none;
+                                                }
                                             }
                                         }
                                     }
