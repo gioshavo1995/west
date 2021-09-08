@@ -1213,7 +1213,10 @@ p.title {
                   .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-month, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-month {
                     margin-bottom: 24px; }
                     .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-month .flatpickr-monthDropdown-months, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-month .flatpickr-monthDropdown-months {
-                      background-color: transparent; }
+                      background-color: transparent;
+                      font-size: 14px;
+                      font-family: "Helvetica-75";
+                      font-weight: bold; }
                   .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-day, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-day {
                     font-size: 12px; }
                     .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-day.selected, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu .dropdown_body .flatpickr-calendar .flatpickr-day.selected {

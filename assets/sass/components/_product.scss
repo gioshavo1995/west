@@ -231,6 +231,9 @@
                                                 margin-bottom: 24px;
                                                 .flatpickr-monthDropdown-months {
                                                     background-color: transparent;
+                                                    font-size: 14px;
+                                                    font-family: $title-font;
+                                                    font-weight: bold;
                                                 }
                                             }
                                             .flatpickr-day {
