@@ -93,6 +93,7 @@
                                   font-family: $title-font;
                                   font-weight: bold;
                                   span {
+                                      font-family: $normal-font;
                                       font-weight: normal;
                                   }
                               }
@@ -458,7 +459,122 @@
         margin: 70px auto 0;
         .modal-content {
             .modal-body {
-
+                padding: 0;
+                .content_wrap {
+                    padding: 25px 44px 0;
+                    .row {
+                        margin: 0 -12px;
+                        .col-md-6 {
+                            padding: 0 12px;
+                        }
+                    }
+                    h4 {
+                        margin-bottom: 32px;
+                        font-size: 24px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    .title {
+                        margin-bottom: 10px;
+                        color: $color-black-4;
+                        font-size: 14px;
+                        .price {
+                            color: $color-black;
+                            font-size: 16px;
+                            font-family: $title-font;
+                            font-weight: bold;
+                        }
+                    }
+                    .tour_date {
+                        margin-bottom: 40px;
+                        font-size: 14px;
+                    }
+                    .pick_place {
+                        margin-bottom: 32px;
+                        padding-bottom: 32px;
+                        border-bottom: 1px solid $color-white-4;
+                    }
+                    .departure {
+                        margin-bottom: 32px;
+                        padding-bottom: 32px;
+                        border-bottom: 1px solid $color-white-4;
+                        .departure_drops {
+                            .dropdown {
+                                button {
+                                    height: 52px;
+                                    margin-bottom: 32px;
+                                    padding: 0 16px;
+                                    color: $color-black-4;
+                                    background-color: transparent;
+                                    font-size: 16px;
+                                    border: 1px solid $color-white-4;
+                                    border-radius: 12px;
+                                    box-shadow: none;
+                                    outline: none;
+                                    img {
+                                        -webkit-transform: rotate(90deg);
+                                        -ms-transform: rotate(90deg);
+                                        transform: rotate(90deg);
+                                        @include transition( all , 0.1s, ease-in-out);
+                                    }
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                                .dropdown-menu {
+                                    min-width: auto;
+                                    margin-top: 10px;
+                                    padding: 5px 0;
+                                    border-radius: 10px;
+                                    border: 1px solid $color-black-1;
+                                    .dropdown-item {
+                                       padding: 5px 16px;
+                                       font-size: 14px;
+                                       background-color: transparent;
+                                       &:active {
+                                          color: inherit;
+                                       }
+                                    }
+                                }
+                                &.show {
+                                    button {
+                                        img {
+                                            -webkit-transform: rotate(270deg);
+                                            -ms-transform: rotate(270deg);    
+                                            transform: rotate(270deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .departure_title {
+                            margin-bottom: 16px;
+                        }
+                        .input_wrap {
+                            img {
+                                position: absolute;
+                                top: 50%;
+                                -webkit-transform: translateY(-50%);
+                                -ms-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                                right: 16px;
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                    .departure_car {
+                        h4 {
+                            img {
+                                margin-top: -8px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }   

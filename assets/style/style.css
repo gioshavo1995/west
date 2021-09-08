@@ -182,6 +182,37 @@ p.title {
   background-color: #fd0e18;
   border-radius: 50%; }
 
+.mhinput {
+  height: 52px;
+  padding: 0 16px;
+  color: #222222;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  outline: none; }
+
+.mhcheckbox .checkbox_input {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .mhcheckbox .checkbox_input:checked {
+    background-color: #fd0e18;
+    background-image: url("../images/checkbox/checkbox.png");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent; }
+
+.mhcheckbox label.checkbox_label {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5; }
+
 .main_image {
   height: 592px;
   margin: 8px 16px 0;
@@ -1099,6 +1130,7 @@ p.title {
             font-family: "Helvetica-75";
             font-weight: bold; }
             .main_content .product .product_content .text .details ul li span.top_text span {
+              font-family: "Helvetica-55";
               font-weight: normal; }
           .main_content .product .product_content .text .details ul li span.bottom_text {
             margin-top: 5px;
@@ -1376,6 +1408,93 @@ p.title {
   align-items: flex-start;
   max-width: 780px;
   margin: 70px auto 0; }
+  #availability .modal-dialog .modal-content .modal-body {
+    padding: 0; }
+    #availability .modal-dialog .modal-content .modal-body .content_wrap {
+      padding: 25px 44px 0; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .row {
+        margin: 0 -12px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .row .col-md-6 {
+          padding: 0 12px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap h4 {
+        margin-bottom: 32px;
+        font-size: 24px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap h4 img {
+          width: 24px;
+          height: 24px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .title {
+        margin-bottom: 10px;
+        color: #757575;
+        font-size: 14px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .title .price {
+          color: #222222;
+          font-size: 16px;
+          font-family: "Helvetica-75";
+          font-weight: bold; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .tour_date {
+        margin-bottom: 40px;
+        font-size: 14px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .pick_place {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #dddddd; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #dddddd; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button {
+          height: 52px;
+          margin-bottom: 32px;
+          padding: 0 16px;
+          color: #757575;
+          background-color: transparent;
+          font-size: 16px;
+          border: 1px solid #dddddd;
+          border-radius: 12px;
+          box-shadow: none;
+          outline: none; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button img {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button::after {
+            display: none; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu {
+          min-width: auto;
+          margin-top: 10px;
+          padding: 5px 0;
+          border-radius: 10px;
+          border: 1px solid #000000; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu .dropdown-item {
+            padding: 5px 16px;
+            font-size: 14px;
+            background-color: transparent; }
+            #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu .dropdown-item:active {
+              color: inherit; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown.show button img {
+          -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_title {
+          margin-bottom: 16px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .input_wrap img {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: 16px;
+          width: 24px;
+          height: 24px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure_car h4 img {
+        margin-top: -8px; }
 
 body header {
   border-bottom: 1px solid #dddddd; }
@@ -1465,6 +1584,7 @@ header {
     header .main_menu .lang .dropdown-toggle {
       height: 40px;
       font-size: 14px;
+      font-family: "Helvetica-75";
       font-weight: bold;
       line-height: 14px;
       box-shadow: none; }
@@ -1802,7 +1922,8 @@ footer .footer_wrap {
       footer .footer_wrap .footer_links .footer_divs h4 {
         margin-bottom: 25px;
         font-size: 12px;
-        font-family: "Helvetica-75"; }
+        font-family: "Helvetica-75";
+        font-weight: bold; }
       footer .footer_wrap .footer_links .footer_divs.text_link ul {
         list-style: none; }
         footer .footer_wrap .footer_links .footer_divs.text_link ul li {
