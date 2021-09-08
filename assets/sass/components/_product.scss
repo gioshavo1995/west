@@ -160,8 +160,142 @@
           }
           .right_travel {
               width: 365px;
-          }
-      }
+              .right_top , .right_bottom {
+                    padding: 32px 16px 16px;
+                    h4 {
+                        margin-bottom: 8px;
+                        font-size: 24px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                    }
+                    &.right_top {
+                        background-color: $color-white-1;
+                        border: 1px solid transparent;
+                        border-top-left-radius: 16px;
+                        border-top-right-radius: 16px;
+                        p {
+                            margin-bottom: 34px;
+                            font-size: 18px;
+                        }
+                        button {
+                            font-size: 14px;
+                            outline: none;
+                            box-shadow: none;
+                            &.modal_button {
+                                height: 52px;
+                                margin-bottom: 16px;
+                                padding: 0 16px;
+                                background-color: $color-white;
+                                border: 1px solid $color-white-4;
+                                border-radius: 12px;
+                                .arrow {
+                                    -webkit-transform: rotate(90deg);
+                                    -ms-transform: rotate(90deg);
+                                    transform: rotate(90deg);
+                                }
+                                &::after {
+                                    display: none !important;
+                                }
+                                .dropdown-menu {
+                                    width: calc(100% + 34px);
+                                    left: -16px !important;
+                                    margin-top: 8px;
+                                    border: 1px solid $color-black;
+                                    border-radius: 16px;
+                                    .dropdown_head {
+                                        height: 50px;
+                                        padding: 0 24px;
+                                        font-size: 14px;
+                                        background-color: $color-white-1;
+                                        border-bottom: 1px solid $color-white-4;
+                                        border-top-left-radius: 16px;
+                                        border-top-right-radius: 16px;
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                    .dropdown_body {
+                                        padding: 16px 24px 24px;
+                                        .title {
+                                            margin-bottom: 15px;
+                                        }
+                                        .flatpickr-calendar {
+                                            box-shadow: none;
+                                            .flatpickr-month {
+                                                margin-bottom: 24px;
+                                                .flatpickr-monthDropdown-months {
+                                                    background-color: transparent;
+                                                }
+                                            }
+                                            .flatpickr-day {
+                                                font-size: 12px;
+                                                &.selected {
+                                                    background-color: $color-green;
+                                                }
+                                            }
+                                            .numInputWrapper {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.availability {
+                                height: 40px;
+                                font-family: $title-font;
+                                font-weight: bold;
+                                color: $color-white;
+                                background-color: $color-red-1;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                    &.right_bottom {
+                        border: 1px solid $color-white-4;
+                        border-bottom-left-radius: 16px;
+                        border-bottom-right-radius: 16px;
+                        h4 {
+                            margin-bottom: 24px;
+                        }
+                        .bottom_items {
+                            .bottom_item {
+                                height: 40px;
+                                margin-bottom: 8px;
+                                padding: 0 16px 0 10px;
+                                border: 1px solid $color-white-4;
+                                border-radius: 8px;
+                                font-size: 16px;
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        .bottom_booked {
+                            height: 34px;
+                            padding: 0 16px;
+                            background-color: $color-white-1;
+                            border-radius: 8px;
+                            font-size: 12px;
+                            img {
+                                width: 16px;
+                                height: 16px;
+                                margin-right: 8px;
+                            }
+                            span {
+                                margin: 0 5px;
+                                color: $color-red;
+                                font-size: 14px;
+                                line-height: 14px;
+                                font-family: $title-font;
+                            }
+                        }
+                    }
+                }
+            }
+        }
       .similar_place {
           margin-top: 55px;
           h4 {

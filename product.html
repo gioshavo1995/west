@@ -6,6 +6,7 @@
     <title>Markup</title>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/swiper.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/flatpickr.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.min.css" />
 </head>
 <body class="positon-relative">
@@ -387,7 +388,63 @@
                 </div>
             </div>
             <div class="right_travel">
+                <div class="right_top">
+                  <h4>Select Date and Travelers</h4>
+                  <p>The best way to learn more about us and our service.</p>
+                  <div>
+                    <button class="btn w-100 d-flex modal_button align-items-center justify-content-between dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/product_picker.png">
+                      Dates </div><img class="arrow" src="assets/images/right_arrow.png">
+                      <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                          <div class="dropdown_head d-flex align-items-center">
+                            <img class="mr-2" src="assets/images/product_details/place1.png">
+                            When will you be there
+                          </div>
+                          <div class="dropdown_body">
+                            <span class="d-block title">Selected: 20 May 2021</span>
+                            <div class="calendar">
 
+                            </div>
+                          </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div>
+                    <button class="btn w-100 d-flex modal_button align-items-center justify-content-between dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/guest.png">
+                      Guests </div><img class="arrow" src="assets/images/right_arrow.png">
+                      <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown_head d-flex align-items-center">
+                          <img class="mr-2" src="assets/images/product_details/place1.png">
+                          Who’s coming?
+                        </div>
+                        <div class="dropdown_body">
+                          
+                        </div>
+                    </div>
+                  </button>
+                  </div>
+                  <button class="btn w-100 availability">Check Availability</button>
+                </div>
+                <div class="right_bottom">
+                  <h4>About this Trip</h4>
+                  <div class="bottom_items d-flex flex-column align-items-start">
+                    <div class="bottom_item d-inline-flex align-items-center">
+                      <img src="assets/images/categories_images/free_map.png">
+                      Free map Georgia/Tbilisi
+                    </div>
+                    <div class="bottom_item d-inline-flex align-items-center">
+                      <img src="assets/images/categories_images/panoramic_stop.png">
+                      Panoramic stops
+                    </div>
+                    <div class="bottom_item d-inline-flex align-items-center">
+                      <img src="assets/images/categories_images/free_sim.png">
+                      Free sim card
+                    </div>
+                  </div>
+                  <div class="bottom_booked d-inline-flex align-items-center justify-content-center w-100 ml-auto mt-3 mb-4">
+                    <img src="assets/images/red_fire.png">
+                    booked by <span>73,266</span> travelers !
+                  </div>
+                </div>
             </div>
           </div>
           <div class="similar_place">
@@ -615,6 +672,7 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/flatpickr.min.js"></script>
   <script src="assets/js/rater.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

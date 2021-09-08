@@ -165,4 +165,11 @@ $( document ).ready(function() {
           $(this).toggleClass('active');
           $(this).next().slideToggle();
         });
+        $(".calendar").flatpickr({
+          inline: true
+        });
+        $(".modal_button .dropdown-menu").click(function(e){
+          e.stopPropagation();
+       })
+       
 });
