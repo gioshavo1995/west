@@ -1424,6 +1424,12 @@ p.title {
         #availability .modal-dialog .modal-content .modal-body .content_wrap h4 img {
           width: 24px;
           height: 24px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .border_bottom {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #dddddd; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .border_bottom:last-child {
+          border-bottom: none; }
       #availability .modal-dialog .modal-content .modal-body .content_wrap .title {
         margin-bottom: 10px;
         color: #757575;
@@ -1436,65 +1442,120 @@ p.title {
       #availability .modal-dialog .modal-content .modal-body .content_wrap .tour_date {
         margin-bottom: 40px;
         font-size: 14px; }
-      #availability .modal-dialog .modal-content .modal-body .content_wrap .pick_place {
-        margin-bottom: 32px;
-        padding-bottom: 32px;
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets h4 img {
+        margin-top: -4px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets .tickets_price {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
         border-bottom: 1px solid #dddddd; }
-      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure {
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets .tickets_price span {
+          font-size: 14px; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets .tickets_price span.price {
+            font-size: 16px;
+            font-family: "Helvetica-75";
+            font-weight: bold; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets .type {
+        margin-bottom: 18px;
+        color: #757575;
+        font-size: 14px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets .radio_inputs .mh_radio {
+        margin-bottom: 25px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .buss_tickets .radio_inputs .mh_radio:last-child {
+          margin-bottom: 0; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button {
+        height: 52px;
         margin-bottom: 32px;
-        padding-bottom: 32px;
-        border-bottom: 1px solid #dddddd; }
-        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button {
-          height: 52px;
-          margin-bottom: 32px;
-          padding: 0 16px;
-          color: #757575;
-          background-color: transparent;
-          font-size: 16px;
-          border: 1px solid #dddddd;
-          border-radius: 12px;
-          box-shadow: none;
-          outline: none; }
-          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button img {
-            -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-            -webkit-transition: all 0.1s ease-in-out;
-            -moz-transition: all 0.1s ease-in-out;
-            -ms-transition: all 0.1s ease-in-out;
-            -o-transition: all 0.1s ease-in-out;
-            transition: all 0.1s ease-in-out; }
-          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button::after {
-            display: none; }
-        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu {
-          min-width: auto;
+        padding: 0 16px;
+        color: #757575;
+        background-color: transparent;
+        font-size: 16px;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        box-shadow: none;
+        outline: none; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button img {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -ms-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown button::after {
+          display: none; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu {
+        min-width: auto;
+        margin-top: 10px;
+        padding: 5px 0;
+        border-radius: 10px;
+        border: 1px solid #000000; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu .dropdown-item {
+          padding: 5px 16px;
+          font-size: 14px;
+          background-color: transparent; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu .dropdown-item:active {
+            color: inherit; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown.show button img {
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg); }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_title {
+        margin-bottom: 16px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .input_wrap img {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 16px;
+        width: 24px;
+        height: 24px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure_car {
+        padding-bottom: 10px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure_car h4 img {
+          margin-top: -8px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure_car .radio_inputs .mh_radio {
+          margin-bottom: 25px;
+          font-size: 16px; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure_car .radio_inputs .mh_radio .custom_input {
+            flex-shrink: 0; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room h4 img {
+        margin-top: -4px; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item {
+        width: 212px;
+        margin-right: 24px;
+        margin-bottom: 0;
+        padding: 16px;
+        border: 1px solid #dddddd;
+        border-radius: 8px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item img.small_room, #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item img.big_room {
+          width: 56px;
+          height: 56px; }
+          #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item img.small_room.small_room, #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item img.big_room.small_room {
+            margin-left: -10px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item p {
           margin-top: 10px;
-          padding: 5px 0;
-          border-radius: 10px;
-          border: 1px solid #000000; }
-          #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu .dropdown-item {
-            padding: 5px 16px;
-            font-size: 14px;
-            background-color: transparent; }
-            #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown .dropdown-menu .dropdown-item:active {
-              color: inherit; }
-        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_drops .dropdown.show button img {
-          -webkit-transform: rotate(270deg);
-          -ms-transform: rotate(270deg);
-          transform: rotate(270deg); }
-        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .departure_title {
-          margin-bottom: 16px; }
-        #availability .modal-dialog .modal-content .modal-body .content_wrap .departure .input_wrap img {
-          position: absolute;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          right: 16px;
-          width: 24px;
-          height: 24px; }
-      #availability .modal-dialog .modal-content .modal-body .content_wrap .departure_car h4 img {
-        margin-top: -8px; }
+          margin-bottom: 0;
+          padding-right: 45px;
+          font-size: 16px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .chose_room .room_items .room_item:last-child {
+          margin-right: 0; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .starting_time .time_items .time_item {
+        margin-right: 16px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .starting_time .time_items .time_item label {
+          height: 38px;
+          padding: 0 16px;
+          border: 1px solid #dddddd;
+          border-radius: 8px; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .starting_time .time_items .time_item input:checked + label {
+          color: #ffffff;
+          background-color: #222222;
+          border: 1px solid transparent; }
+        #availability .modal-dialog .modal-content .modal-body .content_wrap .starting_time .time_items .time_item:last-child {
+          margin-right: 0%; }
+      #availability .modal-dialog .modal-content .modal-body .content_wrap .transfers .radio_inputs .mh_radio {
+        margin-bottom: 25px; }
 
 body header {
   border-bottom: 1px solid #dddddd; }

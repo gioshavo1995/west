@@ -478,6 +478,14 @@
                             height: 24px;
                         }
                     }
+                    .border_bottom {
+                        margin-bottom: 32px;
+                        padding-bottom: 32px;
+                        border-bottom: 1px solid $color-white-4;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
                     .title {
                         margin-bottom: 10px;
                         color: $color-black-4;
@@ -493,15 +501,40 @@
                         margin-bottom: 40px;
                         font-size: 14px;
                     }
-                    .pick_place {
-                        margin-bottom: 32px;
-                        padding-bottom: 32px;
-                        border-bottom: 1px solid $color-white-4;
+                    .buss_tickets {
+                        h4 {
+                            img {
+                                margin-top: -4px;
+                            }
+                        }
+                        .tickets_price {
+                            margin-bottom: 16px;
+                            padding-bottom: 16px;
+                            border-bottom: 1px solid $color-white-4;
+                            span {
+                                font-size: 14px;
+                                &.price {
+                                    font-size: 16px;
+                                    font-family: $title-font;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .type {
+                            margin-bottom: 18px;
+                            color: $color-black-4;
+                            font-size: 14px;
+                        }
+                        .radio_inputs {
+                            .mh_radio {
+                                margin-bottom: 25px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
                     }
                     .departure {
-                        margin-bottom: 32px;
-                        padding-bottom: 32px;
-                        border-bottom: 1px solid $color-white-4;
                         .departure_drops {
                             .dropdown {
                                 button {
@@ -568,9 +601,86 @@
                         }
                     }
                     .departure_car {
+                        padding-bottom: 10px;
                         h4 {
                             img {
                                 margin-top: -8px;
+                            }
+                        }
+                        .radio_inputs {
+                            .mh_radio {
+                                margin-bottom: 25px;
+                                font-size: 16px;
+                                .custom_input {
+                                    flex-shrink: 0;
+                                }
+                            }
+                        }
+                    }
+                    .chose_room {
+                        h4 {
+                            img {
+                                margin-top: -4px;
+                            }
+                        }
+                        .room_items {
+                            .room_item {
+                                width: 212px;
+                                margin-right: 24px;
+                                margin-bottom: 0;
+                                padding: 16px;
+                                border: 1px solid $color-white-4;
+                                border-radius: 8px;
+                                img {
+                                    &.small_room , &.big_room {
+                                        width: 56px;
+                                        height: 56px;
+                                        &.small_room {
+                                            margin-left: -10px;
+                                        }
+                                    }
+                                }
+                                p {
+                                    margin-top: 10px;
+                                    margin-bottom: 0;
+                                    padding-right: 45px;
+                                    font-size: 16px;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                    .starting_time {
+                        .time_items {
+                            .time_item {
+                                margin-right: 16px;
+                                label {
+                                    height: 38px;
+                                    padding: 0 16px;
+                                    border: 1px solid $color-white-4;
+                                    border-radius: 8px;
+                                }
+                                input {
+                                    &:checked  {
+                                        + label {
+                                            color: $color-white;
+                                            background-color: $color-black;
+                                            border: 1px solid transparent;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    margin-right: 0%;
+                                }
+                            }
+                        }
+                    }
+                    .transfers {
+                        .radio_inputs {
+                            .mh_radio {
+                                margin-bottom: 25px;
                             }
                         }
                     }

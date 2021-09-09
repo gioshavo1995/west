@@ -563,7 +563,31 @@
             <div class="price">$76.00</div>
           </div>
           <span class="d-block tour_date">Selected: 20 May 2021, 2 Adults</span>
-          <div class="pick_place">
+          <div class="buss_tickets border_bottom">
+            <h4><img class="mr-2" src="assets/images/availability/tickets.png">Type of ticket</h4>
+            <div class="tickets_price d-flex align-items-center justify-content-between">
+              <span>City tour Tbilisi</span>
+              <span class="price">$20.00</span>
+            </div>
+            <div class="type">choose ticket Type</div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="radio_inputs">
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="type1">
+                    <span>24 Hours</span>
+                    <input id="type1" class="d-none" type="radio" name="tickets">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="type4">
+                    <span>48 hours</span>
+                    <input id="type4" class="d-none" type="radio" name="tickets">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pick_place border_bottom">
             <h4>Pick-up place</h4>
             <div class="row">
               <div class="col-md-6">
@@ -571,7 +595,7 @@
               </div>
             </div>
           </div>
-          <div class="departure">
+          <div class="departure border_bottom">
             <h4 class="d-flex align-items-center"><img class="mr-2" src="assets/images/availability/departure.png">Departure information</h4>
             <div class="mhcheckbox d-flex align-items-center mb-4">
               <input id="check1" class="checkbox_input cursor-pointer" type="checkbox">
@@ -606,8 +630,8 @@
             <div class="row departure_drops">
               <div class="col-md-6">
                 <div class="mhcheckbox d-flex align-items-center mb-3">
-                  <input id="check1" class="checkbox_input cursor-pointer" type="checkbox">
-                  <label for="check1" class="checkbox_label cursor-pointer pr-5 mr-5">Do you want to take you 
+                  <input id="check4" class="checkbox_input cursor-pointer" type="checkbox">
+                  <label for="check4" class="checkbox_label cursor-pointer pr-5 mr-5">Do you want to take you 
                     from the airport?</label>
                 </div>
               </div>
@@ -620,13 +644,117 @@
               </div>
             </div>
           </div>
-          <div class="departure_car">
+          <div class="departure_car border_bottom">
             <h4><img class="mr-2" src="assets/images/availability/departure_transport.png" alt="">Choose car</h4>
             <duv class="row">
               <div class="col-md-6">
-                
+                <div class="radio_inputs">
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="spec1">
+                    <span>1-3 persons</span>
+                    <input id="spec1" class="d-none" type="radio" name="spec1">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="spec2">
+                    <span>4-7 persons</span>
+                    <input id="spec2" class="d-none" type="radio" name="spec1">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="spec4">
+                    <span>8-15 persons</span>
+                    <input id="spec4" class="d-none" type="radio" name="spec1">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="radio_inputs">
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="spec5">
+                    <span>16-30 persons</span>
+                    <input id="spec5" class="d-none" type="radio" name="spec1">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="spec7">
+                    <span>21-30 persons</span>
+                    <input id="spec7" class="d-none" type="radio" name="spec1">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                  </label>
+                </div>
               </div>
             </duv>
+          </div>
+          <div class="chose_room border_bottom">
+            <h4><img class="mr-2" src="assets/images/availability/room.png" alt="">Choose room category</h4>
+            <div class="room_items d-flex align-items-center">
+              <label for="spec8" class="mh_radio room_item cursor-pointer">
+                  <div class="d-flex align-items-start justify-content-between">
+                    <img class="small_room" src="assets/images/availability/small_room.png" alt="">
+                    <input id="spec8" class="d-none" type="radio" name="rooms">
+                    <div class="custom_input position-relative rounded-circle"></div>
+                </div>
+                <p>1 - Person on single room</p>
+              </label>
+              <label for="spec10" class="mh_radio room_item cursor-pointer">
+                <div class="d-flex align-items-start justify-content-between">
+                  <img class="big_room" src="assets/images/availability/big_room.png" alt="">
+                  <input id="spec10" class="d-none" type="radio" name="rooms">
+                  <div class="custom_input position-relative rounded-circle"></div>
+                </div>
+                <p>1 - Person on double room</p>
+              </label>
+              <label for="spec25" class="mh_radio room_item cursor-pointer">
+                <div class="d-flex align-items-start justify-content-between">
+                  <img class="big_room" src="assets/images/availability/big_room.png" alt="">
+                  <img class="small_room" src="assets/images/availability/small_room.png" alt="">
+                  <input id="spec25" class="d-none" type="radio" name="rooms">
+                  <div class="custom_input position-relative rounded-circle"></div>
+                </div>
+                <p>1 - Person on triple room</p>
+              </label>
+            </div>
+          </div>
+          <div class="starting_time border_bottom">
+            <h4>Starting time</h4>
+            <div class="time_items d-flex align-items-center flex-wrap">
+              <div class="time_item">
+                <input id="time1" class="d-none" type="radio" name="time">
+                <label for="time1" class="d-flex align-items-center cursor-pointer mb-0">
+                9:00 AM
+                </label>
+              </div>
+              <div class="time_item">
+                <input id="time4"  class="d-none" type="radio" name="time">
+                <label for="time4" class="d-flex align-items-center cursor-pointer mb-0">
+                9:30 AM
+                </label>
+              </div>
+              <div class="time_item">
+                <input id="time5"  class="d-none" type="radio" name="time">
+                <label for="time5" class="d-flex align-items-center cursor-pointer mb-0">
+                10:00 AM
+                </label>
+              </div>
+              <div class="time_item">
+                <input id="time8" class="d-none" type="radio" name="time">
+                <label for="time8" class="d-flex align-items-center cursor-pointer mb-0">
+                10:30 AM
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="transfers border_bottom">
+            <h4>Transfers</h4>
+            <div class="radio_inputs">
+              <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="transfer1">
+                <span>16-30 persons</span>
+                <input id="transfer1" class="d-none" type="radio" name="transfer">
+                <div class="custom_input position-relative rounded-circle"></div>
+              </label>
+              <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="transfer4">
+                <span>21-30 persons</span>
+                <input id="transfer4" class="d-none" type="radio" name="transfer">
+                <div class="custom_input position-relative rounded-circle"></div>
+              </label>
+            </div>
           </div>
         </div>
       </div>
