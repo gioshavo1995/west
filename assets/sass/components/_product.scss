@@ -277,6 +277,9 @@
                                             box-shadow: none;
                                             .flatpickr-month {
                                                 margin-bottom: 24px;
+                                                .flatpickr-current-month {
+                                                    padding-top: 10px;
+                                                }
                                                 .flatpickr-monthDropdown-months {
                                                     background-color: transparent;
                                                     font-size: 14px;
