@@ -1616,6 +1616,45 @@ p.title {
       #availability .modal-dialog .modal-content .modal-body .content_wrap .transfers .radio_inputs .mh_radio {
         margin-bottom: 25px; }
 
+#calendar .modal-dialog {
+  min-height: calc(100% - 0rem); }
+  #calendar .modal-dialog .modal-content .modal-body .title {
+    margin: 16px 16px 15px;
+    font-size: 14px; }
+  #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar {
+    box-shadow: none; }
+    #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar .flatpickr-month {
+      margin-bottom: 24px; }
+      #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar .flatpickr-month .flatpickr-current-month {
+        padding-top: 10px; }
+      #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar .flatpickr-month .flatpickr-monthDropdown-months {
+        background-color: transparent;
+        font-size: 14px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+    #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar .flatpickr-day {
+      font-size: 12px; }
+      #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar .flatpickr-day.selected {
+        background-color: #11995e; }
+    #calendar .modal-dialog .modal-content .modal-body .flatpickr-calendar .numInputWrapper {
+      display: none; }
+  #calendar .modal-dialog .modal-content .modal-body .bottom_buttons {
+    margin: 24px 0 16px;
+    padding: 0 24px; }
+    #calendar .modal-dialog .modal-content .modal-body .bottom_buttons button {
+      height: 44px;
+      font-size: 14px;
+      line-height: 44px;
+      box-shadow: none;
+      outline: none; }
+      #calendar .modal-dialog .modal-content .modal-body .bottom_buttons button.clear {
+        text-decoration: underline; }
+      #calendar .modal-dialog .modal-content .modal-body .bottom_buttons button.next {
+        padding: 0 40px;
+        color: #ffffff;
+        background-color: #222222;
+        border-radius: 8px; }
+
 body header {
   border-bottom: 1px solid #dddddd; }
 

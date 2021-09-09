@@ -196,7 +196,7 @@
               <a href="#"><img src="assets/images/save.png"></a>
             </div>
           </div>
-          <div class="product_slider">
+          <div class="product_slider d-block d-md-none">
             <div class="swiper-container prod_swipe">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
@@ -423,7 +423,7 @@
                   <h4>Select Date and Travelers</h4>
                   <p>The best way to learn more about us and our service.</p>
                   <div>
-                    <button class="btn w-100 d-flex modal_button align-items-center justify-content-between dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/product_picker.png">
+                    <button class="btn w-100 d-none d-md-flex modal_button align-items-center justify-content-between dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/product_picker.png">
                       Dates </div><img class="arrow" src="assets/images/right_arrow.png">
                       <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
                           <div class="dropdown_head d-flex align-items-center">
@@ -437,6 +437,9 @@
                             </div>
                           </div>
                       </div>
+                    </button>
+                    <button class="btn w-100 d-flex d-md-none modal_button align-items-center justify-content-between position-relative" type="button" data-toggle="modal" data-target="#calendar"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/product_picker.png">
+                      test </div><img class="arrow" src="assets/images/right_arrow.png">
                     </button>
                   </div>
                   <div>
@@ -577,7 +580,30 @@
         </div>
       </div>
   </section>
-  <!-- Modal -->
+  <!-- Modal calendar -->
+  <div class="modal fade bottom_modal availability_modal" id="calendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center">
+          <h5 class="modal-title d-flex align-items-center" id="exampleModalLabel"><img class="mr-2" src="assets/images/product_details/guide.png">When will you be there</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="modal-body p-0 d-flex flex-column align-items-center">
+        <span class="d-block title">Selected: 20 May 2021</span>
+          <div class="calendar">
+            
+          </div>
+          <div class="bottom_buttons d-flex align-items-center justify-content-between w-100">
+            <button class="btn clear d-flex align-items-center">clear</button>
+            <button class="btn next d-flex align-items-center">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal availability -->
 <div class="modal fade bottom_modal availability_modal" id="availability" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">

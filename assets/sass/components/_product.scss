@@ -766,3 +766,61 @@
         }
     }   
 }
+
+#calendar {
+    .modal-dialog  {
+        min-height: calc(100% - 0rem);
+        .modal-content {
+            .modal-body {
+                .title {
+                    margin: 16px 16px 15px;
+                    font-size: 14px;
+                }
+                .flatpickr-calendar {
+                    box-shadow: none;
+                    .flatpickr-month {
+                        margin-bottom: 24px;
+                        .flatpickr-current-month {
+                            padding-top: 10px;
+                        }
+                        .flatpickr-monthDropdown-months {
+                            background-color: transparent;
+                            font-size: 14px;
+                            font-family: $title-font;
+                            font-weight: bold;
+                        }
+                    }
+                    .flatpickr-day {
+                        font-size: 12px;
+                        &.selected {
+                            background-color: $color-green;
+                        }
+                    }
+                    .numInputWrapper {
+                        display: none;
+                    }
+                }
+                .bottom_buttons {
+                    margin: 24px 0 16px;
+                    padding: 0 24px;
+                    button {
+                        height: 44px;
+                        font-size: 14px;
+                        line-height: 44px;
+                        box-shadow: none;
+                        outline: none;
+                        &.clear {
+                            text-decoration: underline;
+                        }
+                        &.next {
+                            padding: 0 40px;
+                            color: $color-white;
+                            background-color: $color-black;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
