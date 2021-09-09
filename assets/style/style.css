@@ -138,6 +138,8 @@ p.title {
       height: 14px;
       margin-left: 4px;
       transform: rotate(-90deg); }
+    .breadcrumb .breadcrumb_item.product_item {
+      opacity: 1; }
 
 @font-face {
   font-family: 'Helvetica-55';
@@ -1064,6 +1066,9 @@ p.title {
 
 .main_content .product {
   margin: 31px 0 120px; }
+  @media only screen and (max-width: 767px) {
+    .main_content .product {
+      margin: 8px 0 24px; } }
   .main_content .product .product_title h4 {
     margin-top: 4px;
     font-size: 32px;
@@ -1076,12 +1081,42 @@ p.title {
     .main_content .product .product_title a img {
       width: 17px;
       height: 17px; }
+  @media only screen and (max-width: 767px) {
+    .main_content .product .product_title {
+      margin-top: 16px; }
+      .main_content .product .product_title h4 {
+        margin-top: 0;
+        padding-right: 14px;
+        font-size: 18px; }
+      .main_content .product .product_title a {
+        margin-right: 16px; }
+        .main_content .product .product_title a img {
+          width: 24px;
+          height: 24px; } }
+  .main_content .product .product_slider {
+    margin-top: 16px; }
+    .main_content .product .product_slider .prod_swipe .swiper-slide figure {
+      margin-bottom: 0; }
+      .main_content .product .product_slider .prod_swipe .swiper-slide figure img {
+        width: 100%;
+        height: 344px;
+        object-fit: cover;
+        border-radius: 16px; }
+    .main_content .product .product_slider .prod_swipe .pagination {
+      position: static;
+      margin-top: 16px; }
+      .main_content .product .product_slider .prod_swipe .pagination .swiper-pagination-bullet {
+        margin: 0 2.7px; }
+      .main_content .product .product_slider .prod_swipe .pagination .swiper-pagination-bullet-active {
+        background-color: #757575; }
   .main_content .product .main_cover {
     margin: 32px -8px 40px; }
     .main_content .product .main_cover .column_image {
       padding: 0 8px; }
       .main_content .product .main_cover .column_image.main img {
         height: 556px; }
+      .main_content .product .main_cover .column_image.main iframe {
+        border-radius: 12px; }
       .main_content .product .main_cover .column_image .small_image {
         height: 50%; }
       .main_content .product .main_cover .column_image img {
@@ -1301,6 +1336,9 @@ p.title {
                     margin-bottom: 0;
                     padding-bottom: 0;
                     border-bottom: none; }
+              @media only screen and (max-width: 1180px) {
+                .main_content .product .product_content .right_travel .right_top.right_top button.modal_button .dropdown-menu, .main_content .product .product_content .right_travel .right_bottom.right_top button.modal_button .dropdown-menu {
+                  left: -11.8px !important; } }
           .main_content .product .product_content .right_travel .right_top.right_top button.availability, .main_content .product .product_content .right_travel .right_bottom.right_top button.availability {
             height: 40px;
             font-family: "Helvetica-75";
@@ -1345,6 +1383,27 @@ p.title {
         -webkit-transform: rotate(270deg) !important;
         -ms-transform: rotate(270deg) !important;
         transform: rotate(270deg) !important; }
+  @media only screen and (max-width: 767px) {
+    .main_content .product .product_content {
+      margin-top: 16px; }
+      .main_content .product .product_content .text {
+        width: 100%;
+        margin-right: 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      .main_content .product .product_content .right_travel {
+        width: calc(100% + 32px);
+        margin: 0 -16px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1; }
+        .main_content .product .product_content .right_travel .right_top.right_top, .main_content .product .product_content .right_travel .right_bottom.right_top {
+          padding: 16px 16px 32px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0; }
+          .main_content .product .product_content .right_travel .right_top.right_top p, .main_content .product .product_content .right_travel .right_bottom.right_top p {
+            margin-bottom: 32px; } }
   .main_content .product .similar_place {
     margin-top: 55px; }
     .main_content .product .similar_place h4 {

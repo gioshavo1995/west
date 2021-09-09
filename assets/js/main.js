@@ -120,6 +120,14 @@ $( document ).ready(function() {
           },
         }
       });
+      const prod_swipe = new Swiper('.prod_swipe', {
+        slidesPerView: 1,
+        touchRatio: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
       // $(".rating").rate();
       //   //or for example
       //   var options = {

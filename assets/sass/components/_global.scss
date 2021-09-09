@@ -162,5 +162,8 @@ p {
             margin-left: 4px;
             transform: rotate(-90deg);
         }
+        &.product_item {
+            opacity: 1;
+        }
     }
 }
