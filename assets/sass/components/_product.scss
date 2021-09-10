@@ -88,6 +88,58 @@
             }
         }
       }
+      .top_text {
+          p {
+              &.description {
+                  font-size: 14px;
+              }
+          }
+      }
+      .bottom_availability {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          z-index: 1000;
+          background-color: $color-black;
+          .availability_wrap {
+            padding: 8px 16px 16px;
+            background-color: $color-white;
+            border-top: 1px solid $color-white-4;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+          }
+          .price {
+            flex-shrink: 0;
+            font-size: 12px;
+              span {
+                  color: $color-black-4;
+                  &.price {
+                    margin: 4px 0;
+                    font-size: 22px;
+                    color: $color-black;
+                    line-height: 22px;
+                    font-family: $title-font;
+                    font-weight: bold;
+                  }
+              }
+          }
+          button {
+              &.btn {
+                height: 48px;
+                padding: 0 16px;
+                color: $color-white;
+                background-color: $color-red-1;
+                font-size: 14px;
+                font-family: $title-font;
+                font-weight: bold;
+                box-shadow: none;
+                outline: none;
+              }
+          }
+          &.menu_open {
+              display: none !important;
+          }
+      }
       .product_content {
           .text {
               flex: 1;
@@ -150,6 +202,7 @@
                                   color: $color-black-4;
                                   font-size: 12px;
                                   a {
+                                      flex-shrink: 0;
                                       color: $color-black;
                                       text-decoration: underline;
                                   }
@@ -436,6 +489,14 @@
                     -webkit-box-ordinal-group:3;
                     -ms-flex-order:2;
                     order:2;
+                    .details {
+                        margin: 0 -16px;
+                        padding: 32px 16px;
+                        background: $color-white-1;
+                    }
+                    .experience {
+                        margin-top: 32px;
+                    }
                 }
                 .right_travel {
                     width: calc(100% + 32px);
@@ -451,6 +512,10 @@
                             p {
                                 margin-bottom: 32px;
                             }
+                        }
+                        &.right_bottom {
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
                         }
                     }
                 }
@@ -525,7 +590,7 @@
             }
         }
             @media only screen and (max-width : 767px) {
-                margin-bottom: 56px;
+                margin: 32px 0 56px;
                 .swiper-container {
                     width: calc(100% + 16px);
                 }

@@ -166,6 +166,7 @@ $( document ).ready(function() {
           $(this).toggleClass('active');
           $('body').toggleClass('menu_open');
           $('.mobile_drop').toggleClass('active');
+          $('.bottom_availability ').toggleClass('menu_open');
         });
         // product drops
         $('.drop_body').hide();
@@ -200,4 +201,38 @@ $( document ).ready(function() {
   $("#guest").modal('show');
   $("#availability").modal('hide');
 })
+});
+
+
+function isOnScreen(elem) {
+	// if the element doesn't exist, abort
+	if( elem.length == 0 ) {
+		return;
+	}
+	var $window = jQuery(window)
+	var viewport_top = $window.scrollTop()
+	var viewport_height = $window.height()
+	var viewport_bottom = viewport_top + viewport_height
+	var $elem = jQuery(elem)
+	var top = $elem.offset().top
+	var height = $elem.height()
+	var bottom = top + height
+
+	return (top >= viewport_top && top < viewport_bottom) ||
+	(bottom > viewport_top && bottom <= viewport_bottom) ||
+	(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+}
+
+if( isOnScreen( jQuery( 'footer' ) ) ) { /* Pass element id/class you want to check */
+			$(".bottom_availability").addClass("menu_open");
+}
+
+jQuery( document ).ready( function() {
+	window.addEventListener('scroll', function(e) {
+		if( isOnScreen( jQuery( 'footer' ) ) ) { /* Pass element id/class you want to check */
+			$(".bottom_availability").addClass("menu_open");
+ 		} else {
+			 $(".bottom_availability").removeClass("menu_open");
+		 }	
+	});
 });
