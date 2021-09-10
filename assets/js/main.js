@@ -179,5 +179,25 @@ $( document ).ready(function() {
         $(".modal_button .dropdown-menu").click(function(e){
           e.stopPropagation();
        })
-       
+       $("#calendar .next").click(function(e){
+        $("body").addClass('modal-open ');
+        $("#calendar").modal('hide');
+        $("#guest").modal('show');
+        
+     })
+     $("#guest .back").click(function(e){
+      $("body").addClass('modal-open');
+      $("#calendar").modal('show');
+      $("#guest").modal('hide');
+      
+   })
+   $("#guest .next").click(function(e){
+    $("body").addClass('modal-open');
+    $("#guest").modal('hide');
+    $("#availability").modal('show');
+ })
+ $("#availability .back").click(function(e){
+  $("#guest").modal('show');
+  $("#availability").modal('hide');
+})
 });

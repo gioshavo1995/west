@@ -439,11 +439,14 @@
                       </div>
                     </button>
                     <button class="btn w-100 d-flex d-md-none modal_button align-items-center justify-content-between position-relative" type="button" data-toggle="modal" data-target="#calendar"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/product_picker.png">
-                      test </div><img class="arrow" src="assets/images/right_arrow.png">
+                      Dates </div><img class="arrow" src="assets/images/right_arrow.png">
+                    </button>
+                    <button class="btn w-100 d-flex d-md-none modal_button align-items-center justify-content-between position-relative" type="button" data-toggle="modal" data-target="#guest"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/guest.png">
+                      Guests </div><img class="arrow" src="assets/images/right_arrow.png">
                     </button>
                   </div>
                   <div>
-                    <button class="btn w-100 d-flex modal_button align-items-center justify-content-between dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/guest.png">
+                    <button class="btn w-100 d-none d-md-flex modal_button align-items-center justify-content-between dropdown-toggle position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="d-flex align-items-center"><img class="mt-1 mr-2" src="assets/images/guest.png">
                       Guests </div><img class="arrow" src="assets/images/right_arrow.png">
                       <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown_head d-flex align-items-center">
@@ -509,7 +512,7 @@
                       Free sim card
                     </div>
                   </div>
-                  <div class="bottom_booked d-inline-flex align-items-center justify-content-center w-100 ml-auto mt-3 mb-4">
+                  <div class="bottom_booked d-inline-flex align-items-center justify-content-center w-100 ml-auto mt-3">
                     <img src="assets/images/red_fire.png">
                     booked by <span>73,266</span> travelers !
                   </div>
@@ -603,6 +606,63 @@
       </div>
     </div>
   </div>
+  <!-- Modal Guests -->
+  <div class="modal fade bottom_modal availability_modal" id="guest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center">
+          <h5 class="modal-title d-flex align-items-center" id="exampleModalLabel"><img class="mr-2" src="assets/images/product_details/guide.png">When will you be there</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="modal-body p-0">
+          <div class="dropdown_body guest">
+            <div class="title d-flex align-items-center justify-content-between mb-3">
+              <span>Ananuri - Kazbegi Day Trip</span>
+              <div class="price">$76.00</div>
+            </div>
+            <span class="d-block title mt-0">Selected: 20 May 2021</span>
+            <div class="guest_count d-flex align-items-center justify-content-between">
+              <div class="d-flex flex-column">
+                <span class="count_title">Adults</span>
+                <span class="count_text">Ages 13 or above</span>
+              </div>
+              <div class="counter d-flex align-items-center">
+                <div class="btn d-flex align-items-center justify-content-center p-0"><img src="assets/images/minus.png" alt=""></div>
+                <span class="count_number">4</span>
+                <div class="btn btn d-flex align-items-center justify-content-center p-0"><img src="assets/images/plus.png" alt=""></div>
+              </div>
+            </div>
+            <div class="guest_count d-flex align-items-center justify-content-between">
+              <div class="d-flex flex-column">
+                <span class="count_title">Infants</span>
+                <span class="count_text">Under -2</span>
+              </div>
+              <div class="counter d-flex align-items-center">
+                <div class="btn btn d-flex align-items-center justify-content-center p-0"><img src="assets/images/minus.png" alt=""></div>
+                <span class="count_number">4</span>
+                <div class="btn btn d-flex align-items-center justify-content-center p-0"><img src="assets/images/plus.png" alt=""></div>
+              </div>
+            </div>
+            <div class="guest_count d-flex align-items-center justify-content-between">
+              <div class="d-flex flex-column">
+                <span class="count_title">Infants</span>
+                <span class="count_text">Ages 0-7</span>
+              </div>
+              <div class="counter d-flex align-items-center free">
+                FREE
+              </div>
+            </div>
+          </div>
+          <div class="bottom_buttons d-flex align-items-center justify-content-between w-100">
+            <button class="btn back d-flex align-items-center justify-content-center p-0"><img src="assets/images/right_arrow.png"></button>
+            <button class="btn next d-flex align-items-center">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal availability -->
 <div class="modal fade bottom_modal availability_modal" id="availability" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -688,7 +748,7 @@
               <div class="col-md-6">
                 <div class="mhcheckbox d-flex align-items-center mb-3">
                   <input id="check4" class="checkbox_input cursor-pointer" type="checkbox">
-                  <label for="check4" class="checkbox_label cursor-pointer pr-5 mr-5">Do you want to take you 
+                  <label for="check4" class="checkbox_label cursor-pointer pr-0 pr-md-5 mr-0 mr-md-5">Do you want to take you 
                     from the airport?</label>
                 </div>
               </div>
@@ -716,7 +776,7 @@
                     <input id="spec2" class="d-none" type="radio" name="spec1">
                     <div class="custom_input position-relative rounded-circle"></div>
                   </label>
-                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer" for="spec4">
+                  <label class="mh_radio d-flex align-items-center justify-content-between cursor-pointer top_item" for="spec4">
                     <span>8-15 persons</span>
                     <input id="spec4" class="d-none" type="radio" name="spec1">
                     <div class="custom_input position-relative rounded-circle"></div>
@@ -815,10 +875,14 @@
           </div>
         </div>
       </div>
+      <div class="bottom_buttons d-flex align-items-center justify-content-between w-100">
+        <button class="btn back d-flex d-md-none align-items-center justify-content-center p-0"><img src="assets/images/right_arrow.png"></button>
+        <button class="btn clear d-none d-md-flex align-items-center">Clear all</button>
+        <button class="btn next d-flex align-items-center">next</button>
+      </div>
     </div>
   </div>
 </div>
-
   <footer>
     <div class="big_container">
       <div class="footer_wrap">

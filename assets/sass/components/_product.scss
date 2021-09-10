@@ -29,7 +29,8 @@
                 font-size: 18px;
               }
               a {
-                  margin-right: 16px;
+                margin-top: -4px;
+                margin-right: 16px;
                   img {
                       width: 24px;
                       height: 24px;
@@ -374,6 +375,7 @@
                         }
                     }
                     &.right_bottom {
+                        padding-bottom: 32px;
                         border: 1px solid $color-white-4;
                         border-bottom-left-radius: 16px;
                         border-bottom-right-radius: 16px;
@@ -563,6 +565,8 @@
                         padding-bottom: 32px;
                         border-bottom: 1px solid $color-white-4;
                         &:last-child {
+                            margin-bottom: 0;
+                            padding-bottom: 0;
                             border-bottom: none;
                         }
                     }
@@ -705,6 +709,7 @@
                         }
                         .room_items {
                             .room_item {
+                                flex-shrink: 0;
                                 width: 212px;
                                 margin-right: 24px;
                                 margin-bottom: 0;
@@ -761,22 +766,188 @@
                         .radio_inputs {
                             .mh_radio {
                                 margin-bottom: 25px;
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    @media only screen and (max-width : 767px) {
+                        padding: 19px 24px 0;
+                        h4 {
+                            margin-bottom: 24px;
+                            font-size: 16px;
+                            img {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        .border_bottom {
+                            margin-bottom: 32px;
+                            padding-bottom: 0;
+                            border-bottom: none;
+                            &:last-child {
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                                border-bottom: none;
+                            }
+                        }
+                        .tour_date {
+                            margin-bottom: 24px;
+                        }
+                        .buss_tickets {
+                            .tickets_price {
+                                margin-left: -8px;
+                                margin-right: -8px;
+                                padding-left: 8px;
+                                padding-right: 8px;
+                            }
+                            .radio_inputs {
+                                .mh_radio {
+                                    margin-bottom: 16px;
+                                    padding-bottom: 19px;
+                                    border-bottom: 1px solid $color-white-4;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                        padding-bottom: 0;
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+                        }
+                        .departure {
+                            .departure_drops {
+                                .dropdown {
+                                    button {
+                                        margin-bottom: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        .departure_car {
+                            margin: 0 -8px 24px;
+                            padding: 0 8px 24px;
+                            border-bottom: 1px solid $color-white-4;
+                            .radio_inputs {
+                                .mh_radio {
+                                    margin-bottom: 16px;
+                                    padding-bottom: 19px;
+                                    border-bottom: 1px solid $color-white-4;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                        padding-bottom: 0;
+                                        border-bottom: none;
+                                    }
+                                    &.top_item {
+                                        margin-bottom: 16px;
+                                        padding-bottom: 19px;
+                                        border-bottom: 1px solid $color-white-4;
+                                    }
+                                }
+                            }
+                        }
+                        .chose_room {
+                            .room_items {
+                                padding-bottom: 10px;
+                                overflow-x: scroll;
+                                .room_item {
+                                    width: 120px;
+                                    padding: 10px;
+                                    img {
+                                        &.small_room , &.big_room{
+                                            width: 38px;
+                                            height: 38px;
+                                        }
+                                    }
+                                    p {
+                                        padding: 0;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .starting_time {
+                            margin: 0 -8px 24px;
+                            padding: 0 8px 24px;
+                            border-bottom: 1px solid $color-white-4;
+                            .time_items {
+                                margin: 0 -8px;
+                                .time_item {
+                                    margin: 0 8px 10px;
+                                }
+                            }
+                        }
+                        .transfers {
+                            .radio_inputs {
+                                .mh_radio {
+                                    margin-bottom: 16px;
+                                    padding-bottom: 19px;
+                                    border-bottom: 1px solid $color-white-4;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                        padding-bottom: 0;
+                                        border-bottom: none;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
+            .bottom_buttons {
+                margin: 44px 0 24px;
+                padding: 25px 24px 0;
+                border-top: 1px solid $color-white-4;
+                button {
+                    height: 44px;
+                    font-size: 14px;
+                    line-height: 44px;
+                    box-shadow: none;
+                    outline: none;
+                    &.back {
+                        width: 44px;
+                        height: 44px;
+                        background-color: $color-white-1;
+                        border-radius: 8px;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            -webkit-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &.clear {
+                        font-size: 16px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                    &.next {
+                        padding: 0 40px;
+                        color: $color-white;
+                        background-color: $color-black;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width : 767px) {
+            align-items: flex-end;
+            .modal-content {
+                min-height: calc(100% - 0rem);
+            }
         }
     }   
 }
 
-#calendar {
+#calendar , #guest{
     .modal-dialog  {
         min-height: calc(100% - 0rem);
         .modal-content {
             .modal-body {
                 .title {
-                    margin: 16px 16px 15px;
+                    margin: 16px 24px 15px;
                     font-size: 14px;
                 }
                 .flatpickr-calendar {
@@ -803,6 +974,68 @@
                         display: none;
                     }
                 }
+                .dropdown_body {
+                    &.guest {
+                        .title {
+                            margin-bottom: 24px;
+                            span {
+                                padding-right: 25px;
+                                color: $color-black-4;
+                                font-size: 14px;
+                            }
+                            .price {
+                                flex-shrink: 0;
+                                font-size: 16px;
+                                font-family: $title-font;
+                                line-height: 16px;
+                                font-weight: bold;
+                            }
+                        }
+                        .guest_count {
+                            margin-bottom: 16px;
+                            padding: 0 24px 16px;
+                            .count_title {
+                                font-size: 14px;
+                                line-height: 14px;
+                                font-family: $title-font;
+                                font-weight: bold;
+                            }
+                            .count_text {
+                                color: $color-black-4;
+                                font-size: 12px;
+                            }
+                            .counter {
+                                font-size: 16px;
+                                font-weight: bold;
+                                .btn {
+                                    width: 32px;
+                                    height: 32px;
+                                    border: 1px solid $color-black-4;
+                                    border-radius: 50%;
+                                    img {
+                                        width: 10px;
+                                        height: 10px;
+                                    }
+                                }
+                                .count_number {
+                                    margin: 0 20px;
+                                }
+                                &.free {
+                                    padding-right: 40px;
+                                    color: $color-green-1;
+                                    font-size: 12px;
+                                    font-family: $title-font;
+                                    font-weight: bold;
+                                }
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
                 .bottom_buttons {
                     margin: 24px 0 16px;
                     padding: 0 24px;
@@ -812,6 +1045,19 @@
                         line-height: 44px;
                         box-shadow: none;
                         outline: none;
+                        &.back {
+                            width: 44px;
+                            height: 44px;
+                            background-color: $color-white-1;
+                            border-radius: 8px;
+                            img {
+                                width: 24px;
+                                height: 24px;
+                                -webkit-transform: rotate(180deg);
+                                -ms-transform: rotate(180deg);
+                                transform: rotate(180deg);
+                            }
+                        }
                         &.clear {
                             text-decoration: underline;
                         }
