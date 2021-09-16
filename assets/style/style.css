@@ -2062,18 +2062,141 @@ section .cart {
       font-family: "Helvetica-75";
       font-weight: bold;
       line-height: 24px; }
-    section .cart .cart_divs .cart_info .cart_text .tour_price {
-      margin-bottom: 10px;
-      font-size: 14px;
+    section .cart .cart_divs .cart_info .cart_text {
+      margin-bottom: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #dddddd; }
+      section .cart .cart_divs .cart_info .cart_text .tour_price {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+        section .cart .cart_divs .cart_info .cart_text .tour_price span:first-child {
+          padding-right: 14px; }
+      section .cart .cart_divs .cart_info .cart_text .cancelation {
+        color: #fd0e18;
+        font-size: 14px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+    section .cart .cart_divs .cart_info .cart_total {
+      margin-bottom: 32px;
+      font-size: 14px; }
+      section .cart .cart_divs .cart_info .cart_total .total_price span {
+        margin-bottom: 10px; }
+        section .cart .cart_divs .cart_info .cart_total .total_price span:first-child {
+          padding-right: 14px;
+          color: #757575; }
+        section .cart .cart_divs .cart_info .cart_total .total_price span.discrount {
+          color: #757575; }
+          section .cart .cart_divs .cart_info .cart_total .total_price span.discrount span {
+            padding-right: 8px;
+            color: #5ec41f; }
+        section .cart .cart_divs .cart_info .cart_total .total_price span.total {
+          font-size: 20px;
+          font-family: "Helvetica-75";
+          font-weight: bold; }
+    section .cart .cart_divs .cart_info .promo_code h4 {
+      margin-bottom: 16px;
+      font-size: 16px; }
+    section .cart .cart_divs .cart_info .promo_code label {
+      top: 11px;
+      left: 14px; }
+    section .cart .cart_divs .cart_info .promo_code input {
+      height: 52px;
+      padding: 0 32px 0 52px;
+      font-size: 12px;
+      border: none;
+      border-radius: 12px;
+      outline: none; }
+      section .cart .cart_divs .cart_info .promo_code input ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #757575;
+        opacity: 1;
+        /* Firefox */ }
+      section .cart .cart_divs .cart_info .promo_code input :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #757575; }
+      section .cart .cart_divs .cart_info .promo_code input ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #757575; }
+    section .cart .cart_divs .cart_info .promo_code button {
+      right: 16px;
+      top: 11px;
+      padding: 0;
+      box-shadow: none; }
+    section .cart .cart_divs .cart_info button.check {
+      height: 52px;
+      margin-top: 32px;
+      font-size: 16px;
+      font-family: "Helvetica-75";
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #fd0e18;
+      border: none;
+      border-radius: 8px;
+      box-shadow: none;
+      outline: none; }
+      section .cart .cart_divs .cart_info button.check img {
+        width: 17px;
+        height: 17px;
+        margin-right: 8px; }
+  section .cart .booking {
+    margin-top: 10px;
+    padding-top: 32px;
+    border-top: 1px solid #dddddd; }
+    section .cart .booking h4 {
+      margin-bottom: 24px;
+      font-size: 24px;
       font-family: "Helvetica-75";
       font-weight: bold; }
-      section .cart .cart_divs .cart_info .cart_text .tour_price span:first-child {
-        padding-right: 14px; }
-    section .cart .cart_divs .cart_info .cart_text .cancelation {
-      color: #fd0e18;
+      section .cart .booking h4 span {
+        background: linear-gradient(97deg, #f9dd07 6%, #fd0e18 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    section .cart .booking .booking_item {
+      margin-bottom: 32px;
+      padding: 16px;
+      background-color: #f7f6f7;
       font-size: 14px;
-      font-family: "Helvetica-75";
-      font-weight: bold; }
+      border-radius: 8px; }
+      section .cart .booking .booking_item img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px; }
+      section .cart .booking .booking_item span {
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+      section .cart .booking .booking_item.book {
+        background-color: transparent;
+        font-size: 16px; }
+      section .cart .booking .booking_item.contact {
+        height: 40px;
+        margin-bottom: 0; }
+        section .cart .booking .booking_item.contact span:first-child {
+          font-family: "Helvetica-55";
+          font-weight: 400; }
+        section .cart .booking .booking_item.contact span:last-child {
+          font-size: 16px; }
+      section .cart .booking .booking_item.socials {
+        background-color: transparent; }
+        section .cart .booking .booking_item.socials span {
+          margin-bottom: 14px;
+          font-size: 16px; }
+        section .cart .booking .booking_item.socials .row {
+          margin: 0 -8px; }
+          section .cart .booking .booking_item.socials .row .socials_item {
+            flex: 1;
+            height: 40px;
+            margin: 0 4px;
+            color: inherit;
+            background-color: #f7f6f7;
+            font-size: 14px;
+            font-family: "Helvetica-75";
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px; }
+            section .cart .booking .booking_item.socials .row .socials_item img {
+              margin-right: 10px; }
 
 body header {
   border-bottom: 1px solid #dddddd; }

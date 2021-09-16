@@ -170,6 +170,9 @@ section {
                     line-height: 24px;
                 }
                 .cart_text {
+                    margin-bottom: 16px;
+                    padding-bottom: 24px;
+                    border-bottom: 1px solid $color-white-4;
                     .tour_price {
                         margin-bottom: 10px;
                         font-size: 14px;
@@ -186,6 +189,161 @@ section {
                         font-size: 14px;
                         font-family: $title-font;
                         font-weight: bold;
+                    }
+                }
+                .cart_total {
+                    margin-bottom: 32px;
+                    font-size: 14px;
+                    .total_price {
+                        span {
+                            margin-bottom: 10px;
+                            &:first-child {
+                                padding-right: 14px;
+                                color: $color-black-4;
+                            }
+                            &.discrount {
+                                color: $color-black-4;
+                                span {
+                                    padding-right: 8px;
+                                    color: $color-green-1;
+                                }
+                            }
+                            &.total {
+                                font-size: 20px;
+                                font-family: $title-font;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .promo_code {
+                    h4 {
+                       margin-bottom: 16px;
+                       font-size: 16px; 
+                    }
+                    label {
+                        top: 11px;
+                        left: 14px;
+                    }
+                    input {
+                        height: 52px;
+                        padding: 0 32px 0 52px;
+                        font-size: 12px;
+                        border: none;
+                        border-radius: 12px;
+                        outline: none;
+                        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: $color-black-4;
+                            opacity: 1; /* Firefox */
+                          }
+                          
+                          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: $color-black-4;
+                          }
+                          
+                          ::-ms-input-placeholder { /* Microsoft Edge */
+                            color: $color-black-4;
+                          }
+                    }
+                    button {
+                        right: 16px;
+                        top: 11px;
+                        padding: 0;
+                        box-shadow: none;
+                    }
+                }
+                button {
+                    &.check {
+                        height: 52px;
+                        margin-top: 32px;
+                        font-size: 16px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                        color: $color-white;
+                        background-color: $color-red;
+                        border: none;
+                        border-radius: 8px;
+                        box-shadow: none;
+                        outline: none;
+                        img {
+                            width: 17px;
+                            height: 17px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .booking {
+            margin-top: 10px;
+            padding-top: 32px;
+            border-top: 1px solid $color-white-4;
+            h4 {
+                margin-bottom: 24px;
+                font-size: 24px;
+                font-family: $title-font;
+                font-weight: bold;
+                span {
+                    background: linear-gradient(97deg, #f9dd07 6%, #fd0e18 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .booking_item {
+                margin-bottom: 32px;
+                padding: 16px;
+                background-color: $color-white-1;
+                font-size: 14px;
+                border-radius: 8px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+                span {
+                    font-family: $title-font;
+                    font-weight: bold;
+                }
+                &.book {
+                    background-color: transparent;
+                    font-size: 16px;
+                }
+                &.contact {
+                    height: 40px;
+                    margin-bottom: 0;
+                    span {
+                        &:first-child {
+                            font-family: $normal-font;
+                            font-weight: 400;
+                        }
+                        &:last-child {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                &.socials {
+                    background-color: transparent;
+                    span {
+                        margin-bottom: 14px;
+                        font-size: 16px;
+                    }
+                    .row {
+                        margin: 0 -8px;
+                        .socials_item {
+                            flex: 1;
+                            height: 40px;
+                            margin: 0 4px;
+                            color: inherit;
+                            background-color: $color-white-1;
+                            font-size: 14px;
+                            font-family: $title-font;
+                            text-decoration: none;
+                            font-weight: bold;
+                            border-radius: 8px;
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
                     }
                 }
             }
