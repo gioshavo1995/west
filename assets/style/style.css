@@ -2169,6 +2169,8 @@ section .cart {
       section .cart .booking .booking_item.book {
         background-color: transparent;
         font-size: 16px; }
+        section .cart .booking .booking_item.book p {
+          font-size: 14px; }
       section .cart .booking .booking_item.contact {
         height: 40px;
         margin-bottom: 0; }
@@ -2197,6 +2199,69 @@ section .cart {
             border-radius: 8px; }
             section .cart .booking .booking_item.socials .row .socials_item img {
               margin-right: 10px; }
+  @media only screen and (max-width: 992px) {
+    section .cart .cart_divs .cart_body {
+      width: 100%;
+      margin-right: 0; }
+    section .cart .cart_divs .cart_info {
+      width: 100%; } }
+  @media only screen and (max-width: 767px) {
+    section .cart {
+      margin-top: 16px;
+      margin-bottom: 80px; }
+      section .cart h4.title {
+        margin: 32px 0 24px 0; }
+      section .cart .cart_divs .cart_body .cart_item {
+        margin: 0 -16px;
+        padding: 0 16px 16px;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0; }
+        section .cart .cart_divs .cart_body .cart_item figure {
+          width: 84px;
+          height: 84px;
+          margin-right: 12px; }
+        section .cart .cart_divs .cart_body .cart_item h4 {
+          margin-bottom: 8px;
+          font-size: 16px; }
+        section .cart .cart_divs .cart_body .cart_item p {
+          margin-bottom: 4px;
+          padding-right: 25px;
+          font-size: 12px; }
+        section .cart .cart_divs .cart_body .cart_item .clear {
+          margin-top: 20px; }
+      section .cart .cart_divs .cart_body .personal_info {
+        margin-top: 24px; }
+        section .cart .cart_divs .cart_body .personal_info h4 {
+          margin: 0 0 24px; }
+        section .cart .cart_divs .cart_body .personal_info .buttons_wrap {
+          flex-wrap: wrap; }
+          section .cart .cart_divs .cart_body .personal_info .buttons_wrap button {
+            flex: auto;
+            width: 100%; }
+            section .cart .cart_divs .cart_body .personal_info .buttons_wrap button:first-child {
+              margin-bottom: 16px; }
+      section .cart .cart_divs .cart_info {
+        width: calc(100% + 32px);
+        margin: 0 -16px;
+        border-top: 1px solid #dddddd;
+        border-radius: 0; }
+      section .cart .booking {
+        margin-top: 32px;
+        padding-top: 0;
+        border-top: none; }
+        section .cart .booking .booking_item {
+          margin-bottom: 8px !important; }
+          section .cart .booking .booking_item.book {
+            margin-top: 24px;
+            padding: 16px 0;
+            border-top: 1px solid #dddddd;
+            border-radius: 0; }
+          section .cart .booking .booking_item.socials {
+            margin-top: 16px;
+            padding: 16px 0;
+            border-top: 1px solid #dddddd;
+            border-radius: 0; } }
 
 body header {
   border-bottom: 1px solid #dddddd; }

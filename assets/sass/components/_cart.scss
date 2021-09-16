@@ -307,6 +307,9 @@ section {
                 &.book {
                     background-color: transparent;
                     font-size: 16px;
+                    p {
+                        font-size: 14px;
+                    }
                 }
                 &.contact {
                     height: 40px;
@@ -344,6 +347,96 @@ section {
                                 margin-right: 10px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width : 992px) {
+            .cart_divs {
+                .cart_body {
+                    width: 100%;
+                    margin-right: 0;
+                }
+                .cart_info {
+                    width: 100%;
+                }
+            }
+        }
+        @media only screen and (max-width : 767px) {
+            margin-top: 16px;
+            margin-bottom: 80px;
+            h4 {
+                &.title {
+                    margin: 32px 0 24px 0;
+                }
+            }
+            .cart_divs {
+                .cart_body {
+                    .cart_item {
+                        margin: 0 -16px;
+                        padding: 0 16px 16px;
+                        border: none;
+                        border-bottom: 1px solid black ;
+                        border-radius: 0;
+                        figure {
+                            width: 84px;
+                            height: 84px;
+                            margin-right: 12px;
+                        }
+                        h4 {
+                            margin-bottom: 8px;
+                            font-size: 16px;
+                        }
+                        p {
+                            margin-bottom: 4px;
+                            padding-right: 25px;
+                            font-size: 12px;
+                        }
+                        .clear {
+                            margin-top: 20px;
+                        }
+                    }
+                    .personal_info {
+                        margin-top: 24px;
+                        h4 {
+                            margin: 0 0 24px;
+                        }
+                        .buttons_wrap {
+                            flex-wrap: wrap;
+                            button {
+                                flex: auto;
+                                width: 100%;
+                                &:first-child {
+                                    margin-bottom: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cart_info {
+                    width: calc(100% + 32px);
+                    margin: 0 -16px;
+                    border-top: 1px solid $color-white-4;
+                    border-radius: 0;
+                }
+            }
+            .booking {
+                margin-top: 32px;
+                padding-top: 0;
+                border-top: none;
+                .booking_item {
+                    margin-bottom: 8px !important;
+                    &.book {
+                        margin-top: 24px;
+                        padding: 16px 0;
+                        border-top: 1px solid $color-white-4;
+                        border-radius: 0;
+                    }
+                    &.socials {
+                        margin-top: 16px;
+                        padding: 16px 0;
+                        border-top: 1px solid $color-white-4;
+                        border-radius: 0;
                     }
                 }
             }
