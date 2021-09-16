@@ -2166,6 +2166,8 @@ section .cart {
       section .cart .booking .booking_item span {
         font-family: "Helvetica-75";
         font-weight: bold; }
+      section .cart .booking .booking_item p {
+        margin-top: 4px; }
       section .cart .booking .booking_item.book {
         background-color: transparent;
         font-size: 16px; }
@@ -2204,7 +2206,9 @@ section .cart {
       width: 100%;
       margin-right: 0; }
     section .cart .cart_divs .cart_info {
-      width: 100%; } }
+      width: 100%; }
+    section .cart .booking {
+      border-top: none; } }
   @media only screen and (max-width: 767px) {
     section .cart {
       margin-top: 16px;
