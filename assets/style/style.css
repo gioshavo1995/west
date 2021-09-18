@@ -2574,6 +2574,59 @@ section #contact {
         border: 1px solid #222222;
         overflow: hidden; }
 
+section #privacy {
+  margin: 29px 0 120px; }
+  @media only screen and (max-width: 767px) {
+    section #privacy {
+      margin: 8px 0 80px; } }
+  section #privacy .nav-tabs {
+    height: 56px;
+    margin-top: 32px; }
+    @media only screen and (max-width: 767px) {
+      section #privacy .nav-tabs {
+        margin-top: 16px; } }
+    section #privacy .nav-tabs .nav-item {
+      flex: 1; }
+      section #privacy .nav-tabs .nav-item .nav-link {
+        max-height: 56px;
+        color: #757575;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid transparent; }
+        section #privacy .nav-tabs .nav-item .nav-link.active {
+          color: #222222;
+          border-bottom: 1px solid #222222; }
+        @media only screen and (max-width: 767px) {
+          section #privacy .nav-tabs .nav-item .nav-link {
+            padding: 0 10px; } }
+  section #privacy .tab-content {
+    margin-top: 24px; }
+    section #privacy .tab-content .tab_image {
+      margin-bottom: 24px; }
+      section #privacy .tab-content .tab_image figure img {
+        width: 100%;
+        height: 183px;
+        object-fit: cover;
+        border-radius: 16px; }
+      section #privacy .tab-content .tab_image h4 {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-size: 40px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+    section #privacy .tab-content h4 {
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+    section #privacy .tab-content p {
+      margin-bottom: 32px;
+      font-size: 14px; }
+
 body header {
   border-bottom: 1px solid #dddddd; }
 
