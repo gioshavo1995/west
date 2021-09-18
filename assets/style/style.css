@@ -2522,6 +2522,7 @@ section #contact {
         background-color: #222222;
         font-size: 12px;
         border-radius: 4px;
+        border: none;
         box-shadow: none; }
     section #contact .contact_info .info_number {
       height: 40px;
@@ -2626,6 +2627,81 @@ section #privacy {
     section #privacy .tab-content p {
       margin-bottom: 32px;
       font-size: 14px; }
+
+section #login {
+  max-width: 370px;
+  margin: 80px auto 120px;
+  padding: 0 16px; }
+  @media only screen and (max-width: 767px) {
+    section #login {
+      margin: 40px auto; } }
+  section #login h4.login {
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: "Helvetica-75";
+    font-weight: bold; }
+    section #login h4.login span {
+      color: #fd0e18; }
+  section #login p {
+    margin-bottom: 32px;
+    color: #757575;
+    font-size: 16px; }
+  section #login button.google, section #login button.facebook {
+    flex: 1;
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    border: 1px solid #757575;
+    font-size: 14px;
+    font-family: "Helvetica-75";
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: none; }
+    section #login button.google span, section #login button.facebook span {
+      flex: 1; }
+  section #login .personal_line {
+    margin: 24px 0; }
+    section #login .personal_line span {
+      z-index: 1;
+      padding: 0 8px;
+      font-size: 12px;
+      color: #757575;
+      background-color: #ffffff; }
+    section #login .personal_line::after {
+      content: " ";
+      position: absolute;
+      top: 9.5px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #dddddd; }
+  section #login .login_inputs {
+    margin-bottom: 16px; }
+    section #login .login_inputs button {
+      top: 20px;
+      right: 4px;
+      width: 32px;
+      height: 32px;
+      background-color: #ffffff;
+      border-radius: 2px; }
+  section #login .register {
+    height: 40px;
+    color: #ffffff;
+    background-color: #222222;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none; }
+  section #login a {
+    font-size: 12px;
+    color: #757575; }
+    section #login a.user {
+      margin: 24px 0; }
+    section #login a.login {
+      padding-top: 24px;
+      border-top: 1px solid #dddddd; }
+      section #login a.login span {
+        color: #2d88ff; }
 
 body header {
   border-bottom: 1px solid #dddddd; }

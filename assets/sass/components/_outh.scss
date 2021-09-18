@@ -1,0 +1,96 @@
+section {
+    #login {
+        max-width: 370px;
+        margin: 80px auto 120px;
+        padding: 0 16px;
+        @media only screen and (max-width : 767px) {
+            margin: 40px auto;
+        }
+        h4 {
+            &.login {
+                margin-bottom: 25px;
+                font-size: 40px;
+                font-family: $title-font;
+                font-weight: bold;
+                span {
+                    color: $color-red;
+                }
+            }
+        }
+        p {
+            margin-bottom: 32px;
+            color: $color-black-4;
+            font-size: 16px;
+        }
+        button {
+            &.google , &.facebook {
+                flex: 1;
+                height: 48px;
+                margin-bottom: 16px;
+                padding: 0 16px;
+                border: 1px solid $color-black-4;
+                font-size: 14px;
+                font-family: $title-font;
+                font-weight: bold;
+                border-radius: 4px;
+                box-shadow: none;
+                span {
+                    flex: 1;
+                }
+            }
+        }
+        .personal_line {
+            margin: 24px 0;
+            span {
+                z-index: 1;
+                padding: 0 8px;
+                font-size: 12px;
+                color: $color-black-4;
+                background-color: $color-white;
+            }
+            &::after {
+                content: " ";
+                position: absolute;
+                top: 9.5px;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: $color-white-4;
+            }
+        }
+        .login_inputs {
+            margin-bottom: 16px;
+            button {
+                top: 20px;
+                right: 4px;
+                width: 32px;
+                height: 32px;
+                background-color: $color-white;
+                border-radius: 2px;
+            }
+        }
+        .register {
+            height: 40px;
+            color: $color-white;
+            background-color: $color-black;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: none;
+        }
+        a {
+            font-size: 12px;
+            color: $color-black-4;
+            &.user {
+                margin: 24px 0;
+            }
+            &.login {
+                padding-top: 24px;
+                border-top: 1px solid $color-white-4;
+                span {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}
