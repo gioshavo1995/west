@@ -1,5 +1,5 @@
 section {
-    #login {
+    #login{
         max-width: 370px;
         margin: 80px auto 120px;
         padding: 0 16px;
@@ -58,18 +58,109 @@ section {
                 background-color: $color-white-4;
             }
         }
-        .login_inputs {
-            margin-bottom: 16px;
-            button {
-                top: 20px;
-                right: 4px;
-                width: 32px;
-                height: 32px;
-                background-color: $color-white;
-                border-radius: 2px;
+    }
+}
+.register_items {
+    max-width: 1208px;
+    margin: 0 auto;
+    padding: 0 16px;
+    .register_rows {
+        margin: 0 -20px;
+        .register_item {
+            flex: 1;
+            max-width: 33.3% !important;
+            margin: 80px 20px 100px !important;
+            padding: 0 !important;
+            h4 {
+                margin-bottom: 32px;
+                font-size: 18px;
+            }
+            .login_inputs {
+                margin-bottom: 16px;
+                .dropdown {
+                    .dropdown-toggle {
+                        height: 40px;
+                        color: $color-black-4;
+                        background-color: $color-white-1;
+                        font-size: 12px;
+                        line-height: 14px;
+                        box-shadow: none;
+                        img {
+                            width: 17px;
+                            height: 17px;
+                            -webkit-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                            transform: rotate(90deg);
+                           @include transition( all , 0.1s, ease-in-out);
+                        }
+                        &::after {
+                           display: none;
+                        }
+                     }
+                     .dropdown-menu {
+                        border-radius: 10px;
+                        min-width: auto;
+                        margin-top: 10px;
+                        padding: 10px 0;
+                        border: 1px solid $color-black-1;
+                        .dropdown-item {
+                           padding: 5px 10px;
+                           font-size: 12px;
+                           background-color: transparent;
+                           @include transition( all , 0.1s, ease-in-out);
+                           &:active {
+                              color: inherit;
+                           }
+                           &:hover {
+                               background-color: $color-white-1;
+                           }
+                        }
+                    }
+                    &.show {
+                        .dropdown-toggle {
+                            img {
+                                -webkit-transform: rotate(270deg);
+                                -ms-transform: rotate(270deg);
+                                transform: rotate(270deg);
+                            }
+                        } 
+                    }
+                }
+                .mhcheckbox {
+                    margin: 25px 0;
+                    input {
+                        width: 16px;
+                        height: 16px;
+                        background-size: 8px;
+                    }
+                    label {
+                        font-size: 12px;
+                        color: $color-black-4;
+                        a {
+                            color: $color-black;
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
         }
-        .register {
+    }
+    a {
+        font-size: 12px;
+        color: $color-black-4;
+        &.user {
+            margin: 24px 0;
+        }
+        &.login {
+            padding-top: 24px;
+            border-top: 1px solid $color-white-4;
+            span {
+                color: $color-blue;
+            }
+        }
+    }
+    button {
+        &.register {
             height: 40px;
             color: $color-white;
             background-color: $color-black;
@@ -78,17 +169,32 @@ section {
             border-radius: 4px;
             box-shadow: none;
         }
-        a {
-            font-size: 12px;
-            color: $color-black-4;
-            &.user {
-                margin: 24px 0;
-            }
-            &.login {
-                padding-top: 24px;
-                border-top: 1px solid $color-white-4;
-                span {
-                    color: $color-blue;
+    }
+    .login_inputs {
+        margin-bottom: 16px;
+        button {
+            top: 20px;
+            right: 4px;
+            width: 32px;
+            height: 32px;
+            background-color: $color-white;
+            border-radius: 2px;
+        }
+    }
+    @media only screen and (max-width : 767px) {
+        .register_rows {
+            flex-wrap: wrap;
+            margin: 0;
+            .register_item {
+                flex: auto;
+                width: 100%;
+                max-width: 100% !important;
+                margin: 0 !important;
+                &#login {
+                    margin-top: 40px !important;
+                }
+                &:last-child {
+                    margin: 45px 0 32px !important;
                 }
             }
         }

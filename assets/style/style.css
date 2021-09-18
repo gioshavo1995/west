@@ -2675,16 +2675,89 @@ section #login {
       right: 0;
       height: 1px;
       background-color: #dddddd; }
-  section #login .login_inputs {
-    margin-bottom: 16px; }
-    section #login .login_inputs button {
-      top: 20px;
-      right: 4px;
-      width: 32px;
-      height: 32px;
-      background-color: #ffffff;
-      border-radius: 2px; }
-  section #login .register {
+
+.register_items {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 0 16px; }
+  .register_items .register_rows {
+    margin: 0 -20px; }
+    .register_items .register_rows .register_item {
+      flex: 1;
+      max-width: 33.3% !important;
+      margin: 80px 20px 100px !important;
+      padding: 0 !important; }
+      .register_items .register_rows .register_item h4 {
+        margin-bottom: 32px;
+        font-size: 18px; }
+      .register_items .register_rows .register_item .login_inputs {
+        margin-bottom: 16px; }
+        .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-toggle {
+          height: 40px;
+          color: #757575;
+          background-color: #f7f6f7;
+          font-size: 12px;
+          line-height: 14px;
+          box-shadow: none; }
+          .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-toggle img {
+            width: 17px;
+            height: 17px;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; }
+          .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-toggle::after {
+            display: none; }
+        .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-menu {
+          border-radius: 10px;
+          min-width: auto;
+          margin-top: 10px;
+          padding: 10px 0;
+          border: 1px solid #000000; }
+          .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-menu .dropdown-item {
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: transparent;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; }
+            .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-menu .dropdown-item:active {
+              color: inherit; }
+            .register_items .register_rows .register_item .login_inputs .dropdown .dropdown-menu .dropdown-item:hover {
+              background-color: #f7f6f7; }
+        .register_items .register_rows .register_item .login_inputs .dropdown.show .dropdown-toggle img {
+          -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
+        .register_items .register_rows .register_item .login_inputs .mhcheckbox {
+          margin: 25px 0; }
+          .register_items .register_rows .register_item .login_inputs .mhcheckbox input {
+            width: 16px;
+            height: 16px;
+            background-size: 8px; }
+          .register_items .register_rows .register_item .login_inputs .mhcheckbox label {
+            font-size: 12px;
+            color: #757575; }
+            .register_items .register_rows .register_item .login_inputs .mhcheckbox label a {
+              color: #222222;
+              text-decoration: underline; }
+  .register_items a {
+    font-size: 12px;
+    color: #757575; }
+    .register_items a.user {
+      margin: 24px 0; }
+    .register_items a.login {
+      padding-top: 24px;
+      border-top: 1px solid #dddddd; }
+      .register_items a.login span {
+        color: #2d88ff; }
+  .register_items button.register {
     height: 40px;
     color: #ffffff;
     background-color: #222222;
@@ -2692,16 +2765,28 @@ section #login {
     border: none;
     border-radius: 4px;
     box-shadow: none; }
-  section #login a {
-    font-size: 12px;
-    color: #757575; }
-    section #login a.user {
-      margin: 24px 0; }
-    section #login a.login {
-      padding-top: 24px;
-      border-top: 1px solid #dddddd; }
-      section #login a.login span {
-        color: #2d88ff; }
+  .register_items .login_inputs {
+    margin-bottom: 16px; }
+    .register_items .login_inputs button {
+      top: 20px;
+      right: 4px;
+      width: 32px;
+      height: 32px;
+      background-color: #ffffff;
+      border-radius: 2px; }
+  @media only screen and (max-width: 767px) {
+    .register_items .register_rows {
+      flex-wrap: wrap;
+      margin: 0; }
+      .register_items .register_rows .register_item {
+        flex: auto;
+        width: 100%;
+        max-width: 100% !important;
+        margin: 0 !important; }
+        .register_items .register_rows .register_item#login {
+          margin-top: 40px !important; }
+        .register_items .register_rows .register_item:last-child {
+          margin: 45px 0 32px !important; } }
 
 body header {
   border-bottom: 1px solid #dddddd; }
