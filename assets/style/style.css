@@ -2628,25 +2628,31 @@ section #privacy {
       margin-bottom: 32px;
       font-size: 14px; }
 
-section #login {
+section #login, section #reset {
   max-width: 370px;
   margin: 80px auto 120px;
   padding: 0 16px; }
   @media only screen and (max-width: 767px) {
-    section #login {
+    section #login, section #reset {
+      max-width: 100%;
       margin: 40px auto; } }
-  section #login h4.login {
-    margin-bottom: 25px;
-    font-size: 40px;
+  section #login h4, section #reset h4 {
+    margin-bottom: 32px;
+    font-size: 24px;
     font-family: "Helvetica-75";
     font-weight: bold; }
-    section #login h4.login span {
-      color: #fd0e18; }
-  section #login p {
+    section #login h4.login, section #reset h4.login {
+      margin-bottom: 25px;
+      font-size: 40px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+      section #login h4.login span, section #reset h4.login span {
+        color: #fd0e18; }
+  section #login p, section #reset p {
     margin-bottom: 32px;
     color: #757575;
     font-size: 16px; }
-  section #login button.google, section #login button.facebook {
+  section #login button.google, section #login button.facebook, section #reset button.google, section #reset button.facebook {
     flex: 1;
     height: 48px;
     margin-bottom: 16px;
@@ -2657,17 +2663,17 @@ section #login {
     font-weight: bold;
     border-radius: 4px;
     box-shadow: none; }
-    section #login button.google span, section #login button.facebook span {
+    section #login button.google span, section #login button.facebook span, section #reset button.google span, section #reset button.facebook span {
       flex: 1; }
-  section #login .personal_line {
+  section #login .personal_line, section #reset .personal_line {
     margin: 24px 0; }
-    section #login .personal_line span {
+    section #login .personal_line span, section #reset .personal_line span {
       z-index: 1;
       padding: 0 8px;
       font-size: 12px;
       color: #757575;
       background-color: #ffffff; }
-    section #login .personal_line::after {
+    section #login .personal_line::after, section #reset .personal_line::after {
       content: " ";
       position: absolute;
       top: 9.5px;
@@ -2675,6 +2681,18 @@ section #login {
       right: 0;
       height: 1px;
       background-color: #dddddd; }
+  section #login#reset, section #reset#reset {
+    min-height: 70vh; }
+    section #login#reset a, section #reset#reset a {
+      margin-top: 32px;
+      height: 40px;
+      color: #222222;
+      border: 1px solid #dddddd;
+      border-radius: 4px; }
+    @media only screen and (max-width: 767px) {
+      section #login#reset, section #reset#reset {
+        max-width: 100%;
+        min-height: auto; } }
 
 .register_items {
   max-width: 1208px;

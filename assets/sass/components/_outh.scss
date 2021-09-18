@@ -1,12 +1,17 @@
 section {
-    #login{
+    #login , #reset{
         max-width: 370px;
         margin: 80px auto 120px;
         padding: 0 16px;
         @media only screen and (max-width : 767px) {
+            max-width: 100%;
             margin: 40px auto;
         }
         h4 {
+            margin-bottom: 32px;
+            font-size: 24px;
+            font-family: $title-font;
+            font-weight: bold;
             &.login {
                 margin-bottom: 25px;
                 font-size: 40px;
@@ -56,6 +61,20 @@ section {
                 right: 0;
                 height: 1px;
                 background-color: $color-white-4;
+            }
+        }
+        &#reset {
+            min-height: 70vh;
+            a {
+                margin-top: 32px;
+                height: 40px;
+                color: $color-black;
+                border: 1px solid $color-white-4;
+                border-radius: 4px;
+            }
+            @media only screen and (max-width : 767px) {
+                max-width: 100%;
+                min-height: auto;
             }
         }
     }
