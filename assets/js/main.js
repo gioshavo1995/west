@@ -237,9 +237,27 @@ jQuery( document ).ready( function() {
 	});
 });
 
+// modals
 $('body').on('hidden.bs.modal', function () {
   if($('.modal.show').length > 0)
   {
       $('body').addClass('modal-open');
   }
 });
+
+
+// contact drops
+$('.contact_drops .drop_item .inner_body').hide();
+
+$('.contact_drops .drop_item .drop_title').click(function(){
+  $(this).toggleClass('active');
+  $(this).next().slideToggle();
+})
+$('.contact_drops .drop_item .inner_body').click(function(e){
+  e.stopPropagation();
+})
+$('.contact_drops .drop_item .inner_title').click(function(e){
+  e.stopPropagation();
+  $(this).toggleClass('active');
+  $(this).next().slideToggle();
+})

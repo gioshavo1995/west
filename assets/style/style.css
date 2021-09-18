@@ -32,6 +32,11 @@ body {
   margin: 0 auto;
   padding: 0 16px; }
 
+.small_container {
+  max-width: 753px;
+  margin: 0 auto;
+  padding: 0 16px; }
+
 h4.title {
   margin-bottom: 4px;
   font-size: 24px;
@@ -2267,82 +2272,82 @@ section .cart {
             border-top: 1px solid #dddddd;
             border-radius: 0; } }
 
-.success_page {
+#success_page {
   max-width: 721px;
   margin: 40px auto 120px; }
-  .success_page .success_icon {
+  #success_page .success_icon {
     height: 338px;
     margin-bottom: 32px;
     background-color: #f7f6f7;
     border-radius: 16px; }
-    .success_page .success_icon img {
+    #success_page .success_icon img {
       width: 255px;
       height: 215px; }
-  .success_page .success_text {
+  #success_page .success_text {
     margin: 0 -17px; }
-    .success_page .success_text h4 {
+    #success_page .success_text h4 {
       margin-bottom: 20px;
       font-size: 24px;
       font-family: "Helvetica-75";
       font-weight: bold; }
-    .success_page .success_text .left, .success_page .success_text .right {
+    #success_page .success_text .left, #success_page .success_text .right {
       flex: 1;
       margin: 0 17px; }
-    .success_page .success_text .left h4 {
+    #success_page .success_text .left h4 {
       margin-bottom: 17px; }
-    .success_page .success_text .left p {
+    #success_page .success_text .left p {
       margin-bottom: 32px;
       font-size: 14px; }
-      .success_page .success_text .left p span {
+      #success_page .success_text .left p span {
         font-family: "Helvetica-75";
         font-weight: bold; }
-        .success_page .success_text .left p span.confirmed {
+        #success_page .success_text .left p span.confirmed {
           color: #5ec41f; }
-    .success_page .success_text .left > div {
+    #success_page .success_text .left > div {
       padding-right: 24px;
       border-radius: 8px;
       box-shadow: 0 0 10px 0 rgba(0, 53, 78, 0.1); }
-      .success_page .success_text .left > div .left_icon {
+      #success_page .success_text .left > div .left_icon {
         width: 40px;
         margin-right: 14px;
         background-color: #5ec41f;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px; }
-      .success_page .success_text .left > div .right_text {
+      #success_page .success_text .left > div .right_text {
         flex: 1;
         padding: 16px 0; }
-        .success_page .success_text .left > div .right_text .details {
+        #success_page .success_text .left > div .right_text .details {
           margin-bottom: 16px;
           color: #757575;
           font-size: 14px;
           line-height: 14px; }
-        .success_page .success_text .left > div .right_text h5 {
+        #success_page .success_text .left > div .right_text h5 {
           margin-bottom: 8px;
           font-size: 16px;
           font-family: "Helvetica-75";
           font-weight: bold; }
-        .success_page .success_text .left > div .right_text span {
+        #success_page .success_text .left > div .right_text span {
           margin-bottom: 4px;
           color: #757575;
           font-size: 12px; }
-        .success_page .success_text .left > div .right_text .price {
+        #success_page .success_text .left > div .right_text .price {
           margin-top: 16px;
           padding-top: 12px;
           border-top: 1px solid #dddddd; }
-          .success_page .success_text .left > div .right_text .price span {
+          #success_page .success_text .left > div .right_text .price span {
             color: #222222;
             font-family: "Helvetica-75";
             font-weight: bold; }
-            .success_page .success_text .left > div .right_text .price span:first-child {
+            #success_page .success_text .left > div .right_text .price span:first-child {
               font-size: 16px; }
-            .success_page .success_text .left > div .right_text .price span:last-child {
+            #success_page .success_text .left > div .right_text .price span:last-child {
               font-size: 24px; }
-    .success_page .success_text .right h4 {
+    #success_page .success_text .right h4 {
       margin-bottom: 24px;
       line-height: 1.4; }
-    .success_page .success_text .right .login_input {
+    #success_page .success_text .right .login_input {
       margin-bottom: 16px; }
-    .success_page .success_text .right button {
+    #success_page .success_text .right button {
       height: 40px;
       margin-top: 10px;
       color: #ffffff;
@@ -2351,18 +2356,223 @@ section .cart {
       border-radius: 4px;
       box-shadow: none; }
   @media only screen and (max-width: 767px) {
-    .success_page {
+    #success_page {
       margin: 32px 0 80px; }
-      .success_page .success_text {
+      #success_page .success_text {
         margin: 0;
         flex-wrap: wrap; }
-        .success_page .success_text .left, .success_page .success_text .right {
+        #success_page .success_text .left, #success_page .success_text .right {
           flex: auto;
           margin: 0; }
-          .success_page .success_text .left.left, .success_page .success_text .right.left {
+          #success_page .success_text .left.left, #success_page .success_text .right.left {
             margin-bottom: 32px; }
-          .success_page .success_text .left.right h4, .success_page .success_text .right.right h4 {
+          #success_page .success_text .left.right h4, #success_page .success_text .right.right h4 {
             font-size: 16px; } }
+
+section #contact {
+  margin: 29px 0 120px; }
+  @media only screen and (max-width: 767px) {
+    section #contact {
+      margin: 8px 0 80px; } }
+  section #contact .title_icon {
+    margin-top: 20px; }
+  section #contact h4.title {
+    max-width: 370px;
+    margin: 16px 0 40px;
+    font-size: 40px; }
+  section #contact .drop_item {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd; }
+    section #contact .drop_item .drop_title {
+      padding: 16px;
+      font-size: 16px; }
+      section #contact .drop_item .drop_title img {
+        width: 24px;
+        height: 24px;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+      section #contact .drop_item .drop_title.active img {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+    section #contact .drop_item .drop_body {
+      padding: 16px 16px 8px; }
+      section #contact .drop_item .drop_body .inner_title {
+        height: 40px;
+        color: #2d88ff;
+        font-size: 16px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+        section #contact .drop_item .drop_body .inner_title img {
+          width: 24px;
+          height: 24px;
+          -webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -ms-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out; }
+        section #contact .drop_item .drop_body .inner_title.active img {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+      section #contact .drop_item .drop_body p {
+        margin-bottom: 24px;
+        font-size: 14px; }
+  section #contact .contact_info {
+    margin-top: 64px; }
+    section #contact .contact_info h5 {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #dddddd;
+      font-size: 16px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+    section #contact .contact_info .row {
+      margin: 0 -20px; }
+      section #contact .contact_info .row .col-md-6 {
+        padding: 0 20px; }
+      @media only screen and (max-width: 767px) {
+        section #contact .contact_info .row {
+          margin: 0; }
+          section #contact .contact_info .row .col-md-6 {
+            padding: 0; } }
+    section #contact .contact_info .info_title {
+      font-size: 16px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+      section #contact .contact_info .info_title img {
+        margin-right: 8px; }
+      section #contact .contact_info .info_title p {
+        color: #757575;
+        font-size: 14px;
+        font-family: "Helvetica-55";
+        font-weight: normal; }
+    section #contact .contact_info .contact_inputs {
+      margin-top: 40px; }
+      section #contact .contact_info .contact_inputs .input_item {
+        margin-bottom: 16px; }
+        section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-toggle {
+          height: 40px;
+          color: #757575;
+          background-color: #f7f6f7;
+          font-size: 12px;
+          line-height: 14px;
+          box-shadow: none; }
+          section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-toggle img {
+            width: 17px;
+            height: 17px;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; }
+          section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-toggle::after {
+            display: none; }
+        section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-menu {
+          border-radius: 10px;
+          min-width: auto;
+          margin-top: 10px;
+          padding: 10px 0;
+          border: 1px solid #000000; }
+          section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-menu .dropdown-item {
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: transparent;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; }
+            section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-menu .dropdown-item:active {
+              color: inherit; }
+            section #contact .contact_info .contact_inputs .input_item .dropdown .dropdown-menu .dropdown-item:hover {
+              background-color: #f7f6f7; }
+        section #contact .contact_info .contact_inputs .input_item .dropdown.show .dropdown-toggle img {
+          -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
+        section #contact .contact_info .contact_inputs .input_item textarea {
+          height: 180px;
+          padding: 12px 16px;
+          background-color: #f7f6f7;
+          font-size: 12px;
+          border: none;
+          border-radius: 4px;
+          resize: none; }
+          section #contact .contact_info .contact_inputs .input_item textarea ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #757575;
+            opacity: 1;
+            /* Firefox */ }
+          section #contact .contact_info .contact_inputs .input_item textarea :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #757575; }
+          section #contact .contact_info .contact_inputs .input_item textarea ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #757575; }
+      section #contact .contact_info .contact_inputs button {
+        height: 40px;
+        color: #ffffff;
+        background-color: #222222;
+        font-size: 12px;
+        border-radius: 4px;
+        box-shadow: none; }
+    section #contact .contact_info .info_number {
+      height: 40px;
+      margin-top: 16px;
+      color: inherit;
+      background-color: #f7f6f7;
+      font-size: 16px;
+      font-family: "Helvetica-75";
+      font-weight: bold;
+      text-decoration: none; }
+    section #contact .contact_info .contact_social {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #dddddd; }
+      section #contact .contact_info .contact_social h4 {
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+      section #contact .contact_info .contact_social .row {
+        margin: 0 -8px; }
+        section #contact .contact_info .contact_social .row .socials_item {
+          flex: 1;
+          height: 40px;
+          margin: 0 4px;
+          color: inherit;
+          background-color: #f7f6f7;
+          font-size: 14px;
+          font-family: "Helvetica-75";
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 8px; }
+          section #contact .contact_info .contact_social .row .socials_item img {
+            margin-right: 10px; }
+    section #contact .contact_info .contact_maps {
+      margin-top: 40px; }
+      section #contact .contact_info .contact_maps .title {
+        padding-right: 25px;
+        font-size: 16px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+        section #contact .contact_info .contact_maps .title img {
+          margin-right: 8px; }
+      section #contact .contact_info .contact_maps span {
+        color: #757575;
+        font-size: 14px; }
+      section #contact .contact_info .contact_maps #map {
+        margin-top: 24px;
+        border-radius: 4px;
+        border: 1px solid #222222;
+        overflow: hidden; }
 
 body header {
   border-bottom: 1px solid #dddddd; }
