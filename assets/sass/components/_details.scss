@@ -1,0 +1,199 @@
+section {
+    #details {
+        margin: 29px 0 120px;
+        .left {
+            width: 350px;
+            margin-right: 32px;
+            .left_menu{
+                border-radius: 16px;
+                box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
+                .details_title {
+                    padding: 16px 16px 8px;
+                    background-color: $color-white-1;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                    span {
+                        &.title {
+                            margin-bottom: 8px;
+                            color: $color-black-4;
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                    h4 {
+                        margin-bottom: 10px;
+                        font-size: 24px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                        line-height: 24px;
+                    }
+                    .details_point {
+                        height: 40px;
+                        padding: 0 5px 0 10px;
+                        background-color: $color-white;
+                        border-radius: 8px;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 8px;
+                        }
+                        span {
+                            margin-right: 8px;
+                            font-size: 12px;
+                            &.count {
+                                font-size: 22px;
+                                font-family: $title-font;
+                                font-weight: bold;
+                            }
+                        }
+                        .details_main {
+                            height: 28px;
+                            padding: 0 20px;
+                            color: $color-red;
+                            font-size: 14px;
+                            font-family: $title-font;
+                            font-weight: bold;
+                            border: 1px solid $color-red;
+                            border-radius: 5px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .vertical_tabs {
+                    a {
+                        height: 59px;
+                        padding-left: 16px;
+                        background-color: transparent;
+                        color: $color-black;
+                        font-size: 14px;
+                        border-top: 1px solid $color-white-4;
+                        @include transition( all , 0.1s, ease-in-out);
+                        svg {
+                            margin-top: 1px;
+                            margin-right: 8px;
+                            @include transition( all , 0.1s, ease-in-out);
+                        }
+                        &.active {
+                            color: $color-red;
+                            svg {
+                                path {
+                                    &:last-child {
+                                        fill: $color-red;
+                                    }
+                                }
+                            }
+                        }
+                        &.ofer_tabs {
+                            height: 0;
+                            padding: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            flex: 1;
+            .tab-content {
+                .details_tabs {
+                    h4 {
+                        &.title {
+                            margin-bottom: 32px;
+                            font-size: 24px;
+                            font-family: $title-font;
+                            font-weight: bold;
+                            svg {
+                             margin-right: 14px;   
+                            }
+                        }
+                    }
+                    .details_baner {
+                        padding: 32px;
+                        background-color: $color-black-5;
+                        border-radius: 16px;
+                        h4 {
+                            margin-bottom: 16px;
+                            color: $color-white;
+                            font-size: 32px;
+                            font-family: $title-font;
+                            font-weight: bold;
+                            span {
+                                color: $color-red;
+                            }
+                        }
+                        p {
+                            margin-bottom: 16px;
+                            color: $color-white-4;
+                            font-size: 16px;
+                        }
+                        .baner_bottom {
+                            height: 40px;
+                            padding: 0 16px;
+                            color: $color-white;
+                            background-color: $color-black-7;
+                            font-size: 15px;
+                            border-radius: 8px;
+                            span {
+                                margin: 0 8px 0 40px;
+                                font-size: 22px;
+                                font-family: $title-font;
+                                font-weight: bold;
+                            }
+                        }
+                        figure {
+                            img {
+                                margin-top: -25px;
+                                margin-bottom: -40px;
+                            }
+                        }
+                    }
+                    .detail_items {
+                        margin: 24px -8px 0;
+                        .detail_item {
+                            width: 33.33333333333333%;
+                            margin-bottom: 16px;
+                            padding: 0 8px;
+                            color: inherit;
+                            text-decoration: none;
+                            .item {
+                                border: 1px solid $color-white-4;
+                                border-radius: 16px;
+                            }
+                            figure {
+                                img {
+                                    width: 100%;
+                                    height: 235px;
+                                    object-fit: cover;
+                                    border-top-left-radius: 16px;
+                                    border-top-right-radius: 16px;
+                                }
+                            }
+                            .item_bottom {
+                                height: 64px;
+                                padding: 0 14px;
+                                background-color: $color-white-1;
+                                font-size: 16px;
+                                font-family: $title-font;
+                                font-weight: bold;
+                                border-bottom-left-radius: 16px;
+                                border-bottom-right-radius: 16px;
+                                button {
+                                    height: 31px;
+                                    padding: 0 8px;
+                                    background-color: $color-white;
+                                    border-radius: 4px;
+                                    box-shadow: none;
+                                    svg {
+                                        width: 14px;
+                                        height: 14px;
+                                        margin-left: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -261,3 +261,9 @@ $('.contact_drops .drop_item .inner_title').click(function(e){
   $(this).toggleClass('active');
   $(this).next().slideToggle();
 })
+
+// tab button click 
+$(".details_main").click(function(){
+  $(".ofer_tabs").click(); 
+  return false;
+});

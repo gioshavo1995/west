@@ -2806,6 +2806,161 @@ section #login, section #reset {
         .register_items .register_rows .register_item:last-child {
           margin: 45px 0 32px !important; } }
 
+section #details {
+  margin: 29px 0 120px; }
+  section #details .left {
+    width: 350px;
+    margin-right: 32px; }
+    section #details .left .left_menu {
+      border-radius: 16px;
+      box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12); }
+      section #details .left .left_menu .details_title {
+        padding: 16px 16px 8px;
+        background-color: #f7f6f7;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px; }
+        section #details .left .left_menu .details_title span.title {
+          margin-bottom: 8px;
+          color: #757575;
+          font-size: 14px;
+          line-height: 14px; }
+        section #details .left .left_menu .details_title h4 {
+          margin-bottom: 10px;
+          font-size: 24px;
+          font-family: "Helvetica-75";
+          font-weight: bold;
+          line-height: 24px; }
+        section #details .left .left_menu .details_title .details_point {
+          height: 40px;
+          padding: 0 5px 0 10px;
+          background-color: #ffffff;
+          border-radius: 8px; }
+          section #details .left .left_menu .details_title .details_point svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px; }
+          section #details .left .left_menu .details_title .details_point span {
+            margin-right: 8px;
+            font-size: 12px; }
+            section #details .left .left_menu .details_title .details_point span.count {
+              font-size: 22px;
+              font-family: "Helvetica-75";
+              font-weight: bold; }
+          section #details .left .left_menu .details_title .details_point .details_main {
+            height: 28px;
+            padding: 0 20px;
+            color: #fd0e18;
+            font-size: 14px;
+            font-family: "Helvetica-75";
+            font-weight: bold;
+            border: 1px solid #fd0e18;
+            border-radius: 5px;
+            text-decoration: none; }
+      section #details .left .left_menu .vertical_tabs a {
+        height: 59px;
+        padding-left: 16px;
+        background-color: transparent;
+        color: #222222;
+        font-size: 14px;
+        border-top: 1px solid #dddddd;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+        section #details .left .left_menu .vertical_tabs a svg {
+          margin-top: 1px;
+          margin-right: 8px;
+          -webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -ms-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out; }
+        section #details .left .left_menu .vertical_tabs a.active {
+          color: #fd0e18; }
+          section #details .left .left_menu .vertical_tabs a.active svg path:last-child {
+            fill: #fd0e18; }
+        section #details .left .left_menu .vertical_tabs a.ofer_tabs {
+          height: 0;
+          padding: 0;
+          visibility: hidden; }
+  section #details .right {
+    flex: 1; }
+    section #details .right .tab-content .details_tabs h4.title {
+      margin-bottom: 32px;
+      font-size: 24px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+      section #details .right .tab-content .details_tabs h4.title svg {
+        margin-right: 14px; }
+    section #details .right .tab-content .details_tabs .details_baner {
+      padding: 32px;
+      background-color: #1b1c25;
+      border-radius: 16px; }
+      section #details .right .tab-content .details_tabs .details_baner h4 {
+        margin-bottom: 16px;
+        color: #ffffff;
+        font-size: 32px;
+        font-family: "Helvetica-75";
+        font-weight: bold; }
+        section #details .right .tab-content .details_tabs .details_baner h4 span {
+          color: #fd0e18; }
+      section #details .right .tab-content .details_tabs .details_baner p {
+        margin-bottom: 16px;
+        color: #dddddd;
+        font-size: 16px; }
+      section #details .right .tab-content .details_tabs .details_baner .baner_bottom {
+        height: 40px;
+        padding: 0 16px;
+        color: #ffffff;
+        background-color: #494951;
+        font-size: 15px;
+        border-radius: 8px; }
+        section #details .right .tab-content .details_tabs .details_baner .baner_bottom span {
+          margin: 0 8px 0 40px;
+          font-size: 22px;
+          font-family: "Helvetica-75";
+          font-weight: bold; }
+      section #details .right .tab-content .details_tabs .details_baner figure img {
+        margin-top: -25px;
+        margin-bottom: -40px; }
+    section #details .right .tab-content .details_tabs .detail_items {
+      margin: 24px -8px 0; }
+      section #details .right .tab-content .details_tabs .detail_items .detail_item {
+        width: 33.33333333333333%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        color: inherit;
+        text-decoration: none; }
+        section #details .right .tab-content .details_tabs .detail_items .detail_item .item {
+          border: 1px solid #dddddd;
+          border-radius: 16px; }
+        section #details .right .tab-content .details_tabs .detail_items .detail_item figure img {
+          width: 100%;
+          height: 235px;
+          object-fit: cover;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px; }
+        section #details .right .tab-content .details_tabs .detail_items .detail_item .item_bottom {
+          height: 64px;
+          padding: 0 14px;
+          background-color: #f7f6f7;
+          font-size: 16px;
+          font-family: "Helvetica-75";
+          font-weight: bold;
+          border-bottom-left-radius: 16px;
+          border-bottom-right-radius: 16px; }
+          section #details .right .tab-content .details_tabs .detail_items .detail_item .item_bottom button {
+            height: 31px;
+            padding: 0 8px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: none; }
+            section #details .right .tab-content .details_tabs .detail_items .detail_item .item_bottom button svg {
+              width: 14px;
+              height: 14px;
+              margin-left: 4px; }
+
 body header {
   border-bottom: 1px solid #dddddd; }
 
