@@ -298,7 +298,6 @@ p.title {
             margin-right: 12px; }
   @media only screen and (max-width: 767px) {
     .main_image {
-      height: calc(100vh - 80px);
       margin: 8px 8px 0; }
       .main_image .text {
         padding: 25px 20px 0; }
@@ -1286,7 +1285,8 @@ p.title {
               .main_content .product .product_content .text .experience .drop_divs .drop_head.active svg path:last-child {
                 fill: #fd0e18; }
         .main_content .product .product_content .text .experience .drop_divs .drop_body {
-          margin-top: 16px; }
+          margin-top: 16px;
+          padding: 0 16px; }
           .main_content .product .product_content .text .experience .drop_divs .drop_body p {
             margin-bottom: 35px; }
         .main_content .product .product_content .text .experience .drop_divs:first-of-type .drop_head {
@@ -2504,7 +2504,8 @@ section #contact {
           font-size: 12px;
           border: none;
           border-radius: 4px;
-          resize: none; }
+          resize: none;
+          outline: none; }
           section #contact .contact_info .contact_inputs .input_item textarea ::placeholder {
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: #757575;
@@ -2896,7 +2897,8 @@ section #details {
         background-color: transparent;
         color: #222222;
         font-size: 14px;
-        border-top: 1px solid #dddddd; }
+        border-top: 1px solid #dddddd;
+        text-decoration: none; }
         section #details .left .left_links a:first-child {
           border-top: none; }
         section #details .left .left_links a svg {
