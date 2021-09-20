@@ -3371,31 +3371,31 @@ section .blog_items {
     section .blog_items {
       margin: 0 0 80px; } }
 
-section #error {
+section #found {
   margin: 80px auto 120px; }
-  section #error figure {
+  section #found figure {
     margin-bottom: 32px; }
-  section #error h4 {
+  section #found h4 {
     margin-bottom: 24px;
     color: #fd0e18;
     font-size: 48px;
     font-family: "Helvetica-75";
     font-weight: bold; }
-  section #error p {
+  section #found p {
     margin-bottom: 16px;
     font-size: 16px; }
-  section #error span {
+  section #found span {
     margin-bottom: 16px;
     color: #757575;
     font-size: 14px; }
-  section #error a {
+  section #found a {
     margin: 0 12px;
     color: #2d88ff;
     text-decoration: underline; }
   @media only screen and (max-width: 767px) {
-    section #error {
+    section #found {
       margin: 40px 0 120px; }
-      section #error figure img {
+      section #found figure img {
         width: 100%; } }
 
 body header {
