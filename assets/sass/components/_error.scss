@@ -1,0 +1,38 @@
+section {
+    #error {
+        margin: 80px auto 120px;
+        figure {
+            margin-bottom: 32px;
+
+        }
+        h4 {
+            margin-bottom: 24px;
+            color: $color-red;
+            font-size: 48px;
+            font-family: $title-font;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        span {
+            margin-bottom: 16px;
+            color: $color-black-4;
+            font-size: 14px;
+        }
+        a {
+           margin: 0 12px;
+           color: $color-blue;
+           text-decoration: underline;
+        }
+        @media only screen and (max-width : 767px) {
+            margin: 40px 0 120px;
+            figure {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
