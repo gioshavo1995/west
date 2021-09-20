@@ -120,12 +120,22 @@ $( document ).ready(function() {
           },
         }
       });
+      // product swiper
       const prod_swipe = new Swiper('.prod_swipe', {
         slidesPerView: 1,
         touchRatio: 1,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
+        },
+      });
+      // blog swiper
+      const blog_swipe = new Swiper('.blog_swipe', {
+        slidesPerView: 1,
+        touchRatio: 1,
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
         },
       });
       // $(".rating").rate();

@@ -3230,6 +3230,7 @@ section #details {
       margin-right: 32px;
       color: #757575;
       font-size: 14px;
+      font-weight: normal;
       opacity: 1;
       box-shadow: none; }
     #order .modal-dialog .modal-content .modal-body .bottom_buttons .back {
@@ -3243,6 +3244,128 @@ section #details {
     #order .modal-dialog {
       align-items: flex-end;
       min-height: calc(100% - 0rem); } }
+
+section #blog {
+  margin: 29px 0 120px; }
+  section #blog .breadcrumb {
+    margin-bottom: 16px !important; }
+  section #blog figure {
+    margin-bottom: 32px; }
+    section #blog figure.blog_image img {
+      width: 100%;
+      height: 495px;
+      object-fit: cover;
+      border-radius: 16px; }
+  section #blog .blog_socials {
+    width: 120px;
+    margin-left: -152px;
+    padding: 40px 0 20px;
+    border: 1px solid #e9eced;
+    border-radius: 30px; }
+    section #blog .blog_socials span {
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+    section #blog .blog_socials a {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+      border: 1px solid #e9eced; }
+  section #blog h4 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: "Helvetica-75";
+    font-weight: bold; }
+    section #blog h4.title {
+      margin-bottom: 32px;
+      font-size: 32px; }
+  section #blog p {
+    margin-bottom: 40px;
+    font-size: 16px; }
+  section #blog .swiper_wrap {
+    margin-bottom: 40px; }
+    section #blog .swiper_wrap .blog_swipe {
+      border-radius: 16px; }
+      section #blog .swiper_wrap .blog_swipe figure img {
+        width: 100%;
+        height: 495px;
+        object-fit: cover;
+        border-radius: 16px; }
+    section #blog .swiper_wrap .swiper-prev, section #blog .swiper_wrap .swiper-next {
+      top: 50%;
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      section #blog .swiper_wrap .swiper-prev.swiper-prev, section #blog .swiper_wrap .swiper-next.swiper-prev {
+        left: -20px; }
+        section #blog .swiper_wrap .swiper-prev.swiper-prev img, section #blog .swiper_wrap .swiper-next.swiper-prev img {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+      section #blog .swiper_wrap .swiper-prev.swiper-next, section #blog .swiper_wrap .swiper-next.swiper-next {
+        right: -20px; }
+  section #blog .blog_article {
+    margin: 64px 0;
+    padding: 0 70px; }
+    section #blog .blog_article .text {
+      padding: 70px 100px 100px;
+      background-color: #2d88ff;
+      border-radius: 16px; }
+      section #blog .blog_article .text svg {
+        width: 50px;
+        height: 45px;
+        margin-bottom: 55px; }
+      section #blog .blog_article .text p {
+        color: #ffffff;
+        font-size: 30px; }
+  section #blog .blog_post {
+    height: 75px;
+    background-color: #f7f6f7;
+    font-size: 14px;
+    font-family: "Helvetica-75";
+    font-weight: bold;
+    border: 1px solid #dddddd;
+    border-radius: 24px; }
+  @media only screen and (max-width: 767px) {
+    section #blog {
+      margin: 8px 0 80px; }
+      section #blog figure.blog_image img {
+        height: 380px; }
+      section #blog h4 {
+        margin-bottom: 24px;
+        font-size: 16px; }
+        section #blog h4.title {
+          margin-bottom: 24px;
+          font-size: 24px; }
+      section #blog p {
+        margin-bottom: 24px; }
+      section #blog .swiper_wrap .blog_swipe figure img {
+        height: 380px; }
+      section #blog .swiper_wrap .swiper-prev.swiper-prev, section #blog .swiper_wrap .swiper-next.swiper-prev {
+        left: 8px; }
+      section #blog .swiper_wrap .swiper-prev.swiper-next, section #blog .swiper_wrap .swiper-next.swiper-next {
+        right: 8px; }
+      section #blog .blog_article {
+        margin: 40px 0;
+        padding: 0; }
+        section #blog .blog_article .text {
+          padding: 40px 16px; }
+          section #blog .blog_article .text p {
+            font-size: 16px; } }
+
+section .blog_items {
+  margin: 0 0 120px;
+  padding: 0 !important;
+  background-color: #ffffff !important; }
+  @media only screen and (max-width: 767px) {
+    section .blog_items {
+      margin: 0 0 80px; } }
 
 body header {
   border-bottom: 1px solid #dddddd; }
