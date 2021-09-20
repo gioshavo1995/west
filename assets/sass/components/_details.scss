@@ -2,9 +2,11 @@ section {
     #details {
         margin: 29px 0 120px;
         .left {
+            flex-shrink: 0;
             width: 350px;
             margin-right: 32px;
             .left_menu{
+                margin-bottom: 24px;
                 border-radius: 16px;
                 box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
                 .details_title {
@@ -91,9 +93,46 @@ section {
                     }
                 }
             }
+            .left_links {
+                margin-bottom: 24px;
+                border-radius: 16px;
+                box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
+                a {
+                    height: 59px;
+                    padding-left: 16px;
+                    background-color: transparent;
+                    color: $color-black;
+                    font-size: 14px;
+                    border-top: 1px solid $color-white-4;
+                    &:first-child {
+                        border-top: none;
+                    }
+                    svg {
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .left_back {
+                border-radius: 16px;
+                box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
+                a {
+                    height: 59px;
+                    padding-left: 16px;
+                    background-color: transparent;
+                    color: #222;
+                    font-size: 14px;
+                    text-decoration: none;
+                    svg {
+                        margin-right: 8px;
+                    }
+                }
+            }
         }
         .right {
             flex: 1;
+            @media only screen and (max-width : 767px) {
+                width: 100%;
+            }
             .tab-content {
                 .details_tabs {
                     h4 {
@@ -192,8 +231,348 @@ section {
                             }
                         }
                     }
+                    @media only screen and (max-width : 767px) {
+                        h4 {
+                            &.title {
+                                margin-bottom: 16px;
+                            }
+                        }
+                        .details_baner {
+                            .banner_text {
+                                order: 2;
+                                padding: 0;
+                                h4 {
+                                    font-size: 24px;
+                                }
+                                .baner_bottom {
+                                    width: 100%;
+                                    span {
+                                        margin-left: auto;
+                                    }
+                                }
+                            }
+                            .banner_image {
+                                order: 1;
+                                figure {
+                                    img {
+                                        margin-top: -35px;
+                                        margin-bottom: -10px;
+                                    }
+                                }
+                            }
+                        }
+                        .detail_items {
+                            margin: 24px 0 0;
+                           .detail_item {
+                            width: 100%;
+                            padding: 0;
+                           }
+                        }
+                    }
+                }
+                .order {
+                    h4 {
+                        margin-bottom: 32px;
+                        font-size: 24px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            margin: 1px 14px 0 0;
+                        }
+                    }
+                    .order_item {
+                        margin-bottom: 16px;
+                        padding: 16px;
+                        border: 1px solid $color-white-4;
+                        border-radius: 16px;
+                        .order_top {
+                            figure {
+                                margin-right: 24px;
+                                img {
+                                    width: 140px;
+                                    height: 140px;
+                                    border-radius: 12px;
+                                }
+                            }
+                            .text {
+                                flex: 1;
+                                h4 {
+                                    padding-right: 25px;
+                                    font-size: 24px;
+                                    font-family: $title-font;
+                                    font-weight: bold;
+                                }
+                                .price {
+                                    flex-shrink: 0;
+                                    font-size: 24px;
+                                    font-family: $title-font-bold;
+                                    font-weight: bold;
+                                    sub {
+                                        bottom: 0;
+                                    }
+                                }
+                                p {
+                                    margin-bottom: 10px;
+                                    font-size: 18px;
+                                    opacity: 0.5;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .order_bottom {
+                            margin-top: 12px;
+                            .order_left {
+                                height: 32px;
+                                padding: 0 12px;
+                                background-color: $color-white-1;
+                                border-radius: 8px;
+                                span {
+                                    &:first-child {
+                                        margin-right: 4px;
+                                        font-size: 12px;
+                                    }
+                                    &:last-child {
+                                        font-size: 12px;
+                                        font-family: $title-font;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                            button {
+                                height: 32px;
+                                padding: 0 16px 0 10px;
+                                font-size: 12px;
+                                border: 1px solid $color-white-4;
+                                border-radius: 8px;
+                                box-shadow: none;
+                                img {
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                    @media only screen and (max-width : 767px) {
+                        h4 {
+                            margin-bottom: 16px;
+                        }
+                        .order_item {
+                            padding: 0;
+                            border: none;
+                            .order_top {
+                                flex-wrap: wrap;
+                                figure {
+                                    width: 100%;
+                                    margin-right: 0;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .text {
+                                    padding: 10px;
+                                    h4 {
+                                        font-size: 16px;
+                                    }
+                                    .price {
+                                        font-size: 16px;
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .detail_input, .password_tabs {
+                    h4 {
+                        margin-bottom: 32px;
+                        font-size: 24px;
+                        font-family: $title-font;
+                        font-weight: bold;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            margin: 1px 14px 0 0;
+                        }
+                    }
+                    .detail_item {
+                        padding: 24px 24px 8px 24px;
+                        border: 1px solid $color-white-4;
+                        border-radius: 16px;
+                        .detail_rows {
+                            margin: 0 -12px;
+                            .col-md-6 {
+                                padding: 0 12px;
+                            }
+                            .item_input {
+                                margin-bottom: 16px;
+                                input {
+                                    height: 48px;
+                                }
+                                .dropdown {
+                                    .dropdown-toggle {
+                                        height: 48px;
+                                        color: $color-black-4;
+                                        background-color: $color-white-1;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        box-shadow: none;
+                                        img {
+                                            width: 17px;
+                                            height: 17px;
+                                            -webkit-transform: rotate(90deg);
+                                            -ms-transform: rotate(90deg);
+                                            transform: rotate(90deg);
+                                           @include transition( all , 0.1s, ease-in-out);
+                                        }
+                                        &::after {
+                                           display: none;
+                                        }
+                                     }
+                                     .dropdown-menu {
+                                        border-radius: 10px;
+                                        min-width: auto;
+                                        margin-top: 10px;
+                                        padding: 10px 0;
+                                        border: 1px solid $color-black-1;
+                                        .dropdown-item {
+                                           padding: 5px 10px;
+                                           font-size: 12px;
+                                           background-color: transparent;
+                                           @include transition( all , 0.1s, ease-in-out);
+                                           &:active {
+                                              color: inherit;
+                                           }
+                                           &:hover {
+                                               background-color: $color-white-1;
+                                           }
+                                        }
+                                    }
+                                    &.show {
+                                        .dropdown-toggle {
+                                            img {
+                                                -webkit-transform: rotate(270deg);
+                                                -ms-transform: rotate(270deg);
+                                                transform: rotate(270deg);
+                                            }
+                                        } 
+                                    }
+                                }
+                                button {
+                                    height: 48px;
+                                    margin-top: 15px;
+                                    color: $color-white;
+                                    background-color: $color-black;
+                                    font-size: 12px;
+                                    border: none;
+                                    border-radius: 4px;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                    &.password_tabs {
+                        .input_span {
+                            margin-top: 8px;
+                            padding-left: 8px;
+                            font-size: 12px;
+                            line-height: 12px;
+                            svg {
+                                width: 5px;
+                                height: 5px;
+                                margin-right: 5px;
+                                path {
+                                    fill: $color-red !important;
+                                }
+                                circle  {
+                                    fill: $color-red !important;
+                                }
+                            }
+                        }
+                        .password_shield {
+                            margin-top: 15px;
+                            padding: 24px;
+                            background-color: $color-green-4;
+                            border-radius: 8px;
+                            svg {
+                                flex-shrink: 0;
+                                width: 32px;
+                                height: 32px;
+                                margin-right: 20px;
+                            }
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    @media only screen and (max-width : 991px) {
+                        h4 {
+                            margin-bottom: 16px;
+                        }
+                        .detail_item {
+                            padding: 0;
+                            border: none;
+                        }
+                    }
                 }
             }
+        }
+        @media only screen and (max-width : 991px) {
+            margin: 8px 0 80px;
+            .left {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// order_modal 
+#order {
+    .modal-dialog {
+        align-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+        .modal-content {
+            .modal-body {
+                padding: 24px 16px 16px 24px;
+                h4 {
+                    margin-bottom: 16px;
+                    font-size: 16px;
+                    font-family: $title-font;
+                    font-weight: bold;
+                }
+                p {
+                    margin-bottom: 40px;
+                    color: $color-black-4;
+                    font-size: 16px;
+                }
+                .bottom_buttons {
+                    .close {
+                        margin-right: 32px;
+                        color: $color-black-4;
+                        font-size: 14px;
+                        opacity: 1;
+                        box-shadow: none;
+                    }
+                    .back {
+                        height: 44px;
+                        padding: 0 24px;
+                        color: $color-white;
+                        background-color: $color-red;
+                        border-radius: 8px;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width : 767px) {
+            align-items: flex-end;
+            min-height: calc(100% - 0rem);
         }
     }
 }

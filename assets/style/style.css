@@ -2809,9 +2809,11 @@ section #login, section #reset {
 section #details {
   margin: 29px 0 120px; }
   section #details .left {
+    flex-shrink: 0;
     width: 350px;
     margin-right: 32px; }
     section #details .left .left_menu {
+      margin-bottom: 24px;
       border-radius: 16px;
       box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12); }
       section #details .left .left_menu .details_title {
@@ -2884,8 +2886,38 @@ section #details {
           height: 0;
           padding: 0;
           visibility: hidden; }
+    section #details .left .left_links {
+      margin-bottom: 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12); }
+      section #details .left .left_links a {
+        height: 59px;
+        padding-left: 16px;
+        background-color: transparent;
+        color: #222222;
+        font-size: 14px;
+        border-top: 1px solid #dddddd; }
+        section #details .left .left_links a:first-child {
+          border-top: none; }
+        section #details .left .left_links a svg {
+          margin-right: 8px; }
+    section #details .left .left_back {
+      border-radius: 16px;
+      box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12); }
+      section #details .left .left_back a {
+        height: 59px;
+        padding-left: 16px;
+        background-color: transparent;
+        color: #222;
+        font-size: 14px;
+        text-decoration: none; }
+        section #details .left .left_back a svg {
+          margin-right: 8px; }
   section #details .right {
     flex: 1; }
+    @media only screen and (max-width: 767px) {
+      section #details .right {
+        width: 100%; } }
     section #details .right .tab-content .details_tabs h4.title {
       margin-bottom: 32px;
       font-size: 24px;
@@ -2960,6 +2992,255 @@ section #details {
               width: 14px;
               height: 14px;
               margin-left: 4px; }
+    @media only screen and (max-width: 767px) {
+      section #details .right .tab-content .details_tabs h4.title {
+        margin-bottom: 16px; }
+      section #details .right .tab-content .details_tabs .details_baner .banner_text {
+        order: 2;
+        padding: 0; }
+        section #details .right .tab-content .details_tabs .details_baner .banner_text h4 {
+          font-size: 24px; }
+        section #details .right .tab-content .details_tabs .details_baner .banner_text .baner_bottom {
+          width: 100%; }
+          section #details .right .tab-content .details_tabs .details_baner .banner_text .baner_bottom span {
+            margin-left: auto; }
+      section #details .right .tab-content .details_tabs .details_baner .banner_image {
+        order: 1; }
+        section #details .right .tab-content .details_tabs .details_baner .banner_image figure img {
+          margin-top: -35px;
+          margin-bottom: -10px; }
+      section #details .right .tab-content .details_tabs .detail_items {
+        margin: 24px 0 0; }
+        section #details .right .tab-content .details_tabs .detail_items .detail_item {
+          width: 100%;
+          padding: 0; } }
+    section #details .right .tab-content .order h4 {
+      margin-bottom: 32px;
+      font-size: 24px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+      section #details .right .tab-content .order h4 svg {
+        width: 20px;
+        height: 20px;
+        margin: 1px 14px 0 0; }
+    section #details .right .tab-content .order .order_item {
+      margin-bottom: 16px;
+      padding: 16px;
+      border: 1px solid #dddddd;
+      border-radius: 16px; }
+      section #details .right .tab-content .order .order_item .order_top figure {
+        margin-right: 24px; }
+        section #details .right .tab-content .order .order_item .order_top figure img {
+          width: 140px;
+          height: 140px;
+          border-radius: 12px; }
+      section #details .right .tab-content .order .order_item .order_top .text {
+        flex: 1; }
+        section #details .right .tab-content .order .order_item .order_top .text h4 {
+          padding-right: 25px;
+          font-size: 24px;
+          font-family: "Helvetica-75";
+          font-weight: bold; }
+        section #details .right .tab-content .order .order_item .order_top .text .price {
+          flex-shrink: 0;
+          font-size: 24px;
+          font-family: "Helvetica-75-bold";
+          font-weight: bold; }
+          section #details .right .tab-content .order .order_item .order_top .text .price sub {
+            bottom: 0; }
+        section #details .right .tab-content .order .order_item .order_top .text p {
+          margin-bottom: 10px;
+          font-size: 18px;
+          opacity: 0.5; }
+          section #details .right .tab-content .order .order_item .order_top .text p:last-child {
+            margin-bottom: 0; }
+      section #details .right .tab-content .order .order_item .order_bottom {
+        margin-top: 12px; }
+        section #details .right .tab-content .order .order_item .order_bottom .order_left {
+          height: 32px;
+          padding: 0 12px;
+          background-color: #f7f6f7;
+          border-radius: 8px; }
+          section #details .right .tab-content .order .order_item .order_bottom .order_left span:first-child {
+            margin-right: 4px;
+            font-size: 12px; }
+          section #details .right .tab-content .order .order_item .order_bottom .order_left span:last-child {
+            font-size: 12px;
+            font-family: "Helvetica-75";
+            font-weight: bold; }
+        section #details .right .tab-content .order .order_item .order_bottom button {
+          height: 32px;
+          padding: 0 16px 0 10px;
+          font-size: 12px;
+          border: 1px solid #dddddd;
+          border-radius: 8px;
+          box-shadow: none; }
+          section #details .right .tab-content .order .order_item .order_bottom button img {
+            margin-right: 8px; }
+    @media only screen and (max-width: 767px) {
+      section #details .right .tab-content .order h4 {
+        margin-bottom: 16px; }
+      section #details .right .tab-content .order .order_item {
+        padding: 0;
+        border: none; }
+        section #details .right .tab-content .order .order_item .order_top {
+          flex-wrap: wrap; }
+          section #details .right .tab-content .order .order_item .order_top figure {
+            width: 100%;
+            margin-right: 0; }
+            section #details .right .tab-content .order .order_item .order_top figure img {
+              width: 100%; }
+          section #details .right .tab-content .order .order_item .order_top .text {
+            padding: 10px; }
+            section #details .right .tab-content .order .order_item .order_top .text h4 {
+              font-size: 16px; }
+            section #details .right .tab-content .order .order_item .order_top .text .price {
+              font-size: 16px; }
+            section #details .right .tab-content .order .order_item .order_top .text p {
+              font-size: 14px; } }
+    section #details .right .tab-content .detail_input h4, section #details .right .tab-content .password_tabs h4 {
+      margin-bottom: 32px;
+      font-size: 24px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+      section #details .right .tab-content .detail_input h4 svg, section #details .right .tab-content .password_tabs h4 svg {
+        width: 20px;
+        height: 20px;
+        margin: 1px 14px 0 0; }
+    section #details .right .tab-content .detail_input .detail_item, section #details .right .tab-content .password_tabs .detail_item {
+      padding: 24px 24px 8px 24px;
+      border: 1px solid #dddddd;
+      border-radius: 16px; }
+      section #details .right .tab-content .detail_input .detail_item .detail_rows, section #details .right .tab-content .password_tabs .detail_item .detail_rows {
+        margin: 0 -12px; }
+        section #details .right .tab-content .detail_input .detail_item .detail_rows .col-md-6, section #details .right .tab-content .password_tabs .detail_item .detail_rows .col-md-6 {
+          padding: 0 12px; }
+        section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input {
+          margin-bottom: 16px; }
+          section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input input, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input input {
+            height: 48px; }
+          section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-toggle, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-toggle {
+            height: 48px;
+            color: #757575;
+            background-color: #f7f6f7;
+            font-size: 12px;
+            line-height: 14px;
+            box-shadow: none; }
+            section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-toggle img, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-toggle img {
+              width: 17px;
+              height: 17px;
+              -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+              -webkit-transition: all 0.1s ease-in-out;
+              -moz-transition: all 0.1s ease-in-out;
+              -ms-transition: all 0.1s ease-in-out;
+              -o-transition: all 0.1s ease-in-out;
+              transition: all 0.1s ease-in-out; }
+            section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-toggle::after, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-toggle::after {
+              display: none; }
+          section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-menu, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-menu {
+            border-radius: 10px;
+            min-width: auto;
+            margin-top: 10px;
+            padding: 10px 0;
+            border: 1px solid #000000; }
+            section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-menu .dropdown-item, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-menu .dropdown-item {
+              padding: 5px 10px;
+              font-size: 12px;
+              background-color: transparent;
+              -webkit-transition: all 0.1s ease-in-out;
+              -moz-transition: all 0.1s ease-in-out;
+              -ms-transition: all 0.1s ease-in-out;
+              -o-transition: all 0.1s ease-in-out;
+              transition: all 0.1s ease-in-out; }
+              section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-menu .dropdown-item:active, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-menu .dropdown-item:active {
+                color: inherit; }
+              section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown .dropdown-menu .dropdown-item:hover, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown .dropdown-menu .dropdown-item:hover {
+                background-color: #f7f6f7; }
+          section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input .dropdown.show .dropdown-toggle img, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input .dropdown.show .dropdown-toggle img {
+            -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            transform: rotate(270deg); }
+          section #details .right .tab-content .detail_input .detail_item .detail_rows .item_input button, section #details .right .tab-content .password_tabs .detail_item .detail_rows .item_input button {
+            height: 48px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #222222;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: none; }
+    section #details .right .tab-content .detail_input.password_tabs .input_span, section #details .right .tab-content .password_tabs.password_tabs .input_span {
+      margin-top: 8px;
+      padding-left: 8px;
+      font-size: 12px;
+      line-height: 12px; }
+      section #details .right .tab-content .detail_input.password_tabs .input_span svg, section #details .right .tab-content .password_tabs.password_tabs .input_span svg {
+        width: 5px;
+        height: 5px;
+        margin-right: 5px; }
+        section #details .right .tab-content .detail_input.password_tabs .input_span svg path, section #details .right .tab-content .password_tabs.password_tabs .input_span svg path {
+          fill: #fd0e18 !important; }
+        section #details .right .tab-content .detail_input.password_tabs .input_span svg circle, section #details .right .tab-content .password_tabs.password_tabs .input_span svg circle {
+          fill: #fd0e18 !important; }
+    section #details .right .tab-content .detail_input.password_tabs .password_shield, section #details .right .tab-content .password_tabs.password_tabs .password_shield {
+      margin-top: 15px;
+      padding: 24px;
+      background-color: rgba(17, 153, 94, 0.08);
+      border-radius: 8px; }
+      section #details .right .tab-content .detail_input.password_tabs .password_shield svg, section #details .right .tab-content .password_tabs.password_tabs .password_shield svg {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        margin-right: 20px; }
+      section #details .right .tab-content .detail_input.password_tabs .password_shield p, section #details .right .tab-content .password_tabs.password_tabs .password_shield p {
+        font-size: 14px; }
+    @media only screen and (max-width: 991px) {
+      section #details .right .tab-content .detail_input h4, section #details .right .tab-content .password_tabs h4 {
+        margin-bottom: 16px; }
+      section #details .right .tab-content .detail_input .detail_item, section #details .right .tab-content .password_tabs .detail_item {
+        padding: 0;
+        border: none; } }
+  @media only screen and (max-width: 991px) {
+    section #details {
+      margin: 8px 0 80px; }
+      section #details .left {
+        width: 100%;
+        margin-right: 0; } }
+
+#order .modal-dialog {
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto; }
+  #order .modal-dialog .modal-content .modal-body {
+    padding: 24px 16px 16px 24px; }
+    #order .modal-dialog .modal-content .modal-body h4 {
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-family: "Helvetica-75";
+      font-weight: bold; }
+    #order .modal-dialog .modal-content .modal-body p {
+      margin-bottom: 40px;
+      color: #757575;
+      font-size: 16px; }
+    #order .modal-dialog .modal-content .modal-body .bottom_buttons .close {
+      margin-right: 32px;
+      color: #757575;
+      font-size: 14px;
+      opacity: 1;
+      box-shadow: none; }
+    #order .modal-dialog .modal-content .modal-body .bottom_buttons .back {
+      height: 44px;
+      padding: 0 24px;
+      color: #ffffff;
+      background-color: #fd0e18;
+      border-radius: 8px;
+      box-shadow: none; }
+  @media only screen and (max-width: 767px) {
+    #order .modal-dialog {
+      align-items: flex-end;
+      min-height: calc(100% - 0rem); } }
 
 body header {
   border-bottom: 1px solid #dddddd; }
