@@ -3257,6 +3257,7 @@ section #blog {
       object-fit: cover;
       border-radius: 16px; }
   section #blog .blog_socials {
+    display: flex;
     width: 120px;
     margin-left: -152px;
     padding: 40px 0 20px;
@@ -3272,6 +3273,9 @@ section #blog {
       height: 40px;
       margin-bottom: 20px;
       border: 1px solid #e9eced; }
+    @media only screen and (max-width: 1500px) {
+      section #blog .blog_socials {
+        display: none; } }
   section #blog h4 {
     margin-bottom: 24px;
     font-size: 24px;

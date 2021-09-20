@@ -247,6 +247,20 @@ jQuery( document ).ready( function() {
 	});
 });
 
+if( isOnScreen( jQuery( '.blog_items' ) ) ) { /* Pass element id/class you want to check */
+  $(".blog_socials").addClass("d-none");
+}
+
+jQuery( document ).ready( function() {
+window.addEventListener('scroll', function(e) {
+if( isOnScreen( jQuery( '.blog_items' ) ) ) { /* Pass element id/class you want to check */
+  $(".blog_socials").addClass("d-none");
+ } else {
+   $(".blog_socials").removeClass("d-none");
+ }	
+});
+});
+
 // modals
 $('body').on('hidden.bs.modal', function () {
   if($('.modal.show').length > 0)
