@@ -132,7 +132,7 @@
                     padding-right: 40px;
                     font-size: 14px;
                     color: $color-black-1;
-                    opacity: 0.5;
+                    opacity: 0.8;
                 }
             }
         }
@@ -189,6 +189,7 @@
                             font-weight: bold;
                             font-family: $title-font-bold;
                             sub {
+                                margin-top: -1px;
                                 font-size: 12px;
                             }
                         }

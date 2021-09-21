@@ -148,31 +148,21 @@ p.title {
 
 @font-face {
   font-family: 'Helvetica-55';
-  src: url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.eot");
+  src: url("../fonts/russian/helvetica-55/HelveticaNeueCyr-Roman.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.eot") format("embedded-opentype"), url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.woff2") format("woff2"), url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.woff") format("woff"), url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.ttf") format("truetype"), url("../fonts/helvetica-55/helvetica-neue-lt-geo-55-roman.svg") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
-  font-family: 'helvetica-65';
-  src: url("../fonts/helvetica-65/helvetica-neue-lt-geo-65-medium.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/helvetica-65/helvetica-neue-lt-geo-65-medium.eot") format("embedded-opentype"), url("../fonts/helvetica-65/helvetica-neue-lt-geo-65-medium.woff2") format("woff2"), url("../fonts/helvetica-65/helvetica-neue-lt-geo-65-medium.woff") format("woff"), url("../fonts/helvetica-65/helvetica-neue-lt-geo-65-medium.ttf") format("truetype"), url("../fonts/helvetica-65/helvetica-neue-lt-geo-65-medium.svg") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/russian/helvetica-55/HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("../fonts/russian/helvetica-55/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/russian/helvetica-55/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/russian/helvetica-55/HelveticaNeueCyr-Roman.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Helvetica-75';
-  src: url("../fonts/helvetica-75/helvetica-neue-lt-geo-75-bold.eot");
+  src: url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/helvetica-75/helvetica-neue-lt-geo-75-bold.eot") format("embedded-opentype"), url("../fonts/helvetica-75/helvetica-neue-lt-geo-75-bold.woff2") format("woff2"), url("../fonts/helvetica-75/helvetica-neue-lt-geo-75-bold.woff") format("woff"), url("../fonts/helvetica-75/helvetica-neue-lt-geo-75-bold.ttf") format("truetype"), url("../fonts/helvetica-75/helvetica-neue-lt-geo-75-bold.svg") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Helvetica-75-bold';
-  src: url("../fonts/helvetica-75-bold/helvetica-neue-lt-geo-75-bold-caps.eot");
+  src: url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/helvetica-75-bold/helvetica-neue-lt-geo-75-bold-caps.eot") format("embedded-opentype"), url("../fonts/helvetica-75-bold/helvetica-neue-lt-geo-75-bold-caps.woff2") format("woff2"), url("../fonts/helvetica-75-bold/helvetica-neue-lt-geo-75-bold-caps.woff") format("woff"), url("../fonts/helvetica-75-bold/helvetica-neue-lt-geo-75-bold-caps.ttf") format("truetype"), url("../fonts/helvetica-75-bold/helvetica-neue-lt-geo-75-bold-caps.svg") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/russian/helvetica-75/HelveticaNeueCyr-Bold.ttf") format("truetype"); }
 
 .mh_radio .custom_input {
   width: 18px;
@@ -352,7 +342,7 @@ p.title {
       padding-right: 40px;
       font-size: 14px;
       color: #000000;
-      opacity: 0.5; }
+      opacity: 0.8; }
   @media only screen and (max-width: 767px) {
     .main_content .popular_destinations {
       margin: 24px 0; } }
@@ -398,6 +388,7 @@ p.title {
         font-weight: bold;
         font-family: "Helvetica-75-bold"; }
         .main_content .afordable_prices .swiper-container .swiper-wrapper .swiper-slide .text .price sub {
+          margin-top: -1px;
           font-size: 12px; }
       .main_content .afordable_prices .swiper-container .swiper-wrapper .swiper-slide .text span {
         display: block;
@@ -3756,7 +3747,7 @@ header {
           -webkit-box-orient: vertical;
           overflow: hidden;
           font-size: 12px;
-          font-family: "helvetica-65";
+          font-family: "Helvetica-75";
           line-height: 1.5; }
   .search_wrap.active {
     pointer-events: all;
