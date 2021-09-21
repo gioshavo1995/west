@@ -3691,9 +3691,9 @@ header {
   -ms-transform: translateY(-10px) scaleY(0.95);
   transform: translateY(-10px) scaleY(0.95);
   transform-origin: top;
-  transition: .5s ease-in-out;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out; }
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out; }
   .search_wrap .search_content {
     background-color: #ffffff;
     border-radius: 16px;
