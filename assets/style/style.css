@@ -3746,12 +3746,12 @@ header {
     transition: all 0.1s ease-in-out; }
     header .header_link img {
       margin-right: 8px; }
-    @media only screen and (max-width: 1870px) {
+    @media only screen and (max-width: 1950px) {
       header .header_link {
         margin-right: 15px; } }
     header .header_link:hover {
       opacity: 0.7; }
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1450px) {
       header .header_link {
         display: none !important; }
         header .header_link.cart {
@@ -3799,7 +3799,7 @@ header {
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
       transform-origin: left center; }
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1450px) {
       header .main_menu .mobile_menu {
         display: block; } }
   header .main_menu .lang {
@@ -3840,7 +3840,7 @@ header {
           color: inherit; }
         header .main_menu .lang .dropdown-menu .dropdown-item:hover {
           background-color: #f7f6f7; }
-    @media only screen and (max-width: 1870px) {
+    @media only screen and (max-width: 1950px) {
       header .main_menu .lang {
         margin-right: 15px; } }
     header .main_menu .lang.show .dropdown-toggle img {
@@ -3859,7 +3859,7 @@ header {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-    @media only screen and (max-width: 1550px) {
+    @media only screen and (max-width: 1640px) {
       header .logo {
         position: static;
         transform: none;
@@ -3986,7 +3986,7 @@ header {
           padding: 15px 16px; }
           header .mobile_drop ul h4 {
             margin-bottom: 15px; } }
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1450px) {
     header {
       -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
