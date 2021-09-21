@@ -48,11 +48,16 @@ section {
                         height: 40px;
                         margin-top: 14px;
                         background-color: $color-white-1;
+                        border: 1px solid transparent;
                         border-radius: 8px;
                         box-shadow: none;
+                        @include transition( all , 0.1s, ease-in-out);
                         img {
                             width: 20px;
                             height: 20px;
+                        }
+                        &:hover {
+                            border: 1px solid $color-black;
                         }
                     }
                 }
@@ -74,8 +79,12 @@ section {
                             font-weight: bold;
                             border-radius: 4px;
                             box-shadow: none;
+                            @include transition( all , 0.1s, ease-in-out);
                             span {
                                 flex: 1;
+                            }
+                            &:hover {
+                                border: 1px solid $color-black;
                             }
                         }
                     }
@@ -110,7 +119,9 @@ section {
                                     background-color: $color-white-1;
                                     font-size: 12px;
                                     line-height: 14px;
+                                    border: 1px solid transparent;
                                     box-shadow: none;
+                                    @include transition( all , 0.1s, ease-in-out);
                                     img {
                                         width: 17px;
                                         height: 17px;
@@ -121,6 +132,9 @@ section {
                                     }
                                     &::after {
                                        display: none;
+                                    }
+                                    &:hover {
+                                        border: 1px solid $color-white-4;
                                     }
                                  }
                                  .dropdown-menu {
@@ -228,9 +242,10 @@ section {
                         height: 52px;
                         padding: 0 32px 0 52px;
                         font-size: 12px;
-                        border: none;
+                        border: 1px solid transparent;
                         border-radius: 12px;
                         outline: none;
+                        @include transition( all , 0.1s, ease-in-out);
                         ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
                             color: $color-black-4;
                             opacity: 1; /* Firefox */
@@ -242,6 +257,9 @@ section {
                           
                           ::-ms-input-placeholder { /* Microsoft Edge */
                             color: $color-black-4;
+                          }
+                          &:hover {
+                              border: 1px solid $color-black
                           }
                     }
                     button {
@@ -264,10 +282,14 @@ section {
                         border-radius: 8px;
                         box-shadow: none;
                         outline: none;
+                        @include transition( all , 0.5s, ease-in-out);
                         img {
                             width: 17px;
                             height: 17px;
                             margin-right: 8px;
+                        }
+                        &:hover {
+                            background-color: $color-red-1;
                         }
                     }
                 }

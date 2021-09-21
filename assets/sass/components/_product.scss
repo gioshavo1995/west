@@ -293,6 +293,10 @@
                                 background-color: $color-white;
                                 border: 1px solid $color-white-4;
                                 border-radius: 12px;
+                                @include transition( all , 0.1s, ease-in-out);
+                                &:hover {
+                                    border: 1px solid $color-black;
+                                }
                                 .arrow {
                                     -webkit-transform: rotate(90deg);
                                     -ms-transform: rotate(90deg);
@@ -425,6 +429,10 @@
                                 color: $color-white;
                                 background-color: $color-red-1;
                                 border-radius: 8px;
+                                @include transition( all , 0.1s, ease-in-out);
+                                &:hover {
+                                    background-color: $color-red;
+                                }
                             }
                         }
                     }
@@ -552,10 +560,13 @@
                     height: 380px;
                     border-radius: 16px;
                     figure {
+                        border-radius: 16px;
+                        overflow: hidden;
                         img {
                             max-width: 100%;
                             object-fit: cover;
                             border-radius: 16px;
+                            @include transition( all , 0.5s, ease-in-out);
                         }
                     }
                     .text {
@@ -576,6 +587,7 @@
                             font-weight: bold;
                             font-family: $title-font-bold;
                             sub {
+                                margin-top: -1px;
                                 font-size: 12px;
                             }
                         }
@@ -585,6 +597,15 @@
                             font-size: 18px;
                             font-weight: bold;
                             font-family: $title-font-bold;
+                        }
+                    }
+                    &:hover {
+                        figure {
+                            img {
+                                -webkit-transform: scale(1.1);
+                                -ms-transform: scale(1.1);
+                                transform: scale(1.1);
+                            }
                         }
                     }
                 }
@@ -698,6 +719,7 @@
                                     border-radius: 12px;
                                     box-shadow: none;
                                     outline: none;
+                                    @include transition( all , 0.1s, ease-in-out);
                                     img {
                                         -webkit-transform: rotate(90deg);
                                         -ms-transform: rotate(90deg);
@@ -706,6 +728,9 @@
                                     }
                                     &::after {
                                         display: none;
+                                    }
+                                    &:hover {
+                                        border: 1px solid $color-black;
                                     }
                                 }
                                 .dropdown-menu {
@@ -786,6 +811,7 @@
                                 padding: 16px;
                                 border: 1px solid $color-white-4;
                                 border-radius: 8px;
+                                @include transition( all , 0.1s, ease-in-out);
                                 img {
                                     &.small_room , &.big_room {
                                         width: 56px;
@@ -804,6 +830,9 @@
                                 &:last-child {
                                     margin-right: 0;
                                 }
+                                &:hover {
+                                    border: 1px solid $color-black;
+                                }
                             }
                         }
                     }
@@ -816,6 +845,10 @@
                                     padding: 0 16px;
                                     border: 1px solid $color-white-4;
                                     border-radius: 8px;
+                                    @include transition( all , 0.1s, ease-in-out);
+                                    &:hover {
+                                        border: 1px solid $color-black;
+                                    }
                                 }
                                 input {
                                     &:checked  {

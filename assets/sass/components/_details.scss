@@ -9,6 +9,7 @@ section {
                 margin-bottom: 24px;
                 border-radius: 16px;
                 box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
+                overflow: hidden;
                 .details_title {
                     padding: 16px 16px 8px;
                     background-color: $color-white-1;
@@ -58,6 +59,11 @@ section {
                             border: 1px solid $color-red;
                             border-radius: 5px;
                             text-decoration: none;
+                            @include transition( all , 0.1s, ease-in-out);
+                            &:hover {
+                                color: $color-white;
+                                background-color: $color-red;
+                            }
                         }
                     }
                 }
@@ -90,6 +96,9 @@ section {
                             padding: 0;
                             visibility: hidden;
                         }
+                        &:hover {
+                            background-color: $color-white-1;
+                        }
                     }
                 }
             }
@@ -97,6 +106,7 @@ section {
                 margin-bottom: 24px;
                 border-radius: 16px;
                 box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
+                overflow: hidden;
                 a {
                     height: 59px;
                     padding-left: 16px;
@@ -105,17 +115,22 @@ section {
                     font-size: 14px;
                     border-top: 1px solid $color-white-4;
                     text-decoration: none;
+                    @include transition( all , 0.1s, ease-in-out);
                     &:first-child {
                         border-top: none;
                     }
                     svg {
                         margin-right: 8px;
                     }
+                    &:hover {
+                        background-color: $color-white-1;
+                    }
                 }
             }
             .left_back {
                 border-radius: 16px;
                 box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.12);
+                overflow: hidden;
                 a {
                     height: 59px;
                     padding-left: 16px;
@@ -123,8 +138,12 @@ section {
                     color: #222;
                     font-size: 14px;
                     text-decoration: none;
+                    @include transition( all , 0.1s, ease-in-out);
                     svg {
                         margin-right: 8px;
+                    }
+                    &:hover {
+                        background-color: $color-white-1;
                     }
                 }
             }
@@ -198,6 +217,10 @@ section {
                             .item {
                                 border: 1px solid $color-white-4;
                                 border-radius: 16px;
+                                @include transition( all , 0.1s, ease-in-out);
+                                &:hover {
+                                    border: 1px solid $color-black;
+                                }
                             }
                             figure {
                                 img {
@@ -288,6 +311,7 @@ section {
                         padding: 16px;
                         border: 1px solid $color-white-4;
                         border-radius: 16px;
+                        @include transition( all , 0.1s, ease-in-out);
                         .order_top {
                             figure {
                                 margin-right: 24px;
@@ -355,6 +379,9 @@ section {
                                 }
                             }
                         }
+                        &:hover {
+                            border: 1px solid $color-black;
+                        }
                     }
                     @media only screen and (max-width : 767px) {
                         h4 {
@@ -362,7 +389,7 @@ section {
                         }
                         .order_item {
                             padding: 0;
-                            border: none;
+                            border: none !important;
                             .order_top {
                                 flex-wrap: wrap;
                                 figure {
@@ -421,7 +448,9 @@ section {
                                         background-color: $color-white-1;
                                         font-size: 12px;
                                         line-height: 14px;
+                                        border: 1px solid transparent;
                                         box-shadow: none;
+                                        @include transition( all , 0.1s, ease-in-out);
                                         img {
                                             width: 17px;
                                             height: 17px;
@@ -432,6 +461,9 @@ section {
                                         }
                                         &::after {
                                            display: none;
+                                        }
+                                        &:hover {
+                                            border: 1px solid $color-white-4;
                                         }
                                      }
                                      .dropdown-menu {
@@ -472,6 +504,10 @@ section {
                                     border: none;
                                     border-radius: 4px;
                                     box-shadow: none;
+                                    @include transition( all , 0.1s, ease-in-out);
+                                    &:hover {
+                                        background-color: rgba(34, 34, 34,0.9);;
+                                    }
                                 }
                             }
                         }

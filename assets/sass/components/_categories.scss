@@ -66,13 +66,18 @@
                    font-size: 12px;
                    font-weight: bold;
                    font-family: $title-font;
+                   border: 1px solid transparent;
                    line-height: 14px;
                    box-shadow: none;
+                   @include transition( all , 0.1s, ease-in-out);
                    img {
                       @include transition( all , 0.1s, ease-in-out);
                    }
                    &::after {
                       display: none;
+                   }
+                   &:hover {
+                       border: 1px solid $color-black;
                    }
                 }
                 .dropdown-menu {
@@ -236,6 +241,7 @@
                 text-decoration: none;
                 border: 1px solid $color-white-4;
                 border-radius: 16px;
+                @include transition( all , 0.1s, ease-in-out);
                 figure {
                     margin-right: 32px;
                     img {
@@ -319,6 +325,9 @@
                         font-family: $title-font;
                     }
                 }
+                &:hover {
+                    border: 1px solid $color-black;
+                }
             }
             .read_more {
                 margin: 40px 0;
@@ -330,6 +339,11 @@
                     border: 1px solid $color-black-4;
                     box-shadow: none;
                     outline: none;
+                    @include transition( all , 0.1s, ease-in-out);
+                    &:hover {
+                        color: $color-white;
+                        background-color: $color-black;
+                    }
                 }
                 @media only screen and (max-width : 767px) {
                     margin: 24px 0 0;
@@ -345,7 +359,7 @@
                 a {
                     flex-wrap: wrap;
                     padding: 0 0 16px;
-                    border: none;
+                    border: none !important;
                     figure {
                         width: 100%;
                         margin-bottom: 16px !important;

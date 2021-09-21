@@ -42,6 +42,9 @@ section {
                 span {
                     flex: 1;
                 }
+                &:hover {
+                    border: 1px solid $color-black;
+                }
             }
         }
         .personal_line {
@@ -103,7 +106,9 @@ section {
                         background-color: $color-white-1;
                         font-size: 12px;
                         line-height: 14px;
+                        border: 1px solid transparent;
                         box-shadow: none;
+                        @include transition( all , 0.1s, ease-in-out);
                         img {
                             width: 17px;
                             height: 17px;
@@ -114,6 +119,9 @@ section {
                         }
                         &::after {
                            display: none;
+                        }
+                        &:hover {
+                            border: 1px solid $color-white-4;
                         }
                      }
                      .dropdown-menu {
@@ -187,6 +195,10 @@ section {
             border: none;
             border-radius: 4px;
             box-shadow: none;
+            @include transition( all , 0.1s, ease-in-out);
+                &:hover {
+                    background-color: rgba(34, 34, 34,0.9);
+                }
         }
     }
     .login_inputs {
