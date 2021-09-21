@@ -52,8 +52,12 @@
                     font-weight: bold;
                     font-family: $title-font;
                     background-image: linear-gradient(to bottom, #fff, #ddd);
+                    @include transition( all , 0.1s, ease-in-out);
                     img {
                         margin-right: 12px;
+                    }
+                    &:hover {
+                        opacity: 0.9;
                     }
                 }
             }

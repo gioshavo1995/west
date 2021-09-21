@@ -57,8 +57,8 @@ p.title {
 .scroll_social {
   position: fixed;
   z-index: 4;
-  top: 400px;
-  right: 100px; }
+  bottom: 40px;
+  right: 40px; }
   @media only screen and (max-width: 1270px) {
     .scroll_social {
       right: 50px; } }
@@ -109,6 +109,10 @@ p.title {
     .scroll_social .social_items.social_button, .scroll_social .social_button.social_button {
       z-index: 1;
       margin-bottom: 0; }
+    .scroll_social .social_items.social_items, .scroll_social .social_button.social_items {
+      box-shadow: none !important; }
+      .scroll_social .social_items.social_items.active, .scroll_social .social_button.social_items.active {
+        box-shadow: 0 6px 12px 0 rgba(34, 34, 34, 0.12) !important; }
 
 .bottom_modal {
   background-color: rgba(34, 34, 34, 0.6); }
@@ -297,9 +301,16 @@ p.title {
           font-size: 14px;
           font-weight: bold;
           font-family: "Helvetica-75";
-          background-image: linear-gradient(to bottom, #fff, #ddd); }
+          background-image: linear-gradient(to bottom, #fff, #ddd);
+          -webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -ms-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out; }
           .main_image .text .bottom_divs .tour_items .tour_item img {
             margin-right: 12px; }
+          .main_image .text .bottom_divs .tour_items .tour_item:hover {
+            opacity: 0.9; }
   @media only screen and (max-width: 767px) {
     .main_image {
       margin: 8px 8px 0; }
