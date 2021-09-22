@@ -2822,7 +2822,6 @@ section #contact {
       section #contact .contact_info .contact_maps #map {
         margin-top: 24px;
         border-radius: 4px;
-        border: 1px solid #222222;
         overflow: hidden; }
 
 section #privacy {
@@ -3748,7 +3747,7 @@ header {
       margin-right: 8px; }
     @media only screen and (max-width: 1950px) {
       header .header_link {
-        margin-right: 15px; } }
+        margin-right: 27px; } }
     header .header_link:hover {
       opacity: 0.7; }
     @media only screen and (max-width: 1450px) {
