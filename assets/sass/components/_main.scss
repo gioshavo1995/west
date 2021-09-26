@@ -80,7 +80,7 @@
             .bottom_divs {
                 margin-bottom: 0;
                 p {
-                    margin-bottom: 16px;
+                    margin-bottom: 8px;
                     font-size: 16px;
                 }
                .tour_items {
@@ -88,7 +88,9 @@
                    .tour_item {
                        height: 34px;
                        margin: 8px 4px 0;
-                       padding: 0 16px 0 14px;
+                       padding: 0 14px 0 12px;
+                       font-family: $normal-font;
+                       font-weight: normal;
                        img {
                            width: 18px;
                            height: 18px;
