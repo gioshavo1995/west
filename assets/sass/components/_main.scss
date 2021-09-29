@@ -138,6 +138,10 @@
                     @include transition( all , 0.1s, ease-in-out);
                 }
                 p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
                     margin-bottom: 24px;
                     padding-right: 40px;
                     font-size: 14px;
