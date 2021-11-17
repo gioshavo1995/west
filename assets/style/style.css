@@ -454,8 +454,11 @@ p.title {
           margin-top: -1px;
           font-size: 12px; }
       .main_content .afordable_prices .swiper-container .swiper-wrapper .swiper-slide .text span {
-        display: block;
-        min-height: 45px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        min-height: 54px;
+        overflow: hidden;
         font-size: 18px;
         font-weight: bold;
         font-family: "Helvetica-75-bold"; }
@@ -646,8 +649,13 @@ p.title {
         border-top-left-radius: 16px;
         border-top-right-radius: 16px; }
     .main_content .blog .swiper-container .swiper-wrapper .swiper-slide .text {
+      min-height: 92px;
       padding: 16px; }
       .main_content .blog .swiper-container .swiper-wrapper .swiper-slide .text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
         margin-bottom: 0;
         font-size: 20px; }
     .main_content .blog .swiper-container .swiper-wrapper .swiper-slide:hover {
