@@ -38,6 +38,17 @@
          display: none !important;
          &.cart {
             display: flex !important;
+            &.phone {
+               display: none !important;
+            }
+         }
+      }
+      @media only screen and (max-width : 767px) {
+         &.cart {
+            display: none !important;
+            &.phone {
+               display: flex  !important;
+            }
          }
       }
     }

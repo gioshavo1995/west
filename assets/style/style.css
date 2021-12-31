@@ -3777,7 +3777,14 @@ header {
       header .header_link {
         display: none !important; }
         header .header_link.cart {
-          display: flex !important; } }
+          display: flex !important; }
+          header .header_link.cart.phone {
+            display: none !important; } }
+    @media only screen and (max-width: 767px) {
+      header .header_link.cart {
+        display: none !important; }
+        header .header_link.cart.phone {
+          display: flex  !important; } }
   header .main_menu .mobile_menu {
     display: none;
     margin-right: 14px; }
